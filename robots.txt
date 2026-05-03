@@ -1,0 +1,16 @@
+User-Agent: *
+Disallow: /cgi-bin/          # Стандартная папка на хостингах, не нужна в поиске
+Disallow: /pages/            # Запрещает индексацию всех страниц в этой папке
+Disallow: /*?                # Закрывает от индексации ссылки с параметрами (например, UTM-метки)
+Allow: /                     # Разрешает индексацию всего остального
+
+# Специальные инструкции для роботов Яндекса (реклама и обход)
+User-Agent: YadirectBot
+Disallow:
+
+User-Agent: YandexDirect
+Disallow:
+
+# Указываем путь к карте сайта для всех ботов
+Sitemap: https://float-camera.ru/sitemap.xml
+

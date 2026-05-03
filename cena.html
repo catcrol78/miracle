@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цены на флоат-камеры Miracle | Стоимость оборудования под ключ</title>
+    <link rel="icon" href="https://float-camera.ru/favicon.ico" type="image/x-icon">
+	<meta name="description" content="Актуальная стоимость профессиональных флоат-камер Miracle напрямую от производителя. Узнайте цены, условия поставки для отелей и SPA, варианты комплектации и расчет окупаемости. Надежное оборудование для вашего бизнеса.">
+
+<link rel="canonical" href="https://float-camera.ru/cena.html">
+    <link rel="stylesheet" href="assets/css/miracle-redesign.css">
+	<style>
+	
+  /* === БАЗОВЫЕ НАСТРОЙКИ === */
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+    --primary: #00695c;
+    --secondary: #004d40;
+    --accent: #d81b60;
+    --text: #333;
+    --light-bg: #f8f9fa;
+    --white: #fff;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+    background: #fff;
+}
+
+a { text-decoration: none; color: inherit; transition: 0.3s; }
+ul { padding: 0; margin: 0; list-style: none !important; }
+
+/* Чтобы длинные слова не растягивали экран */
+h1, h2, h3 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* === ШАПКА === */
+.top-bar { background: var(--secondary); color: white; padding: 8px 0; text-align: center; font-size: 0.9em; }
+
+header { 
+    background: var(--white); 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    width: 100%; 
+}
+
+.nav-container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 15px 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo { 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: var(--primary); 
+    text-transform: uppercase; 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    white-space: nowrap;
+}
+
+.main-menu { display: flex; gap: 20px; list-style: none !important; }
+.main-menu a { font-weight: 500; color: #555; }
+.main-menu a:hover, .main-menu a.active { color: var(--primary); }
+
+.menu-toggle { 
+    display: none; /* Скрыта на больших экранах */
+    font-size: 30px; 
+    cursor: pointer; 
+    color: var(--primary); 
+    user-select: none;
+}
+
+/* === СЕТКА КОНТЕНТА === */
+.layout-grid { 
+    display: grid; 
+    grid-template-columns: 3fr 1fr; 
+    gap: 40px; 
+    max-width: 1200px; 
+    margin: 40px auto; 
+    padding: 0 20px; 
+    width: 100%;
+}
+
+.content h1 { color: var(--secondary); border-bottom: 2px solid #eee; padding-bottom: 10px; line-height: 1.2; }
+
+/* === ТАБЛИЦА ЦЕН === */
+.price-box { background: white; padding: 20px; border-radius: 8px; border: 1px solid #eee; margin-bottom: 30px; box-shadow: 0 2px 5px rgba(0,0,0,0.03); width: 100%; }
+.table-wrapper { 
+    width: 100%; 
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+    margin-top: 15px; 
+    padding-bottom: 10px;
+}
+table { width: 100%; border-collapse: collapse; min-width: 500px; }
+th, td { padding: 12px; text-align: left; border-bottom: 1px solid #eee; font-size: 0.95em; }
+th { background: var(--light-bg); color: var(--secondary); font-weight: bold; }
+.price-val { font-weight: bold; color: var(--accent); white-space: nowrap; }
+
+/* === ИНФО БЛОКИ === */
+.info-card { background: #e0f2f1; padding: 25px; border-radius: 8px; border-left: 5px solid var(--primary); margin-bottom: 30px; width: 100%; }
+.info-card h2 { margin-top: 0; color: var(--primary); font-size: 1.4em; }
+.feature-list li { margin-bottom: 10px; display: flex; gap: 10px; align-items: flex-start; }
+.feature-list li::before { content: "✅"; flex-shrink: 0; }
+
+/* === САЙДБАР === */
+.sidebar-block { background: var(--light-bg); padding: 20px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #eee; }
+.sidebar-block h3 { margin-top: 0; color: var(--secondary); font-size: 1.1em; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 15px; }
+.sidebar-menu li { margin-bottom: 10px; border-bottom: 1px dotted #ccc; padding-bottom: 5px; }
+
+.adv-sidebar { border: 2px solid var(--primary); background: #fff; }
+.adv-sidebar strong { display: block; color: var(--primary); margin-bottom: 5px; font-size: 0.95em; }
+.adv-sidebar p { font-size: 0.85em; margin: 0 0 15px 0; line-height: 1.4; color: #555; }
+
+.btn-price { background: var(--accent); color: white !important; padding: 15px 30px; border-radius: 5px; font-weight: bold; border: none; cursor: pointer; transition: 0.3s; width: 100%; font-size: 1.1em; display: block; }
+
+/* === ФУТЕР === */
+footer { background: #004d40; color: white; padding: 40px 0; margin-top: 60px; width: 100%; position: relative; z-index: 10; }
+.footer-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px; }
+.footer-inner > div { flex: 1; min-width: 200px; }
+.footer-inner h4 { border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 10px; margin-bottom: 15px; color: white; }
+.footer-inner p, .footer-inner a { line-height: 1.6; color: #e0f2f1; text-decoration: none; display: block; margin-bottom: 5px; }
+
+/* === АДАПТИВНОСТЬ (Итоговая версия) === */
+@media (max-width: 900px) {
+    /* 1. Исправление меню (бургер) */
+    .menu-toggle { display: block; } /* Показываем ☰ */
+
+    .main-menu { 
+        display: none; /* Скрываем обычный список ссылок */
+        flex-direction: column; 
+        position: absolute; 
+        top: 100%; left: 0; 
+        width: 100%; 
+        background: white; 
+        padding: 20px; 
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1); 
+        gap: 15px;
+        z-index: 999;
+    }
+
+    /* Когда нажали на кнопку через JS */
+    .main-menu.active { display: flex !important; }
+
+    /* 2. Сетка контента */
+    .layout-grid { 
+        display: block; 
+        width: 100%;
+        margin: 10px 0;
+        padding: 0 10px; 
+    }
+    
+    aside { display: block; width: 100%; margin-top: 30px; }
+    
+    /* 3. Таблица и карточки */
+    .price-box { padding: 10px; width: 100%; overflow: hidden; }
+    table { min-width: 400px; font-size: 0.85em; }
+    th, td { padding: 8px 5px; }
+
+    .info-card { padding: 15px; margin: 15px 0; }
+    .nav-container { padding: 10px 15px; }
+    h1 { font-size: 1.4em; }
+    .logo { font-size: 18px; }
+}
+/* === МОДАЛЬНОЕ ОКНО === */
+.modal-overlay {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 9999; /* Поверх всего */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: auto;
+    padding: 20px;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #999;
+    cursor: pointer;
+    line-height: 1;
+    transition: 0.3s;
+}
+
+.close-btn:hover {
+    color: var(--accent);
+}
+
+/* === ФОРМА === */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.submit-btn {
+    width: 100%;
+    background: var(--accent);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #c2185b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Адаптив для модалки */
+@media (max-width: 600px) {
+    .modal-content {
+        margin: 10% auto;
+        padding: 20px;
+        width: 95%;
+    }
+}
+
+</style>
+</head>
+<body class="miracle-page">
+
+<!-- HEADER_START -->
+<div class="miracle-top-bar">
+  Консультации круглосуточно:
+  <a href="tel:89272528367">8-927-252-83-67</a>
+</div>
+<header class="miracle-header">
+  <div class="miracle-shell miracle-header__inner">
+    <a href="index.html" class="miracle-logo" aria-label="MIRACLE">MIRACLE</a>
+    <button
+      class="miracle-menu-toggle"
+      type="button"
+      aria-label="Открыть меню"
+      aria-expanded="false"
+      data-miracle-menu-toggle
+    >
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="miracle-nav" aria-label="Основная навигация" data-miracle-nav>
+      <a href="index.html">Главная</a>
+      <a href="tovary.html">Наши работы</a>
+      <a href="stati.html">Статьи</a>
+      <a href="dokument.html">Документация</a>
+      <a href="cena.html">Цена</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+    <a class="miracle-premium-btn" href="https://float-camera-bufo.ru" target="_blank" rel="noopener">Premium BUFO</a>
+  </div>
+</header>
+<!-- HEADER_END -->
+
+<div class="layout-grid">
+    <main class="content">
+        <h1>Стоимость и условия поставки</h1>
+        <p>Мы являемся производителем флоат-камер Miracle в г. Камышин. Прямые поставки позволяют нам предлагать лучшую цену на оборудование профессионального уровня.</p>
+
+        <div class="price-box">
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Наименование</th><th>Описание</th><th>Стоимость</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><b>Флоат-камера Miracle</b></td><td>Базовая комплектация + фильтрация</td><td class="price-val">Уточняйте по телефону</td></tr>
+                        <tr><td><b>Монтаж и обучение</b></td><td>Сборка, запуск, инструктаж</td><td class="price-val">Договорная</td></tr>
+                        <tr><td><b>Соль Эпсома</b></td><td>Магнезия высшей очистки (25 кг)</td><td class="price-val">3 000 руб.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="font-size:0.8em; color:#666; margin-top:10px; font-style:italic;">* Таблицу можно листать вправо на мобильных устройствах</p>
+        </div>
+
+        <div class="info-card">
+            <h2>Условия оплаты</h2>
+            <ul class="feature-list">
+                <li><b>Предоплата 50%</b> при оформлении заказа.</li>
+                <li><b>Оставшиеся 50% — после установки</b> и запуска флоат-камеры.</li>
+                <li>Возможна беспроцентная рассрочка (обсуждается индивидуально).</li>
+            </ul>
+        </div>
+
+        <div class="info-card" style="background: #f1f8e9; border-left-color: #8bc34a;">
+            <h2>Доставка и установка</h2>
+            <ul class="feature-list">
+                <li><b>Срок изготовления:</b> 10 рабочих дней.</li>
+                <li><b>География:</b> Доставка по всей России и СНГ.</li>
+                <li><b>Гарантия:</b> 1 год, поддержка 24/7 на весь срок службы.</li>
+            </ul>
+        </div>
+
+        <button onclick="openModal('Запрос КП и условий')" class="btn-price">Получить коммерческое предложение</button>
+    </main>
+
+    <aside>
+        <div class="sidebar-block adv-sidebar">
+            <h3>Miracle — Ваш эксперт</h3>
+            <strong>Опыт с 2010 года</strong>
+            <p>Мы производим и сами эксплуатируем флоат-камеры уже 16 лет.</p>
+            
+            <strong>Техподдержка 24/7</strong>
+            <p>Мы всегда на связи. Техническая помощь доступна круглосуточно.</p>
+            
+            <strong>Сделано в Камышине</strong>
+            <p>Собственное производство гарантирует контроль качества и отсутствие переплат посредникам.</p>
+        </div>
+
+        <div class="sidebar-block">
+            <h3>Полезные ссылки</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati36.html">Как выбрать камеру?</a></li>
+                <li><a href="complect.html">Комплектация</a></li>
+                <li><a href="plan.html">Бизнес-план</a></li>
+                <li><a href="otzyv.html">Отзывы заказчиков</a></li>
+            </ul>
+        </div>
+    </aside>
+</div>
+
+<!-- FOOTER_START -->
+<footer class="miracle-footer">
+  <div class="miracle-shell miracle-footer__grid">
+    <div>
+      <div class="miracle-footer__logo">MIRACLE</div>
+      <p>Флоат-камеры и оборудование для флоатинга с 2010 года</p>
+      <p>© 2010–2024 MIRACLE. Все права защищены.</p>
+    </div>
+    <div>
+      <h4>Навигация</h4>
+      <a href="index.html">Главная</a>
+      <a href="tovary.html">Наши работы</a>
+      <a href="stati.html">Статьи</a>
+      <a href="dokument.html">Документация</a>
+      <a href="cena.html">Цена</a>
+      <a href="contact.html">Контакты</a>
+    </div>
+    <div>
+      <h4>Контакты</h4>
+      <a href="tel:89272528367">8-927-252-83-67</a>
+      <a href="mailto:info@miracle-float.ru">info@miracle-float.ru</a>
+      <p>Россия, Самара</p>
+    </div>
+    <div>
+      <h4>Мы в соцсетях</h4>
+      <div class="miracle-socials">
+        <a href="#" aria-label="Telegram">T</a>
+        <a href="#" aria-label="VK">VK</a>
+        <a href="#" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+  </div>
+  <div class="miracle-shell miracle-footer__bottom">
+    <a href="privacy.html">Политика конфиденциальности</a>
+  </div>
+</footer>
+<!-- FOOTER_END -->
+
+<div id="modalForm" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle" style="color:var(--primary); margin-top:0;">Оставить заявку</h2>
+        <form action="send.php" method="POST" id="universalForm">
+            <input type="hidden" name="form_subject" id="formSubject" value="Заявка с сайта">
+            <input type="text" name="website_trap" style="display:none !important;" tabindex="-1">
+            <div class="form-group"><input type="text" name="name" placeholder="Ваше имя" required></div>
+            <div class="form-group"><input type="tel" name="phone" id="userPhone" placeholder="Ваш телефон"></div>
+            <div class="form-group"><input type="email" name="email" id="userEmail" placeholder="Ваш e-mail"></div>
+            <div class="form-group"><input type="text" name="company" placeholder="Название организации"></div>
+            <div class="form-group"><textarea name="question" placeholder="Ваш вопрос" rows="3"></textarea></div>
+            <p style="font-size: 0.8em; color: #666; margin-bottom:15px;">* Укажите телефон или почту для связи.</p>
+            
+            <div style="font-size:0.8em; color:#777; margin-bottom:15px; display:flex; gap:8px; align-items: flex-start; text-align: left;">
+                <input type="checkbox" name="agree" id="modal_agree" required style="width:auto; margin: 3px 0 0 0; cursor: pointer;">
+                <label for="modal_agree" style="cursor: pointer;">
+                    Я согласен с <a href="privacy.html" target="_blank" style="color:#777; text-decoration: underline;">политикой конфиденциальности</a>
+                </label>
+            </div>
+            
+            <button type="submit" class="submit-btn">ОТПРАВИТЬ ЗАЯВКУ</button>
+        </form>
+    </div>
+</div>
+
+<script>
+function openModal(subject) { document.getElementById('modalForm').style.display = 'block'; document.getElementById('formSubject').value = subject; document.getElementById('modalTitle').innerText = subject; }
+function closeModal() { document.getElementById('modalForm').style.display = 'none'; }
+window.onclick = function(event) { if (event.target == document.getElementById('modalForm')) closeModal(); }
+</script>
+
+<script src="assets/js/miracle-redesign.js"></script>
+</body>
+</html>

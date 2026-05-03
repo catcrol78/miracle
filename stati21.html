@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Косметический эффект флоатинга | Miracle</title>
+    <link rel="icon" href="https://float-camera.ru/favicon.ico" type="image/x-icon">
+    <style>
+        /* БАЗОВЫЕ СТИЛИ */
+        :root { --primary: #00695c; --secondary: #004d40; --accent: #d81b60; --text: #333; --light-bg: #f8f9fa; --white: #fff; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; color: var(--text); line-height: 1.6; background: var(--light-bg); }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        
+        /* ШАПКА */
+        .top-bar { background: var(--secondary); color: white; padding: 8px 0; text-align: center; font-size: 0.9em; }
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: var(--primary); text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
+        .main-menu { display: flex; gap: 20px; }
+        .main-menu a { font-weight: 500; color: #555; }
+        .main-menu a:hover { color: var(--primary); }
+        .menu-toggle { display: none; font-size: 26px; cursor: pointer; }
+
+        /* МАКЕТ СТАТЬИ */
+        .layout-grid { display: grid; grid-template-columns: 3fr 1fr; gap: 40px; max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        
+        /* Контент статьи */
+        .article-content { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .article-content h1 { color: var(--secondary); margin-top: 0; text-align: center; line-height: 1.3; margin-bottom: 30px; }
+        .article-content h3 { color: var(--primary); margin-top: 30px; margin-bottom: 15px; border-left: 4px solid var(--accent); padding-left: 15px; }
+        .article-content p { margin-bottom: 15px; text-align: left; }
+        
+        /* Список преимуществ */
+        .benefits-list { list-style: none; padding: 0; margin-bottom: 20px; }
+        .benefits-list li { margin-bottom: 15px; padding-left: 25px; position: relative; }
+        .benefits-list li::before { content: "✿"; color: var(--accent); position: absolute; left: 0; top: 0; font-size: 1.2em; }
+        .benefits-list strong { color: var(--secondary); }
+
+        /* Блок акцента */
+        .highlight-box { background: #e0f2f1; padding: 20px; border-radius: 8px; text-align: center; font-weight: bold; color: #00695c; margin: 30px 0; border: 1px solid #b2dfdb; }
+
+        /* Сайдбар */
+        aside { font-size: 0.95em; }
+        .sidebar-block { background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #eee; }
+        .sidebar-block h3 { margin-top: 0; color: var(--secondary); font-size: 1.1em; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 15px; }
+        .sidebar-menu { list-style: none; padding: 0; }
+        .sidebar-menu li { margin-bottom: 10px; border-bottom: 1px dotted #eee; padding-bottom: 5px; }
+        .sidebar-menu a:hover { color: var(--accent); }
+
+        footer { background: #263238; color: #cfd8dc; padding: 40px 0; margin-top: 50px; text-align: center; }
+
+        @media (max-width: 900px) {
+            .layout-grid { grid-template-columns: 1fr; }
+            .article-content { padding: 20px; }
+            .sidebar-block { display: none; }
+            .main-menu { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: white; padding: 20px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+            .main-menu.active { display: flex; }
+            .menu-toggle { display: block; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">Консультации: <a href="tel:89272528367" style="color:white">8-927-252-83-67</a></div>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+             <img src="https://float-camera.ru/media/images/logo.png" alt="Miracle" style="height: 40px;"> Miracle
+        </a>
+        <div class="menu-toggle" onclick="document.querySelector('.main-menu').classList.toggle('active')">☰</div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tovary.html">Наши работы</a></li>
+                <li><a href="stati.html" style="color:var(--primary); font-weight:bold;">Статьи</a></li>
+                <li><a href="dokument.html">Документация</a></li>
+                <li><a href="cena.html">Цена</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                 <li><a href="https://float-camera-bufo.ru" target="_blank" style="color: var(--accent); font-weight: bold; border: 1px solid var(--accent); padding: 5px 10px; border-radius: 4px;">Premium BUFO</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="layout-grid">
+    
+    <main class="article-content">
+        
+        <!-- Картинка статьи -->
+       <!-- <img src="https://float-camera.ru/media/gallery/stati21.jpg" alt="Косметический эффект" style="width: 100%; border-radius: 8px; margin-bottom: 20px;"> -->
+
+        <h1>Косметический эффект флоатинга</h1>
+        
+        <p>Помимо положительного влияния на нервную систему у флоатинга есть еще один рычаг воздействия на здоровье. Благодаря своему составу раствор английской соли через кожу выводит из организма мочевину, вредные кислоты и шлаки. Подобная чистка не может не отразиться и на внешности, ведь токсины негативно влияют на состояние кожи. Неудивительно, что после флоатинга она становится шелковистой.</p>
+        
+        <p>А еще во время сеанса в организме человека усиливаются обменные процессы, в итоге на бедрах сглаживаются бугорки целлюлита. Конечно, они вряд ли исчезнут бесследно за один раз, но состояние кожи в проблемных местах улучшится в значительной степени. А отсутствие гравитации позволяет расслабиться глубинным мышцам лица, до которых не добраться ботоксу.</p>
+
+        <h3>Основные косметические свойства:</h3>
+        
+        <ul class="benefits-list">
+            <li><strong>Вывод лишней жидкости.</strong> Усиливает потоотделение, помогая вывести отеки. Это особенно важно, если целлюлит спровоцирован застоем жидкости.</li>
+            <li><strong>Укрепление волос и ногтей.</strong> Волосы наполняются упругостью и становятся сильными.</li>
+            <li><strong>Тонус кожи.</strong> Минерализует кожу за счет биодоступных магния и серы.</li>
+            <li><strong>Детокс.</strong> Выводит из кожи шлаки и токсины, улучшает метаболизм. За счет этого улучшается кровоток, что придает коже упругость и гладкость.</li>
+            <li><strong>Пилинг.</strong> Соль мягко отшелушивает ороговевшую кожу, улучшая цвет лица.</li>
+            <li><strong>Лифтинг-эффект.</strong> За счет тотального расслабления мышц разглаживаются даже глубокие морщины.</li>
+            <li><strong>Лимфодренаж.</strong> Активизирует кровообращение и лимфоток, помогая решить проблему "застоя" лимфы в зонах целлюлита.</li>
+            <li><strong>Снятие мышечного напряжения.</strong> Сеанс флоатинга снимет крепатуру, неизбежную у начинающих заниматься фитнесом.</li>
+            <li><strong>Помощь при судорогах.</strong> Полезен тем, кто занимается плаванием, йогой или пилатесом и сталкивается со спазмами мышц.</li>
+            <li><strong>Лечение кожи.</strong> Английская соль смягчает кожу, ускоряет заживление мелких повреждений, полезна при экземе и высыпаниях на теле.</li>
+        </ul>
+
+        <div class="highlight-box">
+            ✨ Косметический эффект заметен уже после одного сеанса!
+        </div>
+
+    </main>
+
+    <!-- Сайдбар -->
+    <aside>
+        <div class="sidebar-block">
+            <h3>Популярное</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati36.html">Как выбрать флоат-камеру?</a></li>
+                <li><a href="plan.html">Бизнес-план студии</a></li>
+                <li><a href="cena.html">Стоимость оборудования</a></li>
+                <li><a href="complect.html">Комплектация</a></li>
+                <li><a href="filtr.html">Система фильтрации</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-block">
+            <h3>Исследования</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati11.html">Флоатинг в спорте</a></li>
+                <li><a href="stati13.html">Беременность и флоатинг</a></li>
+                <li><a href="stati15.html">Лечение фибромиалгии</a></li>
+                <li><a href="stati16.html">Эндорфины и счастье</a></li>
+            </ul>
+        </div>
+        
+        <div class="sidebar-block" style="text-align: center; border:none; background: transparent;">
+             <a href="tel:89272528367" style="display:inline-block; background: var(--accent); color:white; padding: 10px 20px; border-radius:5px; font-weight:bold;">Заказать звонок</a>
+        </div>
+    </aside>
+
+</div>
+
+<footer>
+    <div class="container"><p>&copy; 2010-2025 Miracle. Производство флоат-камер.</p></div>
+</footer>
+
+</body>
+</html>

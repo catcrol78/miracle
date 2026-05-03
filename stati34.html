@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аутизм и флоатинг: Помощь при сенсорной перегрузке | Miracle</title>
+    <link rel="icon" href="https://float-camera.ru/favicon.ico" type="image/x-icon">
+    <style>
+        /* БАЗОВЫЕ СТИЛИ */
+        :root { --primary: #00695c; --secondary: #004d40; --accent: #d81b60; --text: #333; --light-bg: #f8f9fa; --white: #fff; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; color: var(--text); line-height: 1.6; background: var(--light-bg); }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        
+        /* ШАПКА */
+        .top-bar { background: var(--secondary); color: white; padding: 8px 0; text-align: center; font-size: 0.9em; }
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: var(--primary); text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
+        .main-menu { display: flex; gap: 20px; }
+        .main-menu a { font-weight: 500; color: #555; }
+        .main-menu a:hover { color: var(--primary); }
+        .menu-toggle { display: none; font-size: 26px; cursor: pointer; }
+
+        /* МАКЕТ СТАТЬИ */
+        .layout-grid { display: grid; grid-template-columns: 3fr 1fr; gap: 40px; max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        
+        /* Контент статьи */
+        .article-content { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .article-content h1 { color: var(--secondary); margin-top: 0; text-align: center; line-height: 1.3; margin-bottom: 30px; }
+        .article-content h3 { color: var(--primary); margin-top: 30px; margin-bottom: 15px; border-left: 4px solid var(--accent); padding-left: 15px; }
+        .article-content p { margin-bottom: 15px; text-align: left; }
+        
+        /* Список преимуществ */
+        .article-content ul { list-style: none; padding: 0; margin-bottom: 20px; }
+        .article-content li { margin-bottom: 10px; padding-left: 25px; position: relative; }
+        .article-content li::before { content: "●"; color: var(--accent); position: absolute; left: 0; top: 0; font-size: 1.2em; line-height: 1.4; }
+
+        /* Вывод */
+        .conclusion-box { background: #e0f7fa; padding: 20px; border-radius: 8px; margin-top: 30px; color: #006064; }
+
+        /* Сайдбар */
+        aside { font-size: 0.95em; }
+        .sidebar-block { background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #eee; }
+        .sidebar-block h3 { margin-top: 0; color: var(--secondary); font-size: 1.1em; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 15px; }
+        .sidebar-menu { list-style: none; padding: 0; }
+        .sidebar-menu li { margin-bottom: 10px; border-bottom: 1px dotted #eee; padding-bottom: 5px; }
+        .sidebar-menu a:hover { color: var(--accent); }
+
+        footer { background: #263238; color: #cfd8dc; padding: 40px 0; margin-top: 50px; text-align: center; }
+
+        @media (max-width: 900px) {
+            .layout-grid { grid-template-columns: 1fr; }
+            .article-content { padding: 20px; }
+            .sidebar-block { display: none; }
+            .main-menu { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: white; padding: 20px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+            .main-menu.active { display: flex; }
+            .menu-toggle { display: block; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">Консультации: <a href="tel:89272528367" style="color:white">8-927-252-83-67</a></div>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+             <img src="https://float-camera.ru/media/images/logo.png" alt="Miracle" style="height: 40px;"> Miracle
+        </a>
+        <div class="menu-toggle" onclick="document.querySelector('.main-menu').classList.toggle('active')">☰</div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tovary.html">Наши работы</a></li>
+                <li><a href="stati.html" style="color:var(--primary); font-weight:bold;">Статьи</a></li>
+                <li><a href="dokument.html">Документация</a></li>
+                <li><a href="cena.html">Цена</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                 <li><a href="https://float-camera-bufo.ru" target="_blank" style="color: var(--accent); font-weight: bold; border: 1px solid var(--accent); padding: 5px 10px; border-radius: 4px;">Premium BUFO</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="layout-grid">
+    
+    <main class="article-content">
+        
+        <!-- Картинка статьи -->
+        
+        <h1>Аутизм: Как флоатинг может помочь?</h1>
+        
+        <p>Иметь ребенка с аутизмом – это значит мыслить нестандартно. В зависимости от тяжести заболевания, дети с аутизмом сильно страдают от ситуаций, с которыми другие легко справляются. Аутисты по-разному реагируют на социальные стимулы. Они могут избегать контакта с глазами, не отвечать на объятия или не знать, как попросить помощи.</p>
+        
+        <h3>Проблема сверхстимуляции</h3>
+        <p>Аутизм можно определить по целому спектру условий. Для всех детей с аутизмом общим является их потребность, чтобы с ними общались с сочувствием и пониманием. Ощущение постоянной сверхстимуляции может быть невыносимым для любого. Сверхстимуляция аутичных детей может вызвать крик или они могут стать подавленными, впасть в уныние и замкнуться в себе.</p>
+        
+        <h3>Флоатинг как безопасный отдых</h3>
+        <p>К счастью, существуют способы помочь детям, страдающим аутизмом, получить облегчение от постоянной перестимуляции в повседневной жизни. Один из методов — это отдых в камере сенсорной депривации.</p>
+        <p>В этой камере отсутствует гравитация, и так как нет внешних раздражителей для мозга, человек входит в состояние между сном и явью. Оно похоже на состояние сна с единственным отличием – человек контролирует свое состояние.</p>
+        
+        <p><strong>Это безопасно:</strong> Даже для детей нет опасности, связанной с таким отдыхом. 350 кг соли Эпсома в этой камере позволяют легко держаться на поверхности, как пробка. Размер камеры делает практически невозможным случайное переворачивание. Эти факторы сводят на нет риск того, что человек может утонуть.</p>
+        
+        <h3>Преимущества для ребенка</h3>
+        <p>Те, кто применяют такой вид терапии, сообщают об обширных улучшениях:</p>
+        <ul>
+            <li>Облегчение депрессии</li>
+            <li>Снижение уровня стресса</li>
+            <li>Улучшение сна</li>
+            <li>Повышение концентрации внимания</li>
+            <li>Прилив энергии и уменьшение боли</li>
+        </ul>
+        
+        <div class="conclusion-box">
+            <p>Детям-аутистам полезно получить эти преимущества флоатинга из-за их уникальной физиологии. Все эти дети чувствуют давление мира вокруг них, который они только начинают открывать, и для них это может стать очень серьезной проблемой. Флоатинг может помочь детям, ежедневно остро ощущающим воздействие внешних стимулов – звуков, запахов, видов.</p>
+            <p>Позволяя им быть в одиночестве во флоат-камере, мы даем им возможность облегчить давление социального взаимодействия.</p>
+        </div>
+
+    </main>
+
+    <!-- Сайдбар -->
+    <aside>
+        <div class="sidebar-block">
+            <h3>Популярное</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati36.html">Как выбрать флоат-камеру?</a></li>
+                <li><a href="plan.html">Бизнес-план студии</a></li>
+                <li><a href="cena.html">Стоимость оборудования</a></li>
+                <li><a href="complect.html">Комплектация</a></li>
+                <li><a href="filtr.html">Система фильтрации</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-block">
+            <h3>Исследования</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati11.html">Флоатинг в спорте</a></li>
+                <li><a href="stati13.html">Беременность и флоатинг</a></li>
+                <li><a href="stati15.html">Лечение фибромиалгии</a></li>
+                <li><a href="stati16.html">Эндорфины и счастье</a></li>
+            </ul>
+        </div>
+        
+        <div class="sidebar-block" style="text-align: center; border:none; background: transparent;">
+             <a href="tel:89272528367" style="display:inline-block; background: var(--accent); color:white; padding: 10px 20px; border-radius:5px; font-weight:bold;">Заказать звонок</a>
+        </div>
+    </aside>
+
+</div>
+
+<footer>
+    <div class="container"><p>&copy; 2010-2025 Miracle. Производство флоат-камер.</p></div>
+</footer>
+
+</body>
+</html>

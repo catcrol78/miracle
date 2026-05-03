@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бизнес-план флоат-студии: расчет окупаемости и доходности | Miracle</title>
+    <link rel="icon" href="https://float-camera.ru/favicon.ico" type="image/x-icon">
+	<meta name="description" content="Готовый бизнес-план для запуска флоат-центра или интеграции флоатинга в отель и SPA. Детальные расчеты окупаемости, маржинальности и необходимых вложений для моделей Miracle и Bufo. Начните прибыльный велнес-бизнес.">
+
+<link rel="canonical" href="https://float-camera.ru/plan.html">
+        <style>
+        /* БАЗОВЫЕ СТИЛИ */
+        :root { --primary: #00695c; --secondary: #004d40; --accent: #d81b60; --text: #333; --light-bg: #f8f9fa; --white: #fff; --profit: #2e7d32; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; color: var(--text); line-height: 1.6; background: var(--light-bg); }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        
+		ul.main-menu, ul.main-menu li {
+    list-style: none !important; /* Убирает точки принудительно */
+    margin: 0;
+    padding: 0;
+}
+
+        /* ШАПКА */
+        .top-bar { background: var(--secondary); color: white; padding: 8px 0; text-align: center; font-size: 0.9em; }
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: var(--primary); text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
+        .main-menu { display: flex; gap: 20px; }
+        .main-menu a { font-weight: 500; color: #555; }
+        .main-menu a:hover { color: var(--primary); }
+        .menu-toggle { display: none; font-size: 26px; cursor: pointer; }
+
+        /* МАКЕТ СТАТЬИ */
+        .layout-grid { display: grid; grid-template-columns: 3fr 1fr; gap: 40px; max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        
+        /* Статья */
+        .article-content { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); overflow: hidden; /* Важно для мобильных */ }
+        .article-content h1 { color: var(--secondary); margin-top: 0; margin-bottom: 25px; text-align: center; }
+        .article-content h2 { color: var(--primary); margin-top: 35px; font-size: 1.4em; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .article-content h3 { color: var(--secondary); margin-top: 25px; font-size: 1.2em; }
+        .article-content p { margin-bottom: 15px; text-align: justify; }
+
+        /* ИСПРАВЛЕННЫЕ ТАБЛИЦЫ (Прокрутка на телефоне) */
+        .table-responsive { 
+            width: 100%; 
+            overflow-x: auto; /* Включает прокрутку */
+            -webkit-overflow-scrolling: touch; /* Плавность на iPhone */
+            margin: 25px 0; 
+            display: block;
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            min-width: 600px; /* Минимальная ширина, чтобы таблица не сжималась в кашу */
+            font-size: 0.95em; 
+        }
+        th, td { border: 1px solid #e0e0e0; padding: 10px 15px; text-align: left; }
+        th { background: var(--secondary); color: white; text-transform: uppercase; font-size: 0.85em; letter-spacing: 0.5px; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        .total-row td { font-weight: bold; background: #e8f5e9; color: var(--profit); }
+
+        /* Блоки с цифрами (Адаптивные) */
+        .metric-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 30px 0; }
+        .metric-card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .metric-value { display: block; font-size: 2em; font-weight: bold; color: var(--primary); margin-bottom: 5px; }
+        .metric-label { font-size: 0.9em; color: #666; text-transform: uppercase; }
+
+        /* Инфо-блок */
+        .info-box { background: #e3f2fd; padding: 20px; border-left: 5px solid var(--primary); margin: 25px 0; border-radius: 4px; }
+        .warning-box { background: #fff3e0; padding: 20px; border-left: 5px solid #ff9800; margin: 25px 0; border-radius: 4px; font-size: 0.9em; }
+
+        /* Сайдбар */
+        aside { font-size: 0.95em; }
+        .sidebar-block { background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #eee; }
+        .sidebar-block h3 { margin-top: 0; color: var(--secondary); font-size: 1.1em; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 15px; }
+        .sidebar-menu { list-style: none; padding: 0; }
+        .sidebar-menu li { margin-bottom: 10px; border-bottom: 1px dotted #eee; padding-bottom: 5px; }
+        .sidebar-menu a:hover { color: var(--accent); }
+
+        /* ФУТЕР (ПОЛНЫЙ КОД) */
+footer {
+    background: #004d40; /* Фирменный зеленый */
+    color: white;
+    padding: 40px 0;
+    margin-top: 60px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-inner {
+    max-width: 1200px; /* Ограничиваем ширину контента по центру */
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex; /* <--- ЭТО ВАЖНО: Выстраивает колонки в ряд */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-inner > div {
+    flex: 1; /* Колонки одинаковой ширины */
+    min-width: 250px; /* Чтобы не сжимались слишком сильно на телефоне */
+}
+
+.footer-inner h4 {
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer-inner p, .footer-inner a { 
+    line-height: 1.6; 
+    color: #e0f2f1; /* Светлый оттенок */
+    text-decoration: none; 
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.footer-inner a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+        /* АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ */
+        @media (max-width: 900px) {
+            .layout-grid { grid-template-columns: 1fr; } /* Одна колонка */
+            .article-content { padding: 20px; }
+            /* Сайдбар показывается внизу */
+            aside { margin-top: 40px; }
+            .sidebar-block { display: block; } /* Убедились, что он виден */
+            
+            /* Меню-бургер */
+            .main-menu { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: white; padding: 20px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+            .main-menu.active { display: flex; }
+            .menu-toggle { display: block; }
+            
+            /* Шрифт чуть меньше */
+            .metric-value { font-size: 1.6em; }
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://float-camera.ru/plan.html" 
+  },
+  "headline": "Бизнес-план флоат-студии: расчет окупаемости и советы по открытию",
+  "description": "Готовый бизнес-план для открытия флоат-центра. Расчет необходимых вложений, сроки окупаемости оборудования Miracle и практические советы по запуску бизнеса на флоатинге.",
+  "image": "https://float-camera.ru/media/images/logo.png",
+  "author": {
+    "@type": "Organization",
+    "name": "Компания Miracle",
+    "url": "https://float-camera.ru/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Компания Miracle",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://float-camera.ru/media/images/logo.png"
+    }
+  },
+  "datePublished": "2026-02-10",
+  "dateModified": "2026-02-10"
+}
+</script>
+</head>
+<body>
+
+<div class="top-bar">Консультации: <a href="tel:89272528367" style="color:white">8-927-252-83-67</a></div>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+             <img src="https://float-camera.ru/media/images/logo.png" alt="Miracle" style="height: 40px;"> Miracle
+        </a>
+        <div class="menu-toggle" onclick="document.querySelector('.main-menu').classList.toggle('active')">☰</div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tovary.html">Наши работы</a></li>
+                <li><a href="stati.html" style="color:var(--primary); font-weight:bold;">Статьи</a></li>
+                <li><a href="dokument.html">Документация</a></li>
+                <li><a href="cena.html">Цена</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                 <li><a href="https://float-camera-bufo.ru" target="_blank" style="color: var(--accent); font-weight: bold; border: 1px solid var(--accent); padding: 5px 10px; border-radius: 4px;">Premium BUFO</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="layout-grid">
+    
+    <!-- Основной контент статьи -->
+    <main class="article-content">
+        
+        <h1>Бизнес-план флоат-студии (Пример)</h1>
+        
+        <p>Рынок велнес-услуг в России продолжает уверенный рост. Флоатинг уже перестал быть экзотикой и становится востребованным способом снятия стресса. Ниже представлен <strong>усредненный расчет</strong> открытия малой студии (2 флоат-камеры) с оптимизированными затратами на старт.</p>
+
+        <div class="metric-grid">
+            <div class="metric-card">
+                <span class="metric-value">2000 ₽</span>
+                <span class="metric-label">Средний чек</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-value">8-12</span>
+                <span class="metric-label">Мес. окупаемость</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-value">35%</span>
+                <span class="metric-label">Рентабельность</span>
+            </div>
+        </div>
+        
+        <div class="warning-box">
+            <strong>Обратите внимание:</strong> Данный бизнес-план является типовым. Реальные показатели могут отличаться в зависимости от вашего региона, стоимости аренды и маркетинговой стратегии. Если вам нужен детальный расчет под ваше помещение — звоните или пишите нам.
+        </div>
+
+        <h2>1. Инвестиции (CAPEX)</h2>
+        <p>Расчет оптимизированного бюджета для быстрого старта. Мы рассматриваем покупку двух камер (оптовая скидка) и минимальные затраты на ремонт (покупка готовых душевых кабин вместо капитального строительства душевых зон).</p>
+        
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Статья расходов</th>
+                        <th>Сумма</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Флоат-камеры (2 шт. по 900 000 ₽)</td>
+                        <td>1 800 000 ₽</td>
+                    </tr>
+                    <tr>
+                        <td>Скидка за опт (2 шт.)</td>
+                        <td style="color:var(--accent); font-weight:bold;">- 100 000 ₽</td>
+                    </tr>
+                    <tr>
+                        <td>Доставка и монтаж</td>
+                        <td>~ 50 000 ₽</td>
+                    </tr>
+                    <tr>
+                        <td>Ремонт (косметика) + 2 душевые кабины</td>
+                        <td>~ 150 000 ₽</td>
+                    </tr>
+                    <tr>
+                        <td>Мебель (ресепшн, диван, шкафчики)</td>
+                        <td>~ 100 000 ₽</td>
+                    </tr>
+                    <tr>
+                        <td>Стартовая реклама и сайт</td>
+                        <td>~ 40 000 ₽</td>
+                    </tr>
+                    <tr>
+                        <td>Расходные материалы (соль, полотенца)</td>
+                        <td>~ 80 000 ₽</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td>ИТОГО ВЛОЖЕНИЙ:</td>
+                        <td>2 120 000 ₽</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>2. Операционные расходы (в месяц)</h2>
+        <p>Постоянные расходы для студии площадью 40-50 м².</p>
+        <ul>
+            <li><strong>Аренда:</strong> 45 000 ₽ (усредненно для регионов)</li>
+            <li><strong>ФОТ (2 администратора + уборщица):</strong> 70 000 ₽</li>
+            <li><strong>Коммунальные платежи:</strong> 8 000 ₽</li>
+            <li><strong>Рекламный бюджет:</strong> 30 000 ₽</li>
+            <li><strong>Хоз. нужды и расходники:</strong> 12 000 ₽</li>
+            <li><strong>Налоги (6%):</strong> Зависит от оборота</li>
+        </ul>
+
+        <h2>3. Расчет окупаемости и Прибыли</h2>
+        <p>При стоимости сеанса <strong>2000 рублей</strong> и 12-часовом рабочем дне.<br>
+        <em>Максимальная пропускная способность 2-х камер: ~360 сеансов в месяц.</em></p>
+
+        <div class="table-responsive">
+            <table style="text-align: center;">
+                <thead>
+                    <tr>
+                        <th>Показатель</th>
+                        <th>Пессимистичный<br>(Загрузка 25%)</th>
+                        <th>Реалистичный<br>(Загрузка 45%)</th>
+                        <th>Оптимистичный<br>(Загрузка 65%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align:left">Клиентов в месяц</td>
+                        <td>90 чел.</td>
+                        <td>162 чел.</td>
+                        <td>234 чел.</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">Выручка</td>
+                        <td>180 000 ₽</td>
+                        <td>324 000 ₽</td>
+                        <td>468 000 ₽</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">Расходы (пост. + перемен.)</td>
+                        <td>~ 175 000 ₽</td>
+                        <td>~ 185 000 ₽</td>
+                        <td>~ 195 000 ₽</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td style="text-align:left">Чистая прибыль</td>
+                        <td>5 000 ₽</td>
+                        <td>139 000 ₽</td>
+                        <td>273 000 ₽</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p><strong>Вывод:</strong> При реалистичном сценарии (4-5 человек в день) студия приносит <strong>~140 000 ₽</strong> чистой прибыли в месяц. Полный возврат инвестиций происходит примерно через год.</p>
+
+        <h2>4. Маркетинг и Продажи</h2>
+        <p>Основные каналы привлечения клиентов для быстрой загрузки:</p>
+        <ul>
+            <li><strong>Подарочные сертификаты:</strong> Главный драйвер продаж во флоатинге (до 45% выручки).</li>
+            <li><strong>Партнерские программы:</strong> Кросс-маркетинг с массажными салонами и йога-центрами.</li>
+            <li><strong>Абонементы:</strong> Продажа курсов из 5-10 сеансов для удержания клиентов.</li>
+        </ul>
+
+        <div style="background: var(--secondary); color: white; padding: 30px; border-radius: 8px; text-align: center; margin-top: 40px;">
+            <h3 style="color:white; margin-top:0;">Нужен индивидуальный расчет?</h3>
+            <p>Мы поможем рассчитать окупаемость вашего будущего проекта с учетом особенностей вашего города и помещения.</p>
+            <p style="font-size: 1.2em; font-weight: bold; margin: 15px 0;">Звоните: <a href="tel:89272528367" style="color:#ffcc80; text-decoration: underline;">8-927-252-83-67</a></p>
+            <a href="mailto:float-camera@mail.ru" style="display:inline-block; background: var(--accent); color: white; padding: 12px 30px; border-radius: 5px; font-weight: bold; text-decoration: none;">Написать нам</a>
+        </div>
+
+    </main>
+
+    <!-- Сайдбар (Боковое меню) -->
+    <aside>
+        <div class="sidebar-block">
+            <h3>Популярное</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati36.html">Как выбрать флоат-камеру?</a></li>
+                <li><a href="plan.html">Бизнес-план студии</a></li>
+                <li><a href="cena.html">Стоимость оборудования</a></li>
+                <li><a href="complect.html">Комплектация</a></li>
+                <li><a href="filtr.html">Система фильтрации</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-block">
+            <h3>Исследования</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati11.html">Флоатинг в спорте</a></li>
+                <li><a href="stati13.html">Беременность и флоатинг</a></li>
+                <li><a href="stati15.html">Лечение фибромиалгии</a></li>
+                <li><a href="stati16.html">Эндорфины и счастье</a></li>
+            </ul>
+        </div>
+        
+        <div class="sidebar-block" style="text-align: center; border:none; background: transparent;">
+             <a href="tel:89272528367" style="display:inline-block; background: var(--accent); color:white; padding: 10px 20px; border-radius:5px; font-weight:bold;">Заказать звонок</a>
+        </div>
+    </aside>
+
+</div>
+
+<footer>
+    <div class="footer-inner">
+        <div>
+            <h4>Miracle Float</h4>
+            <p>&copy; 2010-2026 Производство флоат-камер.</p>
+        </div>
+        <div>
+            <h4>Связаться с нами</h4>
+            <p>📞 8-927-252-83-67<br>📞 8-927-253-51-51</p>
+            <p>📧 float-camera@mail.ru</p>
+        </div>
+        <div>
+            <h4>Информация</h4>
+            <p><a href="dokument.html" style="color:inherit;">Документация</a></p>
+            <p><a href="tovary.html" style="color:inherit;">Наши работы</a></p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

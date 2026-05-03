@@ -1,0 +1,1986 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши работы и проекты для SPA | Флоат-камеры Miracle</title>
+   <meta name="description" content="Ознакомьтесь с модельным рядом флоат-камер Miracle и Bufo и примерами их установки в отелях и SPA-центрах. Готовые решения от производителя под ключ: от классики до эксклюзивного дизайна.">
+
+<link rel="canonical" href="https://float-camera.ru/tovary.html">
+    <link rel="icon" href="https://float-camera.ru/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/miracle-redesign.css">
+
+    <style>
+        /* --- ОБЩИЕ СТИЛИ (Копия из index.html) --- */
+        :root {
+            --primary: #00695c;
+            --secondary: #004d40;
+            --accent: #d81b60;
+            --text: #333;
+            --light-bg: #f4f7f6;
+            --white: #fff;
+        }
+        
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; color: var(--text); line-height: 1.6; background: var(--light-bg); }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        ul { padding: 0; margin: 0; list-style: none; }
+        
+        /* ШАПКА */
+        .top-bar { background: var(--secondary); color: white; padding: 8px 0; text-align: center; font-size: 0.9em; }
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: var(--primary); text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
+        .main-menu { display: flex; gap: 20px; }
+        .main-menu a { font-weight: 500; color: #555; }
+        .main-menu a:hover { color: var(--primary); }
+        .menu-toggle { display: none; font-size: 26px; cursor: pointer; }
+
+        /* --- СТИЛИ ПОРТФОЛИО (Уникальные для этой страницы) --- */
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        
+        .page-header { text-align: center; margin-bottom: 40px; }
+        .page-header h1 { color: var(--secondary); margin-bottom: 10px; }
+        .intro-text { max-width: 800px; margin: 0 auto 30px; text-align: center; color: #555; }
+        
+        /* Блок с контактами */
+        .contact-cta {
+            background: #e0f2f1;
+            border: 2px solid var(--primary);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 50px;
+        }
+        .contact-cta h3 { margin-top: 0; color: var(--primary); }
+        .contact-cta a { color: var(--accent); font-weight: bold; font-size: 1.1em; }
+
+        /* СЕТКА ГАЛЕРЕИ */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* Карточка проекта */
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        .project-card a {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            color: inherit;
+        }
+        .img-wrapper {
+            height: 200px; /* Фиксированная высота картинки */
+            overflow: hidden;
+            background: #eee;
+        }
+        .project-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Картинка заполняет блок, не сплющиваясь */
+            transition: transform 0.5s;
+        }
+        .project-card:hover img {
+            transform: scale(1.05);
+        }
+        .card-body {
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        .card-title {
+            font-weight: bold;
+            color: var(--secondary);
+            margin-bottom: 5px;
+            font-size: 1.05em;
+        }
+        .card-city {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* ФУТЕР (ПОЛНЫЙ КОД) */
+footer {
+    background: #004d40; /* Фирменный зеленый */
+    color: white;
+    padding: 40px 0;
+    margin-top: 60px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-inner {
+    max-width: 1200px; /* Ограничиваем ширину контента по центру */
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex; /* <--- ЭТО ВАЖНО: Выстраивает колонки в ряд */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-inner > div {
+    flex: 1; /* Колонки одинаковой ширины */
+    min-width: 250px; /* Чтобы не сжимались слишком сильно на телефоне */
+}
+
+.footer-inner h4 {
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer-inner p, .footer-inner a { 
+    line-height: 1.6; 
+    color: #e0f2f1; /* Светлый оттенок */
+    text-decoration: none; 
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.footer-inner a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+        /* Адаптив */
+        @media (max-width: 768px) {
+            .main-menu { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: white; padding: 20px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+            .main-menu.active { display: flex; }
+            .menu-toggle { display: block; }
+            .portfolio-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; } /* Одна колонка на телефоне */
+        }
+    </style>
+	
+	
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Флоат-камеры Miracle — профессиональное оборудование от производителя",
+  "image": [
+    "https://float-camera.ru/media/images/logo.png"
+  ],
+  "description": "Профессиональные флоат-камеры Miracle. Индивидуальные решения для спа-центров, отелей, фитнес-клубов, флоат-центров, банных комплексов и массажных кабинетов. Специализированные решения для санаториев и ЛПУ. Индивидуальное изготовление для частных заказчиков. Производство в г. Камышин, доставка по РФ и СНГ.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Miracle"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://float-camera.ru/tovary.html",
+    "availability": "https://schema.org/PreOrder",
+    "price": "0",
+    "priceCurrency": "RUB"
+  }
+}
+</script>
+</head>
+<body class="miracle-page">
+
+<!-- HEADER_START -->
+<div class="top-bar">
+    Консультации круглосуточно: <a href="tel:89272528367" style="color:white">8-927-252-83-67</a>
+</div>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <img src="https://float-camera.ru/media/images/logo.png" alt="Miracle Logo" style="height: 40px;">
+            Miracle
+        </a>
+        <div class="menu-toggle" onclick="document.querySelector('.main-menu').classList.toggle('active')">☰</div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tovary.html" style="color:var(--primary); font-weight:bold;">Наши работы</a></li>
+                <li><a href="stati.html">Статьи</a></li>
+                <li><a href="dokument.html">Документация</a></li>
+                <li><a href="cena.html">Цена</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                 <li><a href="https://float-camera-bufo.ru" target="_blank" style="color: var(--accent); font-weight: bold; border: 1px solid var(--accent); padding: 5px 10px; border-radius: 4px;">Premium BUFO</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- HEADER_END -->
+
+<div class="container">
+    <div class="page-header">
+        <h1>Наши работы</h1>
+        <div class="intro-text">
+            <p>Мы производим и продаем флоат-камеры уже более 15 лет. Каждая камера изготавливается с учетом Ваших пожеланий (размер, форма, опции).</p>
+            <p><strong>Срок изготовления камеры — всего 10 рабочих дней!</strong></p>
+        </div>
+    </div>
+
+<div class="contact-cta">
+    <h3>Узнайте цену и условия поставки</h3>
+    <p>
+        Звоните: <a href="tel:89272528367">8-927-252-83-67</a>, <a href="tel:89272535151">8-927-253-51-51</a><br>
+        Или пишите: <a href="mailto:float-camera@mail.ru">float-camera@mail.ru</a>
+    </p>
+    
+    <!-- Вот эта новая кнопка -->
+    <button onclick="openOrderForm()" class="m-btn" style="margin-top: 15px;">Оставить заявку</button>
+</div>
+
+
+<div class="portfolio-grid">
+
+    <!-- БЛОК 1: Выставки и отчеты -->
+    <div class="project-card">
+        <a href="zozhminsk.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/images/zozhminsk new.jpg" alt="Беларусь"></div>
+            <div class="card-body"><div class="card-title">Здравоохранение Беларуси</div><div class="card-city">Отчет о выставке</div></div>
+        </a>
+    </div>
+    <div class="project-card">
+        <a href="zozh2016.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/images/zozh2016 new.jpg" alt="ЗОЖ 2016"></div>
+            <div class="card-body"><div class="card-title">ЗОЖ-2016</div><div class="card-city">Москва, Экспоцентр</div></div>
+        </a>
+    </div>
+    <div class="project-card">
+        <a href="kamera41.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/images/zozh new.jpg" alt="ЗОЖ"></div>
+            <div class="card-body"><div class="card-title">Здоровый образ жизни</div><div class="card-city">Фотоотчет о выставке</div></div>
+        </a>
+    </div>
+
+
+
+    <div class="project-card">
+        <a href="kamera28.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/images/float-camera vystavka.jpg" alt="Сочи"></div>
+            <div class="card-body"><div class="card-title">Выставка Сочи-2014</div><div class="card-city">Роза Хутор</div></div>
+        </a>
+    </div>
+
+    <!-- БЛОК 2: Флоат-центры -->
+
+
+<!-- Пример для центра в Камышине -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera%20miracle_kamysh2.jpg"
+     data-title="Флоат-студия "Счастливые люди""
+     data-city="г. Камышин"
+     data-phone="8 (927) 253-51-51"
+     data-work="Ежедневно с 9:00 до 20:00">
+    
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera%20miracle_kamysh2.jpg" alt="Счастливые люди">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-студия "Счастливые люди"</div>
+        <div class="card-city">г. Камышин</div>
+    </div>
+</div>
+
+
+ 
+
+
+    <!-- Пример для центра в Краснодаре -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/images/float-camera1131.jpg"
+     data-title="Центр флоатинга «Баланс»"
+     data-city="г. Краснодар"
+     data-address="ул. Красноармейская, 131"
+     data-phone="8 (918) 123-45-67"
+     data-work="Ежедневно с 10:00 до 22:00"
+     data-site="https://balance-float.ru">
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/images/float-camera1131.jpg" alt="Баланс">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Центр «Баланс»</div>
+        <div class="card-city">г. Краснодар</div>
+    </div>
+</div>
+
+
+    <div class="project-card">
+        <a href="kamera108.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/gallery/kamera108(2).jpg" alt="СПб"></div>
+            <div class="card-body"><div class="card-title">Цветок соли</div><div class="card-city">г. Санкт-Петербург</div></div>
+        </a>
+    </div>
+    <div class="project-card">
+        <a href="kamera107.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/images/kamera107.jpg" alt="Ростов"></div>
+            <div class="card-body"><div class="card-title">Центр Анаэль</div><div class="card-city">г. Ростов-на-Дону</div></div>
+        </a>
+    </div>
+    <div class="project-card">
+        <a href="kamera106.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/images/kamera106.jpg" alt="Красная Поляна"></div>
+            <div class="card-body"><div class="card-title">RIVER SIDE RESORT</div><div class="card-city">г. Красная Поляна</div></div>
+        </a>
+    </div>
+   
+	
+	 <!-- Пример для центра в Махачкале -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/kamera110(2).jpg"
+     data-title="Центр флоатинга Ocean Space"
+     data-city="г. Махачкала"
+     data-address="г. Махачкала, ул. Гоголя, 43б/5">
+    
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/kamera110(2).jpg" alt="Ocean Space">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Ocean Space</div>
+        <div class="card-city">г. Махачкала</div>
+    </div>
+</div>
+
+
+ <!-- Пример для центра в ЖК Вавилов -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/images/kamera111.jpg"
+     data-title="Кабинет флоатинга в ЖК "Вавилово""
+     data-city="г. Москва"
+     data-address=" ул. Архитектора Власова, д. 6"
+     data-phone="89629156822">
+     
+    
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/images/kamera111.jpg" alt="Вавилово">
+    </div>
+    <div class="card-body">
+        <div class="card-title">ЖК "Вавилово"</div>
+        <div class="card-city">г. Москва</div>
+    </div>
+</div>
+   
+    <div class="project-card">
+        <a href="kamera112.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/images/kamera112.jpg" alt="Сочи"></div>
+            <div class="card-body"><div class="card-title">Энергия жизни</div><div class="card-city">г. Сочи</div></div>
+        </a>
+    </div>
+	
+	  <!-- Пример для центра в Григолетти -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_grigoleti1.jpg"
+     data-title="Вилла РеТа Spa отель"
+     data-city="Грузия, Ланчхутский р-н, пос. Григолети"
+     
+     data-phone=" +995 571 250 555"
+    
+     data-site="http://www.villareta.com/">
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_grigoleti1.jpg " alt="Вилла РеТа">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Вилла РеТа SPA</div>
+        <div class="card-city">г. Григолетти (Грузия)</div>
+    </div>
+</div>
+
+
+	 <!-- Пример для центра в Владивосток -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/images/float-camera miracle_vlad new.jpg"
+     data-title="Иммерсивное спа-пространство OMY SPACE"
+     data-city="г. Владивосток"
+     data-address="Партизанский проспект, 44, к.10"
+     data-phone="8-902-524-12-12"
+     
+    
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/images/float-camera miracle_vlad new.jpg" alt="OMY SPACE">
+    </div>
+    <div class="card-body">
+        <div class="card-title">OMY SPACE</div>
+        <div class="card-city">г. Владивосток</div>
+    </div>
+</div>
+	
+
+
+    <div class="project-card">
+        <a href="kamera105.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/images/float-camera miracle_via new.jpg" alt="VIAYZEN"></div>
+            <div class="card-body"><div class="card-title">VIAYZEN</div><div class="card-city">г. Москва</div></div>
+        </a>
+    </div>
+
+	
+	 <!-- Пример для центра в Ельце -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_elets1.jpg"
+     data-title="Фитнес-клуб ТерриториЯ»"
+     data-city="г. Елец"
+     data-address="ул. Коммунаров, 36"
+     data-phone="+7-910-350-10-10"
+    
+     data-site="https://instagram.com/territoria_elets?utm_medium=copy_link">
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_elets1.jpg" alt="Территория">
+    </div>
+    <div class="card-body">
+        <div class="card-title">ТерриториЯ»</div>
+        <div class="card-city">г. Елец</div>
+    </div>
+</div>
+
+ <!-- Пример для центра в Балашихе -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_blsh1.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Балашиха"
+  
+    
+    
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_blsh1.jpg" alt="Баланс">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Miracle</div>
+        <div class="card-city">г. Балашиха</div>
+    </div>
+</div>
+
+ 
+   
+
+  
+   <!-- Пример для центра Костроме -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_kostroma1.jpg"
+     data-title="Студия Floating"
+     data-city="г. Кострома"
+     data-address="ул. Северной Правды, 49"
+     data-phone="+7(4942)46-63-63"
+    
+     data-site="https://m.vk.com/floating44">
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_kostroma1.jpg" alt="Кострома">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Floating</div>
+        <div class="card-city">г. Кострома</div>
+    </div>
+</div>
+
+
+ <!-- Пример для центра в Самаре -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_samara1.jpg"
+     data-title="Флоат-центр "Аура""
+     data-city="г. Самара"
+     data-address=" ул. Красноармейская, 76
+	 пр. Ленина, д.15"
+     data-phone="8(846)205-10-01"
+    
+     data-site="http://floating63.ru/">
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_samara1.jpg" alt="Аура">
+    </div>
+    <div class="card-body">
+        <div class="card-title">"Аура"</div>
+        <div class="card-city">г. Самара</div>
+    </div>
+</div>
+
+
+    
+    <div class="project-card">
+        <a href="kamera102.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/images/float-camera miracle_spbmore new.jpg" alt="МореСоль"></div>
+            <div class="card-body"><div class="card-title">МореСоль</div><div class="card-city">г. Санкт-Петербург</div></div>
+        </a>
+    </div>
+    <div class="project-card">
+        <a href="kamera103.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/images/float-camera miracle_vnovg new.jpg" alt="Новгород"></div>
+            <div class="card-body"><div class="card-title">Float Now</div><div class="card-city">г. Великий Новгород</div></div>
+        </a>
+    </div>
+	
+	 <!-- Пример для центра в Грозный -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_groznyi1.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Грозный"
+    
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_groznyi1.jpg" alt="Грозный">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Miracle</div>
+        <div class="card-city">г. Грозный</div>
+    </div>
+</div>
+
+
+ 
+    <div class="project-card">
+        <a href="kamera97.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/images/float-camera miracle_nalshik new.jpg" alt="Нальчик"></div>
+            <div class="card-body"><div class="card-title">Флоат-центр Тишина</div><div class="card-city">г. Нальчик</div></div>
+        </a>
+    </div>
+	
+	 <!-- Пример для центра Нефтеюганск -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_neft3.jpg"
+     data-title="Оздоровительная массажная Флоат-студия Нирвана"
+     data-city="г. Нефтеюганск"
+     data-address="10 мкр, д.27"
+     data-phone="8-952-702-00-70"
+    
+     data-site="https://vk.com/nirvanafloat">
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_neft3.jpg" alt="Нефтеюганск">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-студия Нирвана</div>
+        <div class="card-city">г. Нефтеюганск</div>
+    </div>
+</div>
+
+
+<!-- Пример для центра Краснодар -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_krasnod1.jpg"
+     data-title="Салон Fit X Body"
+     data-city="г. Краснодар"
+     data-address="ул. Селезнёва 105"
+     data-phone="+7(989) 23-777-93"
+    
+     data-site="https://vk.com/fitxbody.krasnodar">
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_krasnod1.jpg" alt="Краснодар">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Салон Fit X Body</div>
+        <div class="card-city">г. Краснодар</div>
+    </div>
+</div>
+
+   
+    <div class="project-card">
+        <a href="kamera95.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/images/float-camera miracle_lobnya new.jpg" alt="Лобня"></div>
+            <div class="card-body"><div class="card-title">AltaFloat</div><div class="card-city">г. Лобня</div></div>
+        </a>
+    </div>
+	
+	<!-- Пример для центра Волгоград -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_volgograd1.jpg"
+     data-title="Флоат-центр DariSalt"
+     data-city="г. Волгоград"
+     data-address="ул. Землячки, 58к1"
+     data-phone="+7-961-062-65-39"
+    
+     
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_volgograd1.jpg" alt="Волгоград">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-центр DariSalt</div>
+        <div class="card-city">г. Волгоград</div>
+    </div>
+</div>
+    
+
+	
+    <div class="project-card">
+        <a href="kamera85.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/images/float-camera miracle_tomsk new.jpg" alt="Томск"></div>
+            <div class="card-body"><div class="card-title">Невесомость</div><div class="card-city">г. Томск</div></div>
+        </a>
+    </div>
+	
+	<!-- Пример для центра Ярославль -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_yar1.jpg"
+     data-title="Флоат студия"
+     data-city="г. Ярославль"
+     data-address="ул. Городской Вал, д.5"
+     data-phone="8(4852)45-94-10"
+    
+     data-site="http://studio-float.ru/">
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_yar1.jpg" alt="Ярославль">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат студия</div>
+        <div class="card-city">г. Ярославль</div>
+    </div>
+</div>
+
+
+   
+	
+	<!-- Пример для центра Москва -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_nmosk1.jpg"
+     data-title="Спа-салон "Тайландика""
+     data-city="г. Москва"
+     data-address="1-й Красносельский переулок, д.3"
+     data-phone="8-903-248-05-04"
+    
+     data-site="http://tailandika.ru/">
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_nmosk1.jpg" alt="Москва">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Спа-салон "Тайландика"</div>
+        <div class="card-city">г. Москва</div>
+    </div>
+</div>
+
+    
+    <div class="project-card">
+        <a href="kamera82.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/images/float-camera miracle_serp new.jpg" alt="Серпухов"></div>
+            <div class="card-body"><div class="card-title">Соль</div><div class="card-city">г. Серпухов</div></div>
+        </a>
+    </div>
+	
+	<!-- Пример для центра Арзамас -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_arzamas1.jpg"
+     data-title="Флоат студия Infiniti"
+     data-city="г. Арзамас"
+     data-address="ул. Парковая, 22/3"
+     data-phone="8-969-763-65-77"
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_arzamas1.jpg" alt="Арзамас">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат студия Infiniti</div>
+        <div class="card-city">г. Арзамас</div>
+    </div>
+</div>
+    
+    <div class="project-card">
+        <a href="kamera72.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/gallery/float-camera%20miracle_ekaterin1.jpg" alt="Березовский"></div>
+            <div class="card-body"><div class="card-title">Центр флоатинга</div><div class="card-city">г. Березовский</div></div>
+        </a>
+    </div>
+    
+    <div class="project-card">
+        <a href="kamera75.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/gallery/float-camera miracle_mosk1.jpg" alt="Москва Тишина"></div>
+            <div class="card-body"><div class="card-title">Студия Тишина</div><div class="card-city">г. Москва</div></div>
+        </a>
+    </div>
+	
+	<!-- Пример для центра Лыткарино -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_lytkarino1.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Лыткарино"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_lytkarino1.jpg" alt="Лыткарино">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Лыткарино</div>
+    </div>
+</div>
+
+ <!-- Пример для центра Вельск -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_velsk2.jpg
+"
+     data-title="Флоат-студия "Фиеста""
+     data-city="г. Вельск"
+     data-address="ул. Советская, 53"
+     data-phone="+7-921-476-13-94"
+    
+     data-site="https://vk.com/floating_velsk">
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_velsk2.jpg" alt="Вельск">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-студия "Фиеста"</div>
+        <div class="card-city">г. Вельск</div>
+    </div>
+</div>   
+
+ <!-- Пример для центра Космос -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_moskk1.jpeg"
+     data-title="Флоатинг-студия Cosmos Float"
+     data-city="г. Москва"
+     data-address="ул.Поляны, 8"
+     data-phone="8-915-181-60-18"
+    
+     data-site="http://float-cosmos.ru/">
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_moskk1.jpeg" alt="Москва">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоатинг-студия Cosmos Float</div>
+        <div class="card-city">г. Москва</div>
+    </div>
+</div>   
+   
+  <!-- Пример для центра Екатеринбург -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_ekat1.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Екатеринбург"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_ekat1.jpg" alt="Екатеринбург">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Екатеринбург</div>
+    </div>
+</div>
+ 
+<!-- Пример для центра Москва -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_desang1.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Москва"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_desang1.jpg" alt="Москва">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Москва</div>
+    </div>
+</div>
+  
+<!-- Пример для центра СПБ -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_spdyh1.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Санкт-Петербург"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_spdyh1.jpg" alt="Санкт-Петербург">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Санкт-Петербург</div>
+    </div>
+</div>
+   
+ <!-- Пример для центра Москва -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_yang.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Москва"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_yang.jpg" alt="Москва">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Москва</div>
+    </div>
+</div>
+
+   
+    <div class="project-card">
+        <a href="kamera88.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/gallery/float-camera miracle_volzh1.jpg" alt="Волжский"></div>
+            <div class="card-body"><div class="card-title">FloatSpa</div><div class="card-city">г. Волжский</div></div>
+        </a>
+    </div>
+	
+	<!-- Пример для центра Алушта -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_alushta1.jpg"
+     data-title="Санаторий Golden"
+     data-city="г. Алушта"
+     data-address="ул. Красноармейская, 9"
+     data-phone="8-989-129-44-48"
+    
+     data-site="http://float-cosmos.ru/">
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_alushta1.jpg" alt="Алушта">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Санаторий Golden</div>
+        <div class="card-city">г. Алушта</div>
+    </div>
+</div>   
+
+<!-- Пример для центра Вильнюс -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_vilnus1.jpg"
+     data-title="Флоат-центр Best-floating"
+     data-city="г. Вильнюс"
+     data-address="ул. Смалинес, 23"
+     data-phone="+370-608-66759"
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_vilnus1.jpg" alt="Вильнюс">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-центр Best-floating</div>
+        <div class="card-city">г. Вильнюс</div>
+    </div>
+</div>   
+
+   <!-- Пример для центра Казань -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_kaz1.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Казань"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_kaz1.jpg" alt="Казань">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Казань</div>
+    </div>
+</div>
+    
+	 <!-- Пример для центра Рязань -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_ryazan2.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Рязань"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_ryazan2.jpg" alt="Рязань">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Рязань</div>
+    </div>
+</div>
+
+ <!-- Пример для центра Дольмены -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_dolm2.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Санкт-Петербург"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_dolm2.jpg" alt="Санкт-Петербург">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Санкт-Петербург</div>
+    </div>
+</div>
+    
+ <!-- Пример для центра Владивосток -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_vladivostok1.jpg"
+     data-title="Салон флоатинга"
+     data-city="г. Владивосток"
+     data-address="ул. Черемуховая, 28"
+     data-phone="8(423)271-34-39"
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_vladivostok1.jpg" alt="Владивосток">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Салон флоатинга</div>
+        <div class="card-city">г. Владивосток</div>
+    </div>
+</div>     
+    
+   
+	
+	<!-- Пример для центра Москва -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_msk3.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Москва"
+   
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_msk3.jpg" alt="Москва">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Москва</div>
+    </div>
+</div>     
+ 
+ <!-- Пример для центра Санкт-Петербург -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_spb1.jpg"
+     data-title="Центр косметологии "Грация""
+     data-city="г. Санкт-Петербург"
+     data-address="ул. Восстания,43"
+     data-phone="+7 (812) 241-15-78"
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_spb1.jpg" alt="Владивосток">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Центр косметологии "Грация"</div>
+        <div class="card-city">г. Санкт-Петербург</div>
+    </div>
+</div>     
+     
+ <!-- Пример для центра Воронеж -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_voron2.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Воронеж"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_voron2.jpg" alt="Воронеж">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Воронеж</div>
+    </div>
+</div>        
+   
+ <!-- Пример для центра Калуга -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_etno1.jpg"
+     data-title="Wellness SPA CHI"
+     data-city="г. Калуга"
+     data-address=" Боровский район,
+деревня Петрово"
+     data-phone="8(495)0238181"
+    
+     data-site="https://ethnomir.ru/posetitelyam/health/floating-studiya-rasslablenie-48305/">
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_etno1.jpg" alt="Калуга">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Wellness SPA CHI</div>
+        <div class="card-city">г. Калуга</div>
+    </div>
+</div>   
+
+   
+ <!-- Пример для центра Зеленогорск -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_fin2.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Зеленогорск"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_fin2.jpg" alt="Зеленогорск">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Зеленогорск</div>
+    </div>
+</div>        
+   
+	
+	<!-- Пример для центра Иркутск -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_irk1.jpg"
+     data-title="Wellness-центр Salinas"
+     data-city="г. Иркутск"
+     data-address="ул. Франк-Каменецкого, д. 28/4"
+     data-phone="48-46-87"
+    
+     data-site="https://salinasgrand.ru/float-kamera">
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_irk1.jpg" alt="Иркутск">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Wellness-центр Salinas</div>
+        <div class="card-city">г. Иркутск</div>
+    </div>
+</div>   
+
+<!-- Пример для центра Подольск -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_podolsk2.jpg"
+     data-title="Лаборатория Жизни "Виталис""
+     data-city="г. Подольск"
+     data-address="ул. Февральская, 54/150"
+     data-phone="8-977-436-95-17, 8-963-641-57-35"
+    
+    
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_podolsk2.jpg" alt="Подольск">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Лаборатория "Виталис"</div>
+        <div class="card-city">г. Подольск</div>
+    </div>
+</div>   
+
+   <!-- Пример для центра Нижневартовск -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_nizhnev.jpg"
+     data-title="Оздоровительный центр КЛЕВЕР"
+     data-city="г. Нижневартовск"
+     data-address="ул.Ханты-Мансийская, 36"
+     data-phone="407-457"
+    
+     data-site="http://vk.com/klever407457">
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_nizhnev.jpg" alt="Нижневартовск">
+    </div>
+    <div class="card-body">
+        <div class="card-title">центр КЛЕВЕР</div>
+        <div class="card-city">г. Нижневартовск</div>
+    </div>
+</div>   
+   
+    
+    <div class="project-card">
+        <a href="kamera52.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/images/float-camera miracle_kazan new.jpg" alt="Казань"></div>
+            <div class="card-body"><div class="card-title">CASSIOPEIA</div><div class="card-city">г. Казань</div></div>
+        </a>
+    </div>
+    <div class="project-card">
+        <a href="kamera40.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/images/float-camera miracle_kaluga new.jpg" alt="Вятичи"></div>
+            <div class="card-body"><div class="card-title">Санаторий "Вятичи"</div><div class="card-city">г. Кремёнки</div></div>
+        </a>
+    </div>
+	
+<!-- Пример для центра Тюмень -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_tumen4.jpg"
+     data-title="Салон сенсорной депривации Floating"
+     data-city="г. Тюмень"
+     data-address="ул. Прокопия Артамонова, д.9/11"
+     data-phone="8(3452) 70-33-77"
+    
+     data-site="http://www.floating.ru/">
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_tumen4.jpg" alt="Тюмень">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Салон  Floating</div>
+        <div class="card-city">г. Тюмень</div>
+    </div>
+</div>   	
+	
+   
+    <div class="project-card">
+        <a href="kamera37.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/images/float-camera miracle_irkutsk new.jpg" alt="Иркутск"></div>
+            <div class="card-body"><div class="card-title">Флоат-камера Miracle</div><div class="card-city">г. Иркутск</div></div>
+        </a>
+    </div>
+	
+	   
+ <!-- Пример для центра Уфа -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_ufa23.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Уфа"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_ufa23.jpg" alt="Уфа">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Уфа</div>
+    </div>
+</div>      
+
+ <!-- Пример для центра Нижний Новгород -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_nn1.jpg"
+     data-title="Флоат-студия Namore"
+     data-city="г. Нижний Новгород"
+     data-address="ул.Большая Покровская, д71А, этаж 2, офис 3"
+     data-phone="(831) 430-86-45
++7(831) 291-70-03"
+    
+     
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_nn1.jpg" alt="Нижний Новгород">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Namore</div>
+        <div class="card-city">г. Нижний Новгород</div>
+    </div>
+</div>   	
+   
+ <!-- Пример для центра Севастополь -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_sev1.jpg"
+     data-title="Флоат-студия " МирА клуб"
+     data-city="г. Севастополь"
+     data-address="пер. Юферово,16"
+     data-phone="+7-978-114-67-75"
+    
+     data-site="http://vk.com/public95427484">
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_sev1.jpg" alt="Севастополь">
+    </div>
+    <div class="card-body">
+        <div class="card-title">МирА клуб</div>
+        <div class="card-city">г. Севастополь</div>
+    </div>
+</div>   	   
+   
+  <!-- Пример для центра Ставрополь -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_stavrop1.jpg"
+     data-title="Психологическое агентство "АНИМА""
+     data-city="г. Ставрополь"
+     data-address="ул. Ленина, 394, офис 2,3, 4"
+     data-phone="(8652) 35-85-13"
+    
+    
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_stavrop1.jpg" alt="Ставрополь">
+    </div>
+    <div class="card-body">
+        <div class="card-title">АНИМА</div>
+        <div class="card-city">г. Ставрополь</div>
+    </div>
+</div>   	  
+    
+	
+    
+    <div class="project-card">
+        <a href="kamera34.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/images/float-camera miracle_vologd new.jpg" alt="Вологда"></div>
+            <div class="card-body"><div class="card-title">AQUA</div><div class="card-city">г. Вологда</div></div>
+        </a>
+    </div>
+   
+    <div class="project-card">
+        <a href="kamera1.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/images/float-camera miracle_piter.jpg" alt="СПб"></div>
+            <div class="card-body"><div class="card-title">Шведский центр</div><div class="card-city">г. Санкт-Петербург</div></div>
+        </a>
+    </div>
+
+ <!-- Пример для центра Караганда -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_karag2.jpg"
+     data-title="Флоат-центр Miracle"
+     data-city="г. Караганда"
+     data-address="ул. Лободы, 16"
+     data-phone="+7(776)5201555"
+    
+    
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_karag2.jpg" alt="Караганда">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-центр Miracle</div>
+        <div class="card-city">г. Караганда</div>
+    </div>
+</div>   
+	
+	
+ 
+    <div class="project-card">
+        <a href="kamera24.html">
+            <div class="img-wrapper"><img src="https://float-camera.ru/media/images/float-camera miracle_kirov new.jpg" alt="Киров"></div>
+            <div class="card-body"><div class="card-title">Эллизиум</div><div class="card-city">г. Киров</div></div>
+        </a>
+    </div>
+	
+	
+ <!-- Пример для центра Москва -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_mockva new2.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Москва"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_mockva new2.jpg" alt="Москва">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Москва</div>
+    </div>
+</div>     	
+   
+ <!-- Пример для центра Обнинск -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_obninsk1.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Обнинск"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_obninsk1.jpg" alt="Обнинск">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Обнинск</div>
+    </div>
+</div>    
+
+<!-- Пример для центра СПб -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_sp5.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Санкт-Петербург"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_sp5.jpg" alt="Санкт-Петербург">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Санкт-Петербург</div>
+    </div>
+</div>  
+
+<!-- Пример для центра Волгоград -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_volgograd new1.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Волгоград"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_volgograd new1.jpg" alt="Волгоград">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Волгоград</div>
+    </div>
+</div>   
+
+<!-- Пример для центра Невинномыск -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_nevin7.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Невинномыск"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_nevin7.jpg" alt="Невинномыск">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Невинномыск</div>
+    </div>
+</div>   
+  
+ <!-- Пример для центра Место Силы -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_mesto sily new3.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Санкт-Петербург"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_mesto sily new3.jpg" alt="г. Санкт-Петербург">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Санкт-Петербург</div>
+    </div>
+</div>     
+
+<!-- Пример для центра Челябинск -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_chel5.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Челябинск"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_chel5.jpg" alt="Челябинск">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Челябинск</div>
+    </div>
+</div>  
+    
+
+
+<!-- Пример для центра Челябинск -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_chelyabinsk new2.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Челябинск"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_chelyabinsk new2.jpg" alt="Челябинск">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Челябинск</div>
+    </div>
+</div>  
+
+ <!-- Пример для центра Краснодар -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_krasnodar new5.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Краснодар"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_krasnodar new5.jpg" alt="Краснодар">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Краснодар</div>
+    </div>
+</div>  
+
+ <!-- Пример для центра Москва -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_moscow kurkino3.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Москва"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_moscow kurkino3.jpg" alt="Москва">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Москва</div>
+    </div>
+</div>  
+
+  <!-- Пример для центра Воронеж -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_voroneg2.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Воронеж"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_voroneg2.jpg" alt="Воронеж">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Воронеж</div>
+    </div>
+</div> 
+
+ <!-- Пример для центра Усть-Илимск -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_UI1.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Усть-Илимск"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_UI1.jpg" alt="Усть-Илимск">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Усть-Илимск</div>
+    </div>
+</div> 
+
+<!-- Пример для центра Нижневартовск -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle_NV.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Нижневартовск"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle_NV.jpg" alt="Нижневартовск">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Нижневартовск</div>
+    </div>
+</div> 
+
+<!-- Пример для центра Хабаровск -->
+<div class="project-card" 
+     style="cursor: pointer;"
+     onclick="openProject(this)"
+     data-img="https://float-camera.ru/media/gallery/float-camera miracle habarovsk1.jpg"
+     data-title="Флоат-камера Miracle частное использование"
+     data-city="г. Хабаровск"
+    
+    
+   
+     
+    <!-- Внутри всё остается простым, только картинка и название для превью -->
+    <div class="img-wrapper">
+        <img src="https://float-camera.ru/media/gallery/float-camera miracle habarovsk1.jpg" alt="Хабаровск">
+    </div>
+    <div class="card-body">
+        <div class="card-title">Флоат-камера Miracle</div>
+        <div class="card-city">г. Хабаровск</div>
+    </div>
+</div> 
+
+<!-- Закрываем основной контейнер сетки, чтобы Футер был во всю ширину -->
+
+</div>
+</div>
+
+<!-- ================= ФУТЕР (Исправленный) ================= -->
+<style>
+    footer {
+    background: #004d40; /* <--- Цвет как в шапке */
+    color: #ffffff;      /* Текст делаем чисто белым для контраста */
+        padding: 40px 0;
+        margin-top: 60px;
+        width: 100%; /* Во всю ширину */
+        position: relative;
+        z-index: 10;
+    }
+    .footer-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .footer-col {
+        min-width: 200px; /* Чтобы слова не скакали */
+        flex: 1;
+    }
+    .footer-col h4 { color: white; border-bottom: 1px solid #546e7a; padding-bottom: 10px; margin-bottom: 15px; }
+    .footer-col p, .footer-col a { line-height: 1.6; color: #b0bec5; text-decoration: none; display: block; margin-bottom: 5px; }
+    .footer-col a:hover { color: white; }
+    
+    /* Кнопка вызова формы в футере (или вставьте её где угодно выше) */
+    .footer-btn {
+        background: #d81b60; color: white !important; padding: 10px 20px; 
+        border-radius: 5px; font-weight: bold; text-align: center; display: inline-block; margin-top: 10px; cursor: pointer;
+    }
+</style>
+
+<!-- FOOTER_START -->
+<footer>
+    <div class="footer-inner">
+        <div>
+            <h4>Miracle Float</h4>
+            <p>&copy; 2010-2026 Производство флоат-камер.</p>
+        </div>
+        <div>
+            <h4>Связаться с нами</h4>
+            <p>📞 8-927-252-83-67<br>📞 8-927-253-51-51</p>
+            <p>📧 float-camera@mail.ru</p>
+        </div>
+        <div>
+            <h4>Информация</h4>
+            <p><a href="stati.html" style="color:inherit;">Статьи</a></p>
+            <p><a href="cena.html" style="color:inherit;">Рассрочка</a></p>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER_END -->
+
+
+<!-- ================= КОД ГАЛЕРЕИ (Для картинок) ================= -->
+<!-- (Оставляем ваш код, он хороший) -->
+<style>
+    .modal-overlay { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.85); backdrop-filter: blur(5px); }
+    .modal-box { background-color: #fff; margin: 5% auto; width: 90%; max-width: 900px; border-radius: 10px; box-shadow: 0 5px 30px rgba(0,0,0,0.3); display: flex; overflow: hidden; position: relative; animation: fadeIn 0.3s; }
+    @keyframes fadeIn { from {opacity: 0; transform: translateY(-20px);} to {opacity: 1; transform: translateY(0);} }
+    .close-btn { position: absolute; top: 15px; right: 20px; color: #aaa; font-size: 30px; font-weight: bold; cursor: pointer; z-index: 10; background: rgba(255,255,255,0.8); border-radius: 50%; width: 40px; height: 40px; text-align: center; line-height: 40px; }
+    .close-btn:hover { color: #000; background: #fff; }
+    .modal-img-col { flex: 1.5; background: #eee; min-height: 300px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .modal-img-col img { width: 100%; height: 100%; object-fit: contain; }
+    .modal-info-col { flex: 1; padding: 40px; display: flex; flex-direction: column; justify-content: center; }
+    .m-title { margin-top: 0; color: #004d40; font-size: 1.8em; line-height: 1.2; }
+    .m-city { color: #888; margin-bottom: 20px; font-weight: bold; text-transform: uppercase; font-size: 0.9em; letter-spacing: 1px; }
+    .m-details p { margin: 10px 0; font-size: 1.1em; display: flex; align-items: center; gap: 10px; }
+    .m-btn { display: inline-block; margin-top: 20px; background: #00695c; color: white; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-weight: bold; transition: 0.3s; text-align: center; }
+    .m-btn:hover { background: #004d40; }
+    @media (max-width: 768px) { .modal-box { flex-direction: column; margin: 10% auto; width: 95%; } .modal-img-col { height: 250px; flex: none; } .modal-info-col { padding: 20px; } .m-title { font-size: 1.5em; } }
+</style>
+
+<div id="infoModal" class="modal-overlay">
+    <div class="modal-box">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div class="modal-img-col"><img id="m-img" src="" alt="Фото объекта"></div>
+        <div class="modal-info-col">
+            <div id="m-city" class="m-city"></div>
+            <h2 id="m-title" class="m-title"></h2>
+            <div class="m-details">
+                <p id="m-address-row">📍 <span id="m-address"></span></p>
+                <p id="m-phone-row">📞 <span id="m-phone"></span></p>
+                <p id="m-work-row">🕒 <span id="m-work"></span></p>
+            </div>
+            <a id="m-link" href="#" target="_blank" rel="nofollow" class="m-btn">Перейти на сайт центра</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    const modal = document.getElementById("infoModal");
+    function openProject(element) {
+        const img = element.getAttribute('data-img');
+        const title = element.getAttribute('data-title');
+        const city = element.getAttribute('data-city');
+        const address = element.getAttribute('data-address');
+        const phone = element.getAttribute('data-phone');
+        const work = element.getAttribute('data-work');
+        const site = element.getAttribute('data-site');
+
+        document.getElementById('m-img').src = img;
+        document.getElementById('m-title').innerText = title;
+        document.getElementById('m-city').innerText = city;
+
+        if(address) { document.getElementById('m-address').innerText = address; document.getElementById('m-address-row').style.display = "block"; } else { document.getElementById('m-address-row').style.display = "none"; }
+        if(phone) { document.getElementById('m-phone').innerHTML = '<a href="tel:' + phone.replace(/[^0-9+]/g, '') + '">' + phone + '</a>'; document.getElementById('m-phone-row').style.display = "block"; } else { document.getElementById('m-phone-row').style.display = "none"; }
+        if(work) { document.getElementById('m-work').innerText = work; document.getElementById('m-work-row').style.display = "block"; } else { document.getElementById('m-work-row').style.display = "none"; }
+        
+        const btn = document.getElementById('m-link');
+        if (site && site !== "#") { btn.href = site; btn.style.display = "inline-block"; } else { btn.style.display = "none"; }
+
+        modal.style.display = "block";
+        document.body.style.overflow = "hidden";
+    }
+    function closeModal() { modal.style.display = "none"; document.body.style.overflow = "auto"; }
+    window.onclick = function(event) { if (event.target == modal) { closeModal(); } }
+</script>
+
+
+<!-- ================= КОД НОВОЙ ФОРМЫ ЗАЯВКИ (Изолированный) ================= -->
+<style>
+    .order-overlay { 
+        display: none; 
+        position: fixed; 
+        z-index: 99999; 
+        left: 0; 
+        top: 0; 
+        width: 100%; 
+        height: 100%; 
+        background: rgba(0,0,0,0.7); 
+        backdrop-filter: blur(5px); 
+        overflow-y: auto; /* Чтобы форму можно было листать на маленьких экранах */
+    }
+    
+    .order-box { 
+        background: white; 
+        margin: 5% auto; 
+        padding: 35px 25px 25px; /* Увеличили верхний отступ под крестик */
+        width: 92%; 
+        max-width: 450px; 
+        border-radius: 12px; 
+        position: relative; 
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+        font-family: 'Segoe UI', sans-serif; 
+        box-sizing: border-box; /* ГАРАНТИРУЕТ, что форма не вылезет за края экрана */
+    }
+
+    /* КНОПКА ЗАКРЫТИЯ (Удобная для пальца) */
+    .order-close { 
+        position: absolute; 
+        right: 5px; 
+        top: 5px; 
+        font-size: 32px; 
+        cursor: pointer; 
+        color: #999; 
+        padding: 10px 15px; /* Увеличили зону попадания пальцем */
+        line-height: 1;
+        z-index: 10;
+    }
+
+    .order-box input, .order-box textarea { 
+        width: 100%; 
+        padding: 12px; 
+        margin-bottom: 15px; 
+        border: 1px solid #ddd; 
+        border-radius: 6px; 
+        box-sizing: border-box; 
+        font-size: 16px; /* Чтобы iPhone не увеличивал страницу при вводе текста */
+    }
+
+    .order-btn { 
+        width: 100%; 
+        background: #d81b60; 
+        color: white; 
+        padding: 15px; 
+        border: none; 
+        border-radius: 6px; 
+        font-weight: bold; 
+        cursor: pointer; 
+        transition: 0.3s; 
+        font-size: 1.1em; 
+    }
+    .order-btn:hover { background: #ad1457; }
+
+    /* Стиль для галочки */
+    .order-privacy {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        font-size: 0.85em;
+        color: #666;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .order-privacy input {
+        width: auto !important;
+        margin: 3px 0 0 0 !important;
+        cursor: pointer;
+    }
+    .order-privacy a {
+        color: #d81b60;
+        text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+        .order-box { margin: 20px auto; padding-top: 45px; }
+        .order-close { font-size: 38px; } /* Ещё больше на мобильных */
+    }
+</style>
+
+<div id="orderModal" class="order-overlay">
+    <div class="order-box">
+        <span class="order-close" onclick="closeOrderForm()">&times;</span>
+        <h2 style="color:#00695c; margin-top:0; text-align:center;">Оставить заявку</h2>
+        <p style="text-align:center; color:#666; font-size:0.9em;">Мы свяжемся с вами в ближайшее время</p>
+        
+        <!-- Та самая форма, которая работает через send.php -->
+        <form action="send.php" method="POST">
+            <input type="hidden" name="form_subject" value="Заявка из Товаров">
+			<input type="text" name="website_trap" style="display:none !important;" tabindex="-1" autocomplete="off">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="tel" name="phone" placeholder="Ваш телефон" required>
+            <input type="email" name="email" placeholder="E-mail (не обязательно)">
+            <textarea name="question" placeholder="Комментарий" rows="3"></textarea>
+            
+            <div style="font-size:0.8em; color:#777; margin-bottom:15px; display:flex; gap:8px; align-items: flex-start; text-align: left;">
+    <input type="checkbox" name="agree" id="agree_check" required style="width:auto; margin: 3px 0 0 0; cursor: pointer;">
+    <label for="agree_check" style="cursor: pointer;">
+        Я согласен с <a href="privacy.html" target="_blank" style="color:#777; text-decoration: underline;">политикой конфиденциальности</a>
+    </label>
+</div>
+            
+            <button type="submit" class="order-btn">ОТПРАВИТЬ</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    // Скрипт ТОЛЬКО для формы заявки (не путается с галереей)
+    var orderModalWindow = document.getElementById('orderModal');
+
+    function openOrderForm() {
+        orderModalWindow.style.display = 'block';
+    }
+
+    function closeOrderForm() {
+        orderModalWindow.style.display = 'none';
+    }
+    
+    // Чтобы закрывалось при клике на фон (но не ломало галерею)
+    window.addEventListener('click', function(e){
+        if (e.target == orderModalWindow) {
+            closeOrderForm();
+        }
+    });
+</script>
+
+<!-- Яндекс Метрика (обязательно в конце) -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+   ym(98871717, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/98871717" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<script src="assets/js/miracle-redesign.js"></script>
+</body>
+</html>

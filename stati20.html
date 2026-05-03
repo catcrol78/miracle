@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Флоатинг и йога: Идеальный дуэт | Miracle</title>
+    <link rel="icon" href="https://float-camera.ru/favicon.ico" type="image/x-icon">
+    <style>
+        /* БАЗОВЫЕ СТИЛИ */
+        :root { --primary: #00695c; --secondary: #004d40; --accent: #d81b60; --text: #333; --light-bg: #f8f9fa; --white: #fff; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; color: var(--text); line-height: 1.6; background: var(--light-bg); }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        
+        /* ШАПКА */
+        .top-bar { background: var(--secondary); color: white; padding: 8px 0; text-align: center; font-size: 0.9em; }
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: var(--primary); text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
+        .main-menu { display: flex; gap: 20px; }
+        .main-menu a { font-weight: 500; color: #555; }
+        .main-menu a:hover { color: var(--primary); }
+        .menu-toggle { display: none; font-size: 26px; cursor: pointer; }
+
+        /* МАКЕТ СТАТЬИ */
+        .layout-grid { display: grid; grid-template-columns: 3fr 1fr; gap: 40px; max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        
+        /* Контент статьи */
+        .article-content { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .article-content h1 { color: var(--secondary); margin-top: 0; text-align: center; line-height: 1.3; margin-bottom: 30px; }
+        .article-content h3 { color: var(--primary); margin-top: 30px; margin-bottom: 15px; border-left: 4px solid var(--accent); padding-left: 15px; }
+        .article-content p { margin-bottom: 15px; text-align: left; }
+        
+        /* Цитата */
+        .quote-box { background: #e0f2f1; padding: 20px; border-radius: 8px; font-style: italic; color: #00695c; margin: 20px 0; border: 1px solid #b2dfdb; }
+
+        /* Сайдбар */
+        aside { font-size: 0.95em; }
+        .sidebar-block { background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #eee; }
+        .sidebar-block h3 { margin-top: 0; color: var(--secondary); font-size: 1.1em; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 15px; }
+        .sidebar-menu { list-style: none; padding: 0; }
+        .sidebar-menu li { margin-bottom: 10px; border-bottom: 1px dotted #eee; padding-bottom: 5px; }
+        .sidebar-menu a:hover { color: var(--accent); }
+
+        footer { background: #263238; color: #cfd8dc; padding: 40px 0; margin-top: 50px; text-align: center; }
+
+        @media (max-width: 900px) {
+            .layout-grid { grid-template-columns: 1fr; }
+            .article-content { padding: 20px; }
+            .sidebar-block { display: none; }
+            .main-menu { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: white; padding: 20px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+            .main-menu.active { display: flex; }
+            .menu-toggle { display: block; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">Консультации: <a href="tel:89272528367" style="color:white">8-927-252-83-67</a></div>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+             <img src="https://float-camera.ru/media/images/logo.png" alt="Miracle" style="height: 40px;"> Miracle
+        </a>
+        <div class="menu-toggle" onclick="document.querySelector('.main-menu').classList.toggle('active')">☰</div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tovary.html">Наши работы</a></li>
+                <li><a href="stati.html" style="color:var(--primary); font-weight:bold;">Статьи</a></li>
+                <li><a href="dokument.html">Документация</a></li>
+                <li><a href="cena.html">Цена</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                 <li><a href="https://float-camera-bufo.ru" target="_blank" style="color: var(--accent); font-weight: bold; border: 1px solid var(--accent); padding: 5px 10px; border-radius: 4px;">Premium BUFO</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="layout-grid">
+    
+    <main class="article-content">
+        
+        <!-- Картинка статьи -->
+       
+        <h1>Флоатинг и йога</h1>
+        
+        <p>Когда дело доходит до расслабления и снятия напряжения, флоатинг и йога идеально дополняют друг друга. Дуэт этих двух практик поможет омолодить и укрепить Ваше тело, дать ощущение силы и свежести.</p>
+        
+        <p>Некоторая схожесть флоатинга и йоги состоит в том, что они могут расслабить тело и снять напряженность мышц. В йоге Ваше тело растягивается и подогревается через ряд движений. Расслабление, достигнутое в классе йоги, может постепенно сделать Вас более гибкими. Флоатинг помогает расслабить мышцы между сессиями, делая Вас более гибкими и продвигая Вашу практику.</p>
+
+        <h3>Эффект очищения</h3>
+        <p>Йога увеличивает приток крови к мягким тканям, что в сочетании с флоатингом может помочь удалить токсины и вывести их из Вашей сердечно-сосудистой системы. Это поможет Вашему телу чувствовать себя лучше и бодрее.</p>
+
+        <h3>Медитация и «ленивая йога»</h3>
+        <p>Медитация – составная часть многих школ йоги. Некоторым людям при этом очень сложно добиться успокоения. Флоатинг помогает замедлить мозговые волны, заставляя мозг генерировать тета-волны. Достижение такого состояния посредством одной только медитации могло бы занять месяцы или годы, а в флоат-камере на это потребуется всего 20 минут.</p>
+        
+        <div class="quote-box">
+            Некоторые люди шутят о непринужденности, с которой альфа-состояние может быть достигнуто в флоат-камере, называя его <strong>«ленивой йогой»</strong>.
+        </div>
+
+        <h3>Глубокая депривация</h3>
+        <p>И флоатинг, и йога содержат элементы депривации в своей практике. Флоатинг – это депривация звуков, света, ощущений. В йоге же Шавасана – не что иное, как депривация движений. А практикуя пратьятхару, мы направляем сознание внутрь, «отключая» его от ощущений, идущих извне.</p> 
+        <p>В камере человек сразу же входит в медитативное состояние. Флоатинг помогает достичь более глубоких уровней расслабления не только тела, но и сознания. Такое состояние дает возможность созерцать жизнь с более объективной позиции.</p>
+
+        <h3>Специальное направление: Флоатинг-йога</h3>
+        <p>Существует целое направление йоги, где асаны выполняются в флоат-камере. Создателем этого направления является Шошана Лейбнер, преподаватель йоги из Калифорнии, которая практикует уже 33 года – и почти столько же занимается флоатингом.</p>
+        <p>Практика флоатинг-йоги представляет собой серии специально разработанных асан. Выполняя их, вы полностью сконцентрированы на процессе – вам просто не на что отвлечься. Стенки камеры помогают вытягиваться, раскрываться и скручиваться. Эти позы невозможно повторить в иных условиях.</p>
+        
+        <p>Попробуйте объединить занятия йогой с часом флоатинга, и Вы почувствуете омолаживающие эффекты, которые этот «дуэт» может дать Вашему телу.</p>
+
+    </main>
+
+    <!-- Сайдбар -->
+    <aside>
+        <div class="sidebar-block">
+            <h3>Популярное</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati36.html">Как выбрать флоат-камеру?</a></li>
+                <li><a href="plan.html">Бизнес-план студии</a></li>
+                <li><a href="cena.html">Стоимость оборудования</a></li>
+                <li><a href="complect.html">Комплектация</a></li>
+                <li><a href="filtr.html">Система фильтрации</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-block">
+            <h3>Исследования</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati11.html">Флоатинг в спорте</a></li>
+                <li><a href="stati13.html">Беременность и флоатинг</a></li>
+                <li><a href="stati15.html">Лечение фибромиалгии</a></li>
+                <li><a href="stati16.html">Эндорфины и счастье</a></li>
+            </ul>
+        </div>
+        
+        <div class="sidebar-block" style="text-align: center; border:none; background: transparent;">
+             <a href="tel:89272528367" style="display:inline-block; background: var(--accent); color:white; padding: 10px 20px; border-radius:5px; font-weight:bold;">Заказать звонок</a>
+        </div>
+    </aside>
+
+</div>
+
+<footer>
+    <div class="container"><p>&copy; 2010-2025 Miracle. Производство флоат-камер.</p></div>
+</footer>
+
+</body>
+</html>

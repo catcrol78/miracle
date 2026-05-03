@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ощущения во флоат-камере | Статья Miracle</title>
+    <link rel="icon" href="https://float-camera.ru/favicon.ico" type="image/x-icon">
+    <style>
+        /* БАЗОВЫЕ СТИЛИ */
+        :root { --primary: #00695c; --secondary: #004d40; --accent: #d81b60; --text: #333; --light-bg: #f8f9fa; --white: #fff; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; color: var(--text); line-height: 1.6; background: var(--light-bg); }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        
+        /* ШАПКА */
+        .top-bar { background: var(--secondary); color: white; padding: 8px 0; text-align: center; font-size: 0.9em; }
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: var(--primary); text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
+        .main-menu { display: flex; gap: 20px; }
+        .main-menu a { font-weight: 500; color: #555; }
+        .main-menu a:hover { color: var(--primary); }
+        .menu-toggle { display: none; font-size: 26px; cursor: pointer; }
+
+        /* МАКЕТ СТАТЬИ (Сайдбар + Контент) */
+        .layout-grid { display: grid; grid-template-columns: 3fr 1fr; gap: 40px; max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        
+        /* Статья */
+        .article-content { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .article-content h1 { color: var(--secondary); margin-top: 0; }
+        .article-content h2, .article-content h3 { color: var(--primary); margin-top: 30px; }
+        .article-content ul, .article-content ol { padding-left: 20px; margin-bottom: 20px; }
+        .article-content li { margin-bottom: 15px; } /* Чуть больше отступ для списка с описаниями */
+        
+        /* Сайдбар (Боковое меню) */
+        aside { font-size: 0.95em; }
+        .sidebar-block { background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #eee; }
+        .sidebar-block h3 { margin-top: 0; color: var(--secondary); font-size: 1.1em; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 15px; }
+        .sidebar-menu { list-style: none; padding: 0; }
+        .sidebar-menu li { margin-bottom: 10px; border-bottom: 1px dotted #eee; padding-bottom: 5px; }
+        .sidebar-menu a:hover { color: var(--accent); }
+
+        footer { background: #263238; color: #cfd8dc; padding: 40px 0; margin-top: 50px; text-align: center; }
+
+        @media (max-width: 900px) {
+            .layout-grid { grid-template-columns: 1fr; } /* На телефоне в одну колонку */
+            .article-content { padding: 20px; }
+            .sidebar-block { display: none; } /* Можно скрыть сайдбар на мобильном */
+            
+            .main-menu { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: white; padding: 20px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+            .main-menu.active { display: flex; }
+            .menu-toggle { display: block; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">Консультации: <a href="tel:89272528367" style="color:white">8-927-252-83-67</a></div>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+             <img src="https://float-camera.ru/media/images/logo.png" alt="Miracle" style="height: 40px;"> Miracle
+        </a>
+        <div class="menu-toggle" onclick="document.querySelector('.main-menu').classList.toggle('active')">☰</div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tovary.html">Наши работы</a></li>
+                <li><a href="stati.html" style="color:var(--primary); font-weight:bold;">Статьи</a></li>
+                <li><a href="dokument.html">Документация</a></li>
+                <li><a href="cena.html">Цена</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                 <li><a href="https://float-camera-bufo.ru" target="_blank" style="color: var(--accent); font-weight: bold; border: 1px solid var(--accent); padding: 5px 10px; border-radius: 4px;">Premium BUFO</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="layout-grid">
+    
+    <!-- Основной контент статьи -->
+    <main class="article-content">
+        
+        <h1>Самые распространенные ощущения от посещения камеры</h1>
+        
+        <p>Когда стресс снимается постепенно во флоат-камере, мы редко замечаем это. Но если снятие стресса происходит слишком быстро, это становится заметно. Ниже мы рассмотрим некоторые возникающие при этом типичные ощущения.</p>
+
+        <h3>1. Симптомы быстрого снятия стресса</h3>
+        <ol>
+            <li>
+                <strong>Чувство вращения, кручения, падения, полета.</strong><br>
+                Ощущение того, что Вы стоите или находитесь вверх ногами. Любое чувство движения в то время, когда Вы на самом деле не двигаетесь, говорит о быстром снятии <em>психологического</em> стресса.
+            </li>
+            <li>
+                <strong>Бессвязные мысли, «мыслемешалка».</strong><br>
+                На несколько секунд или в течение всего сеанса. Это означает быстрое снятие <em>душевного</em> напряжения. После этого Вы чувствуете себя более четко, ясно или пребываете в состоянии эйфории. Иногда Вы можете чувствовать легкую, незначительную, притупленную головную боль.
+            </li>
+            <li>
+                <strong>Всплеск эмоций.</strong><br>
+                Ощущение таких эмоций, как грусть, злость, страх, раздражение, возбуждение или веселье. Это ощущение быстрого снятия <em>эмоционального</em> стресса. Многие люди копят в себе чувства, испытанные ими в течение жизни, вместо того, чтобы высвобождать их. Выпустив их наружу, Вы почувствуете себя намного лучше, и в итоге внутренне успокоитесь.
+            </li>
+            <li>
+                <strong>Судороги, дрожь, нервные подергивания.</strong><br>
+                Резкие движения любой части Вашего тела обычно говорят о снятии стресса <em>нервной системы</em>. Боль в шее или плечах во время флоатинга часто является показателем накопленного стресса или полученной ранее травмы.
+            </li>
+            <li>
+                <strong>Чувство тошноты.</strong><br>
+                Очень редкое ощущение, вызванное быстрым снятием сильного эмоционального стресса. Обычно сопровождается сильными чувствами.
+            </li>
+        </ol>
+
+        <h3>2. Реакции на глубокую релаксацию</h3>
+        <p>Следующие пункты описывают другие реакции организма и сознания на глубокое расслабление:</p>
+        
+        <ol start="1">
+            <li>
+                <strong>Потеря чувства времени.</strong><br>
+                Ощущение себя в сознании, но без четких мыслей... «Я был в сознании, но ощущение как перед засыпанием» или «Мне показалось, что прошло 10 минут, я не могу поверить, что время вышло». На самом деле Вы просто очень глубоко расслабились. Иногда за один сеанс флоатинга Вы можете впадать и выходить из этого состояния несколько раз.
+            </li>
+            <li>
+                <strong>Яркие образы и цветные видения.</strong><br>
+                Переживание ярких воспоминаний или картинок происходит из-за того, что в состоянии расслабленности правое полушарие головного мозга (творческое и интуитивное) остается в работе. Яркие образы говорят о снятии проблем и напряжений, мешающих душе вырваться на простор.
+            </li>
+            <li>
+                <strong>Инсайты и озарения.</strong><br>
+                Получение неожиданных ответов, постижение ранее непонятных моментов. Это подсознательная работа интуитивной части правого полушария головного мозга. Чем глубже состояние вашего расслабления, тем вероятнее это может случиться.
+            </li>
+            <li>
+                <strong>Короткие периоды беспокойства.</strong><br>
+                Ощущение нетерпеливости или тоски. Это периоды, когда Вы по какой-либо причине не можете расслабиться. Это может случаться время от времени в течение первых посещений. Это естественная реакция, нет причин для волнений.
+            </li>
+            <li>
+                <strong>«Я совсем не смог успокоиться».</strong><br>
+                Если вы суетились и думали «когда закончится сеанс», помните: иногда, чтобы расслабиться в флоат-комнате, требуется один или два сеанса. Это нормально, и даже в этом состоянии Ваше подсознание извлекает пользу.
+            </li>
+            <li>
+                <strong>«Ничего не происходило».</strong><br>
+                «Я просто лежал там, у меня были какие-то мысли... но больше ничего». Подобные суждения приводят к тому, что Ваше подсознание меньше сопротивляется, и эффект наступает мягче.
+            </li>
+            <li>
+                <strong>Контроль над мыслями и осознанность.</strong><br>
+                Флоат-камера — это идеальное место для размышлений. Некоторые важные решения могут быть приняты там, хотя до этого момента они казались трудными.
+            </li>
+        </ol>
+
+        <div style="background: #e1f5fe; padding: 15px; border-left: 5px solid #039be5; margin-top: 30px;">
+            Это лишь некоторые из ощущений, которые человек может испытать во время флоатинга. Ваши впечатления могут быть похожими или кардинально отличаться. В любом случае, для каждого человека флоатинг несет свой уникальный опыт.
+        </div>
+
+    </main>
+
+    <!-- Сайдбар (Боковое меню) -->
+    <aside>
+        <div class="sidebar-block">
+            <h3>Популярное</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati36.html">Как выбрать флоат-камеру?</a></li>
+                <li><a href="plan.html">Бизнес-план студии</a></li>
+                <li><a href="cena.html">Стоимость оборудования</a></li>
+                <li><a href="complect.html">Комплектация</a></li>
+                <li><a href="filtr.html">Система фильтрации</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-block">
+            <h3>Исследования</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati11.html">Флоатинг в спорте</a></li>
+                <li><a href="stati13.html">Беременность и флоатинг</a></li>
+                <li><a href="stati15.html">Лечение фибромиалгии</a></li>
+                <li><a href="stati16.html">Эндорфины и счастье</a></li>
+            </ul>
+        </div>
+        
+        <div class="sidebar-block" style="text-align: center; border:none; background: transparent;">
+             <a href="tel:89272528367" style="display:inline-block; background: var(--accent); color:white; padding: 10px 20px; border-radius:5px; font-weight:bold;">Заказать звонок</a>
+        </div>
+    </aside>
+
+</div>
+
+<footer>
+    <div class="container"><p>&copy; 2010-2025 Miracle. Производство флоат-камер.</p></div>
+</footer>
+
+</body>
+</html>

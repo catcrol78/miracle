@@ -1,0 +1,1685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content>
+    <menus default="main">
+        <menu id="main">
+            <item ref="main">Главная</item>
+            <item ref="tovary">Наши работы</item>
+            <item ref="stati">Статьи</item>
+            <item ref="dokument">Документация</item>
+            <item ref="rezume">Для вопросов</item>
+            <item ref="cena">Цена</item>
+			<item ref="dostavka">Доставка</item>
+            <item ref="contact">Контакты</item>
+
+        </menu>
+
+
+
+    </menus>
+
+    <slideShows>
+
+        <slideShow id="main">
+       
+    <slide image="float-camera miracle_0.jpg">Флоат-камера купить</slide>
+    <slide image="float-camera miracle_1.jpg">Флоат-камера купить</slide>
+    <slide image="float-camera miracle_3.jpg">Флоат-камера купить</slide>
+    <slide image="float-camera miracle_4.jpg">Флоат-камера купить</slide>
+    <slide image="float-camera miracle_5.jpg">Флоат-камера купить</slide>
+    <slide image="float-camera miracle_6.jpg">Флоат-камера купить</slide>
+    <slide image="float-camera miracle_7.jpg">Флоат-камера купить</slide>
+    <slide image="float-camera miracle_8.jpg">Флоат-камера купить</slide>
+    <slide image="float-camera miracle_9.jpg">Флоат-камера купить</slide>
+    <slide image="float-camera miracle_10.jpg">Флоат-камера купить</slide>
+		</slideShow>
+
+        <slideShow id="kamishin">
+        <slide image="float-camera miracle_kamishin1.jpg">Флоат-камера купить </slide> 
+	<slide image="float-camera miracle_kamishin2.jpg">Флоат-камера купить </slide>
+	<slide image="float-camera miracle_kamishin3.jpg">Флоат-камера купить </slide>
+        </slideShow>
+		
+		<slideShow id="chel">
+        <slide image="float-camera miracle_chel1.jpg">Флоат-камера купить </slide> 
+		<slide image="float-camera miracle_chel2.jpg">Флоат-камера купить </slide>
+		<slide image="float-camera miracle_chel3.jpg">Флоат-камера купить </slide>
+		<slide image="float-camera miracle_chel4.jpg">Флоат-камера купить </slide>
+		<slide image="float-camera miracle_chel5.jpg">Флоат-камера купить </slide>
+		<slide image="float-camera miracle_chel6.jpg">Флоат-камера купить </slide>
+        </slideShow>
+		
+		<slideShow id="peter">
+        <slide image="float-camera miracle_peter1.jpg">Флоат-камера купить </slide> 
+        <slide image="float-camera miracle_peter2.jpg">Флоат-камера купить </slide> 
+		<slide image="float-camera miracle_peter3.jpg">Флоат-камера купить </slide> 
+        <slide image="float-camera miracle_peter4.jpg">Флоат-камера купить </slide>
+		<slide image="float-camera miracle_peter5.jpg">Флоат-камера купить </slide> 
+        <slide image="float-camera miracle_peter6.jpg">Флоат-камера купить </slide>
+		<slide image="float-camera miracle_peter7.jpg">Флоат-камера купить </slide> 
+       
+        </slideShow>
+
+    </slideShows>
+
+    <pages default="main">
+        <page id="main">
+            <title>Продажа оборудования для флоатинга</title>
+            <body>main.html</body>
+            <slideshow>main</slideshow>
+            <description>Каждая флоат-камера изготавливается вручную с учетом Ваших пожеланий (размер, форма, опции). Цена обсуждается с заказчиком в каждом конкретном случае.</description>
+			<keywords>флоат-камера купить, предложения флоат-камер, флоат-оборудование, флоат-комната, флоат камера, флоат камера купить, флоутинг камера купить, продаем флоат камеру, продажа флоат камер, флоут камера купить, флоатинг камера купить, флоатинг камеру купить</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+		 <page id="istoria">
+            <title>История фирмы производителя флоатинг-камер MIRACLE</title>
+            <body>istoria.html</body>
+            <description>Наша организация занимается производством и продажей 
+                   флоат-камер для коммерческого и домашнего использования с 2010 года. </description>
+			<keywords>флоатинг-камера купить, продаю флоат-камеру, предложения флоатинг-камер, флоат-оборудование, флоат-комната</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+        <page id="tovary">
+            <title>Производство и продажа флоат-камер</title>
+            <body>tovary.html</body>
+			<description>Производство и продажа флоат-камер. Примеры наших работ. Флоат-камера Miracle.</description>
+			<keywords>продаем флоат-камеры,флоат-камера Miracle</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+
+		<page id="poleznoe">
+            <title>Интересные ссылки по теме флоатинг</title>
+            <body>poleznoe.html</body>
+			<description>Флоатинг. Видео ссылки.  Флоат-камера Miracle.Мультфильмы и книги о флоатинге</description>
+			<keywords>продаем флоат-камеры,флоат-камера Miracle</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+
+        <page id="stati">
+            <title>Статьи о флоатинге</title>
+            <body>stati.html</body>
+                         <description>Статьи о флоатинге. Заболевания, для лечения которых применяется флоатинг. 
+                 Отзывы посетителей флоат-камеры Miracle.</description>
+                         <keywords>Флоатинг,флоатинг-камера, сенсорная депривация, камера сенсорной депривации, фибромиалгия</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+
+        <page id="dokument">
+            <title>Сертификат флоат-камера Miracle</title>
+            <body>dokument.html</body>
+			<description>Сертификат флоат-камеры Miracle. </description>
+			
+            <footer>Footer TEXT</footer>
+        </page>
+        <page id="rezume">
+            <title>Обратная связь</title>
+            <body>rezume.html</body>
+			<description> Обратная связь. Вы сожете связаться с нами через предложенную форму или по телефону 8-927-252-83-67</description>
+			
+            <footer>Footer TEXT</footer>
+        </page>
+	
+
+             <page id="main-ip">
+            <title>mainip</title>
+            <body>main-ip.html</body>
+			<description>email</description>
+			
+            <footer>Footer TEXT</footer>
+        </page>	
+		<page id="dostavka">
+            <title>Условия доставки</title>
+            <body>dostavka.html</body>
+			<description>Мы доставляем нашу флоат-камеры по России, а также в Евросоюз, Таможенный союз</description>
+	    <footer>Footer TEXT</footer>
+        </page>
+		
+        <page id="contact">
+            <title>Контакты</title>
+            <body>contact.html</body>
+			<description>ИП Шуляков А.Г.тел:+7 (927) 252-83-67,+8 (800) 333-48-70,
+E-mail: shulyakoff@mail.ru</description>
+	    <footer>Footer TEXT</footer>
+        </page>
+        <page id="stati1">
+            <title>Флоат-камера - что это</title>
+            <body>stati1.html</body>
+			<description>В бесконечной гонке под названием «жизнь» каждый из нас, хотя бы раз, 
+мечтал спрятаться от шума, огней, скоростей, правил современного мира и остаться наедине только с самим 
+собой. Флоатинг - воплощение этой мечты, достойная альтернатива Гималаям</description>
+			<keywords>Флоат-камера, стресс, релаксация, флоатинг</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+        <page id="stati2">
+            <title>Ощущения от флоатинга</title>
+            <body>stati2.html</body>
+			<description>Самые распространенные ощущения
+от посещения камеры и их значения</description>
+			<keywords>осознанное мышление, флоат-камера, переживания</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+        <page id="stati3">
+            <title>Флоатинг - что это</title>
+            <body>stati3.html</body>
+			<description>Флоатинг (floating – «плавучий») – процедура особенная, 
+не похожая ни на одну из известных тебе SPA-программ: в это сложно поверить, но на протяжении 
+всего сеанса человек пребывает в состоянии невесомости, как астронавт в космическом корабле.</description>
+			<keywords>Флоатинг,стресс, невесомость</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+        <page id="stati4">
+            <title>Правила успешного флоатинга</title>
+            <body>stati4.html</body>
+			<description>Чтобы у вас получилось опробовать на себе состояние невесомости 
+со всеми вытекающими из него положительными последствиями, недостаточно просто прийти и плюхнуться 
+в соленую водичку. Важен эмоциональный настрой</description>
+			<keywords>Флоатинг, соль, расслабление</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+		 <page id="stati5">
+            <title>Снятие напряжения</title>
+            <body>stati5.html</body>
+			<description>Отзывы посетилей флоат-камер MIRACLE</description>
+			<keywords>Отзывы посетилей флоат-камер MIRACLEа</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+        <page id="stati6">
+            <title>Флоатинг для снятия стресса</title>
+            <body>stati6.html</body>
+			<description>Флоатинг для Для всех</description>
+			<keywords>Описание работы</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+		 <page id="stati7">
+            <title>Для спортсменов</title>
+            <body>stati7.html</body>
+			<description>Флоатинг для спортсменов</description>
+			<keywords>Описание работы</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+		 <page id="stati8">
+            <title>Снять стресс при беременности</title>
+            <body>stati8.html</body>
+			<description>Флоатинг для беременных</description>
+			<keywords>Флоатинг для беременных</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+		 <page id="stati9">
+            <title>Для йогов</title>
+            <body>stati9.html</body>
+			<description>Флоатинг для йогов</description>
+			<keywords>Флоатинг для йогов</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+		 <page id="stati10">
+            <title>Для бинесменов</title>
+            <body>stati10.html</body>
+			<description>Быстроокупаемая бизнес-идея</description>
+			<keywords>Флоатинг для корпораций</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+	     
+                <page id="stati11">
+            <title>Флоатинг в спорте</title>
+            <body>stati11.html</body>
+			<description>Флоатинг в спорте</description>
+			<keywords>Флоатинг для спортсменов</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+	       
+                <page id="stati12">
+            <title>Флоатинг и вредные привычки</title>
+            <body>stati12.html</body>
+			<description>Флоатинг и вредные привычки</description>
+			<keywords>Флоатинг в борьбе с курением</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+
+	       <page id="stati13">
+            <title>Флоатинг при бесплодии и во время беременности</title>
+            <body>stati13.html</body>
+			<description>Флоатинг при бесплодии и во время беременности</description>
+			<keywords>Флоатинг при бесплодии и беременности</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+                
+                <page id="stati14">
+            <title>Боль в спине</title>
+            <body>stati14.html</body>
+			<description>Флоатинг и боли</description>
+			<keywords>Флоатинг и боль</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+
+                 <page id="stati15">
+            <title>Флоатинг и фибромиалгия</title>
+            <body>stati15.html</body>
+			<description>Флоатинг и фибромиалгия</description>
+			<keywords>Флоатинг и фибромиалгия</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+
+                 <page id="stati16">
+            <title>Как выработать эндорфины</title>
+            <body>stati16.html</body>
+			<description>Как вырабатывать эндорфины</description>
+			<keywords>Флоатинг и эндорфины</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+
+                 <page id="stati17">
+            <title>Лечение ревматизма</title>
+            <body>stati17.html</body>
+			<description>Заболевания, для лечения которых применяется флоат-терапия</description>
+			<keywords>Флоатинг и заболевания</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+                 
+                 <page id="stati18">
+            <title>Лечение суставов</title>
+            <body>stati18.html</body>
+			<description>Результаты исследований</description>
+			<keywords>Результаты исследований</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+
+		 <page id="sol">
+            <title>Соль Эпсома купить</title>
+            <body>sol.html</body>
+			<description>Соль эпсома</description>
+			<keywords>продаем соль Эпсома</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+		<page id="complect">
+            <title>Комплектация флоат-камеры MIRACLE</title>
+            <body>complect.html</body>
+			<description>Комплектация флоат-камеры MIRACLE</description>
+			<keywords>Комплектация флоат-камеры MIRACLE</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+		<page id="plan">
+            <title>Бизнес план флоат-камера MIRACLE</title>
+            <body>plan.html</body>
+			<description>Бизнес план флоат-камера MIRACLE</description>
+			<keywords>Бизнес план флоат-камера MIRACLE</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+
+<page id="rassroshka">
+            <title>Флоат-камеры в рассрочку</title>
+            <body>rassroshka.html</body>
+			<description>рассрочка</description>
+			<keywords>рассрочка, кредит</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+
+
+
+
+		<page id="filtr">
+            <title>Система фильтрации</title>
+            <body>filtr.html</body>
+			<description>Система фильтрации флоат-камеры</description>
+			<keywords>Система фильтрации</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+        <page id="kamera1">
+            <title>Новинка SPA оборудования</title>
+            <body>kamera1.html</body>
+			<description>Флоат-камера Miracle г. Санкт-Петербрг</description>
+			
+            <footer>Footer TEXT</footer>
+        </page>
+        <page id="kamera2">
+            <title>Оборудование для SPA заказать</title>
+            <body>kamera2.html</body>
+			<description>Флоат-камера Miracle г. Челябинск</description>
+			
+            <footer>Footer TEXT</footer>
+        </page>
+        <page id="kamera3">
+            <title>Флоат-камера Miracle г. Камышин</title>
+            <body>kamera3.html</body>
+			<description>Флоат-камера Miracle г. Камышин</description>
+			
+            <footer>Footer TEXT</footer>
+        </page>
+		 <page id="kamera5">
+            <title>Солевые ванны</title>
+            <body>kamera5.html</body>
+			<description>Флоат-камера Miracle г. Ростов</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		 <page id="kamera4">
+            <title>Соляные ванны</title>
+            <body>kamera4.html</body>
+			<description>Флоат-камера Miracle г.Нижневартовск</description>
+			<footer>Footer TEXT</footer>
+        </page>
+                <page id="kamera6">
+            <title>Открой свой бизнес</title>
+            <body>kamera6.html</body>
+			<description>Флоат-камера Miracle г. Москва</description>
+			<footer>Footer TEXT</footer>
+        </page>
+                <page id="kamera7">
+            <title>Флоат-камера купить недорого</title>
+            <body>kamera7.html</body>
+			<description>Флоат-камера Miracle г. Хабаровск</description>
+			<footer>Footer TEXT</footer>
+        </page>
+                <page id="kamera8">
+            <title>Медитация для ленивых</title>
+            <body>kamera8.html</body>
+			<description>Флоат-камера Miracle г. Москва2</description>
+	        	<footer>Footer TEXT</footer>
+        </page>
+                <page id="kamera9">
+            <title>Эндорфины - это</title>
+            <body>kamera9.html</body>
+			<description>Флоат-камера Miracle г. Санкт-Петербург1</description>
+			<footer>Footer TEXT</footer>
+        </page>
+                <page id="kamera10">
+            <title>Флоатинг камера купить</title>
+            <body>kamera10.html</body>
+			<description>Флоат-камера Miracle г. Челябинск2 </description>
+			<footer>Footer TEXT</footer>
+        </page>
+                <page id="kamera11">
+            <title>Флоат-камера заказать</title>
+            <body>kamera11.html</body>
+			<description>Флоат-камера Miracle г. Санкт-Петербург2</description>
+			<footer>Footer TEXT</footer>
+        </page>
+                <page id="kamera12">
+            <title>Флоат-камера цена</title>
+            <body>kamera12.html</body>
+			<description>Флоат-камера Miracle г. Краснодар</description>
+			<footer>Footer TEXT</footer>
+        </page>
+               <page id="kamera14">
+            <title>Аппарат для снятия стресса </title>
+            <body>kamera14.html</body>
+			<description>Флоат-камера Miracle г. Пермь</description>
+			<footer>Footer TEXT</footer>
+        </page>
+               <page id="kamera15">
+            <title>Медитация для снятия стресса</title>
+            <body>kamera15.html</body>
+			<description>Флоат-камера Miracle г. Санкт-Петербург11</description>
+			<footer>Footer TEXT</footer>
+        </page>
+
+               <page id="kamera16">
+            <title>Как быстро снять стресс</title>
+            <body>kamera16.html</body>
+			<description>Флоат-камера Miracle г. Санкт-Петербург3</description>
+			<footer>Footer TEXT</footer>
+        </page>
+               <page id="kamera17">
+            <title>Снять стресс</title>
+            <body>kamera17.html</body>
+			<description>Флоат-камера Miracle г. Волгоград</description>
+			<footer>Footer TEXT</footer>
+        </page>
+   
+               <page id="kamera19">
+            <title>Управление стрессом</title>
+            <body>kamera19.html</body>
+			<description>Флоат-камера Miracle г. Москва3</description>
+			<footer>Footer TEXT</footer>
+        </page>
+
+               <page id="kamera20">
+            <title>Преодоление стресса</title>
+            <body>kamera20.html</body>
+			<description>Флоат-камера Miracle г. Нягань</description>
+			<footer>Footer TEXT</footer>
+        </page>
+
+               <page id="kamera21">
+            <title>Как избавиться от стресса</title>
+            <body>kamera21.html</body>
+			<description>Флоат-камера Miracle г. Воронеж</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		        <page id="kamera22">
+            <title>Чем успокоить нервы</title>
+            <body>kamera22.html</body>
+			<description>Флоат-камера Miracle г. Санкт-Петербург4</description>
+			<footer>Footer TEXT</footer>
+        </page>
+  
+                <page id="kamera23">
+            <title>Флоат-камера Miracle г. Усть-Илимск</title>
+            <body>kamera23.html</body>
+			<description>Флоат-камера Miracle г. Усть-Илимск</description>
+			<footer>Footer TEXT</footer>
+        </page>
+                
+				
+				
+				<page id="kamera24">
+            <title>Флоат-камера Miracle г. Киров</title>
+            <body>kamera24.html</body>
+			<description>Флоат-камера Miracle г. Киров</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		        <page id="kamera25">
+            <title>Флоат-камера Miracle г. Одинцово</title>
+            <body>kamera25.html</body>
+			<description>Флоат-камера Miracle г. Одинцово</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		        
+				<page id="kamera26">
+            <title>Сенсорная депривация - что это</title>
+            <body>kamera26.html</body>
+			<description>Флоат-камера Miracle г. Уфа</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		        <page id="kamera27">
+            <title>Флоат-камера Miracle г. Невинномысск</title>
+            <body>kamera27.html</body>
+			<description>Флоат-камера Miracle г. Невинномысск</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		        <page id="kamera28">
+            <title>Выставка Сочи-2014</title>
+            <body>kamera28.html</body>
+			<description>Флоат камера Miracle участвовала в большом банном форуме -2014</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		        
+				<page id="kamera29">
+            <title>Флоат-камера Miracle г. Вологда</title>
+            <body>kamera29.html</body>
+			<description>Флоат-камера Miracle г. Вологда</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		 
+
+                <page id="kamera30">
+            <title>Флоат-камера Miracle г. Севастополь</title>
+            <body>kamera30.html</body>
+			<description>Флоат-камера Miracle г. Севастополь</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		        <page id="kamera31">
+            <title>Флоат-камера Miracle г. Долгопрудный</title>
+            <body>kamera31.html</body>
+			<description>Флоат-камера Miracle г. Долгопрудный</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		        <page id="kamera32">
+            <title>Флоат-камера Miracle г. Нижний Новгород</title>
+            <body>kamera32.html</body>
+			<description>Флоат-камера Miracle г. Нижний Новгород</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		        
+				<page id="kamera33">
+            <title>Флоат-камера Miracle г. Дзержинск</title>
+            <body>kamera33.html</body>
+			<description>Флоат-камера Miracle г. Дзержинск</description>
+			<footer>Footer TEXT</footer>
+        </page>
+
+               <page id="kamera34">
+            <title>Как снять стресс</title>
+            <body>kamera34.html</body>
+			<description>Флоат-камера Miracle г. Вологда</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		      <page id="kamera35">
+            <title>Совет психолога для снятия стресса</title>
+            <body>kamera35.html</body>
+			<description>Флоат-камера Miracle г. Ставрополь</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		      <page id="kamera36">
+            <title>Флоат-камера Miracle г. Тюмень</title>
+            <body>kamera36.html</body>
+			<description>Флоат-камера Miracle г. Тюмень</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		       <page id="kamera37">
+            <title>Флоат-камера Miracle г. Иркутск</title>
+            <body>kamera37.html</body>
+			<description>Флоат-камера Miracle г. Иркутск</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		       <page id="kamera38">
+            <title>Флоат-камера Miracle г. Кстово</title>
+            <body>kamera38.html</body>
+			<description>Флоат-камера Miracle г. Кстово</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		       <page id="kamera39">
+            <title>Флоат-камера Miracle г. Усть-Каменогорск</title>
+            <body>kamera39.html</body>
+			<description>Флоат-камера Miracle г. Усть-Каменогорск</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		       <page id="kamera40">
+            <title>Флоат-камера Miracle г. Кремёнки</title>
+            <body>kamera40.html</body>
+			<description>Флоат-камера Miracle г. Кремёнки</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		       <page id="kamera41">
+            <title>Фотоотчет о выставке</title>
+            <body>kamera41.html</body>
+			<description>Фотоотчет о выставке "Здоровый образ жизни 2014"</description>
+			<keywords>Флоатинг-камера, флоатинг, Miracle, флоат-камера</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		       <page id="kamera42">
+            <title>Флоат-камера Miracle г. Моршин Украина</title>
+            <body>kamera42.html</body>
+			<description>Флоат-камера Miracle г. Моршин Украина</description>
+			<keywords>Флоатинг-камера, флоатинг, Miracle, флоат-камера</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		       <page id="kamera43">
+            <title>Лучшее оборудование для SPA</title>
+            <body>kamera43.html</body>
+			<description>Флоат-камера Miracle г. Москва</description>
+			<keywords>Флоатинг-камера, флоатинг, Miracle, флоат-камера</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		       <page id="kamera44">
+            <title>Универсальное оборудование для СПА</title>
+            <body>kamera44.html</body>
+			<description>Флоат-камера Miracle г. Уфа2</description>
+			<keywords>Флоатинг-камера, флоатинг, Miracle, флоат-камера</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		       <page id="kamera45">
+            <title>Флоатинг-камера Miracle г. Камышин</title>
+            <body>kamera45.html</body>
+			<description>Флоат-камера Miracle г. Камышин</description>
+			<keywords>Флоатинг-камера, флоатинг, Miracle, флоат-камера</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		       <page id="kamera46">
+            <title>Флоатинг-камера Miracle г. Караганда</title>
+            <body>kamera46.html</body>
+			<description>Флоат-камера Miracle г. Караганда</description>
+			<keywords>Флоатинг-камера, флоатинг, Miracle, флоат-камера</keywords>
+			<footer>Footer TEXT</footer>
+        </page> 
+		
+		       <page id="kamera47">
+            <title>Бизнес для ленивых</title>
+            <body>kamera47.html</body>
+			<description>Флоат-камера Miracle г. Санкт-Петербург5</description>
+			<keywords>Флоатинг-камера, флоатинг, Miracle, флоат-камера</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		       <page id="kamera48">
+            <title>Новинка SPA</title>
+            <body>kamera48.html</body>
+			<description>Флоат-камера Miracle г. Москва5</description>
+			<keywords>Флоатинг-камера, флоатинг, Miracle, флоат-камера</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		      <page id="kamera49">
+            <title>Флоатинг-камера Miracle г. Ростов-на-Дону</title>
+            <body>kamera49.html</body>
+			<description>Флоат-камера Miracle г. Ростов-на-Дону</description>
+			<keywords>Флоатинг-камера, флоатинг, Miracle, флоат-камера</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		      <page id="kamera50">
+            <title>Флоатинг-камера Miracle г. Вильнюс</title>
+            <body>kamera50.html</body>
+			<description>Флоат-камера Miracle г. Вильнюс</description>
+			<keywords>Флоатинг-камера, флоатинг, Miracle, флоат-камера</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		      <page id="kamera51">
+            <title>Оборудование для СПА купить</title>
+            <body>kamera51.html</body>
+			<description>Флоат-камера Miracle г. Нижневартовск</description>
+			<keywords>Флоатинг-камера, флоатинг, Miracle, флоат-камера</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		       <page id="kamera52">
+            <title>Флоатинг-камера Miracle г. Казань</title>
+            <body>kamera52.html</body>
+			<description>Флоат-камера Miracle г. Казань</description>
+			<keywords>Флоатинг-камера, флоатинг, Miracle, флоат-камера</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+
+               <page id="kamera53">
+            <title>Флоатинг-камера Miracle г. Рязань</title>
+            <body>kamera53.html</body>
+			<description>Флоат-камера Miracle г. Рязань</description>
+			<keywords>Флоатинг-камера, флоатинг, Miracle, флоат-камера</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		       <page id="kamera54">
+            <title>Бизнес с минимальными вложениями</title>
+            <body>kamera54.html</body>
+			<description>Флоат-камера Miracle г. Иркутск</description>
+			<keywords>Флоатинг-камера, флоатинг, Miracle, флоат-камера</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+
+            <page id="kamera55">
+            <title>Как быстро снять стресс</title>
+            <body>kamera55.html</body>
+			<description>Флоат-камера Miracle г. Москва</description>
+			<keywords>Флоатинг-камера, флоатинг, Miracle, флоат-камера</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+
+<page id="kamera56">
+            <title>Правильная флоатинг камера</title>
+            <body>kamera56.html</body>
+			<description>Флоат-камера Miracle г. Москва</description>
+			<keywords>Флоатинг-камера, флоатинг, Miracle, флоат-камера</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+
+<page id="kamera57">
+            <title>Оборудование для SPA</title>
+            <body>kamera57.html</body>
+			<description>Флоат-камера Miracle г. Санкт-Петербург</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+
+<page id="kamera58">
+            <title>Флоат-камера в Екатеринбуоге</title>
+            <body>kamera58.html</body>
+			<description>Флоат-камера Miracle г. Екатеринбург</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+
+
+
+
+<page id="kamera59">
+            <title>Флоат-камера в Саратове</title>
+            <body>kamera59.html</body>
+			<description>Флоат-камера Miracle г. Саратов</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+
+<page id="kamera60">
+            <title>Флоат-камера в Москве на Янгеля</title>
+            <body>kamera60.html</body>
+			<description>Флоат-камера Miracle г. Москва</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+
+<page id="kamera61">
+            <title>Флоат-камера в Москве (Дессанж)</title>
+            <body>kamera61.html</body>
+			<description>Флоат-камера Miracle г. Москва</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+
+<page id="kamera62">
+            <title>Флоат-камера в Абакане</title>
+            <body>kamera62.html</body>
+			<description>Флоат-камера Miracle г. Абакан</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+
+
+<page id="kamera63">
+            <title>Флоат-камера в Ярославле</title>
+            <body>kamera63.html</body>
+			<description>Флоат-камера Miracle г. Ярославль</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+	
+
+<page id="kamera64">
+            <title>Флоат-камера в спа-салоне</title>
+            <body>kamera64.html</body>
+			<description>Флоат-камера Miracle г. Воронеж</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera65">
+            <title>Флоат-камера в спа-салоне</title>
+            <body>kamera65.html</body>
+			<description>Флоат-камера Miracle г. Владивосток</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera66">
+            <title>Флоат-камера в спа-салоне</title>
+            <body>kamera66.html</body>
+			<description>Флоат-камера Miracle г. Астрахань</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera67">
+            <title>Флоат-камера в спа-салоне</title>
+            <body>kamera67.html</body>
+			<description>Флоат-камера Miracle г. Подольск</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+
+<page id="kamera68">
+            <title>Флоат-камера в спа-центре</title>
+            <body>kamera68.html</body>
+			<description>Флоат-камера Miracle г. Санкт-Петербур</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera69">
+            <title>Флоат-камера в г.Березовский</title>
+            <body>kamera69.html</body>
+			<description>Флоат-камера Miracle г. Березовский</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera70">
+            <title>Флоат-центр FLOASIS</title>
+            <body>kamera70.html</body>
+			<description>Флоат-камера Miracle г. Москва</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera71">
+            <title>Этномир</title>
+            <body>kamera71.html</body>
+			<description>Флоат-камера Miracle г. Калуга</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera72">
+            <title>Море релакса</title>
+            <body>kamera72.html</body>
+			<description>Флоат-камера Miracle г.Березовский</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera73">
+            <title>Флоатинг в Лыткарино</title>
+            <body>kamera73.html</body>
+			<description>Флоат-камера Miracle г.Лыткарино</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera74">
+            <title>Флоатинг в Вельск</title>
+            <body>kamera74.html</body>
+			<description>Флоат-камера Miracle г.Вельск</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera75">
+            <title>Флоатинг на Вернадского</title>
+            <body>kamera75.html</body>
+			<description>Флоат-камера Miracle г.Москва</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera76">
+            <title>Флоат-камера для частного использования</title>
+            <body>kamera76.html</body>
+			<description>Флоат-камера Miracle г.Зеленогорск</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera77">
+            <title>Флоат-камера в г.Королев</title>
+            <body>kamera77.html</body>
+			<description>Флоат-камера Miracle г.Королев</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+
+<page id="kamera78">
+            <title>Флоат-камера в г.Самара</title>
+            <body>kamera78.html</body>
+			<description>Флоат-камера Miracle г.Самара</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+
+<page id="kamera79">
+            <title>Флоат-студия в г.Ярославль</title>
+            <body>kamera79.html</body>
+			<description>Флоат-камера Miracle г.Ярославль</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera80">
+            <title>Флоат-камера в г.Арзамас</title>
+            <body>kamera80.html</body>
+			<description>Флоат-камера Miracle г.Арзамас</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera81">
+            <title>Флоат-камера Тайландика</title>
+            <body>kamera81.html</body>
+			<description>Флоат-камера Miracle г.Москва</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera82">
+            <title>Флоат-камера Серпухов</title>
+            <body>kamera82.html</body>
+			<description>Флоат-камера Miracle г. Серпухов</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera83">
+            <title>Флоат-камера Москва ТЦ Вива</title>
+            <body>kamera83.html</body>
+			<description>Флоат-камера Miracle г. Москва</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+
+<page id="kamera84">
+            <title>Флоат-камера Йошкар-Ола</title>
+            <body>kamera84.html</body>
+			<description>Флоат-камера Miracle г. Йошкар-Ола</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera85">
+            <title>Флоат-камера Томск</title>
+            <body>kamera85.html</body>
+			<description>Флоат-камера Miracle г. Томск</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera86">
+            <title>Флоат-камера Обнинск</title>
+            <body>kamera86.html</body>
+			<description>Флоат-камера Miracle г. Обнинск</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera87">
+            <title>Флоат-камера Алушта Golden</title>
+            <body>kamera87.html</body>
+			<description>Флоат-камера Miracle г. Алушта</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera88">
+            <title>Релакс-центр FloatSpa</title>
+            <body>kamera88.html</body>
+			<description>Флоат-камера Miracle г. Волжский</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera89">
+            <title>Вилла Рета Spa отель</title>
+            <body>kamera89.html</body>
+			<description>Флоат-камера Miracle п. Григолети</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+
+<page id="kamera90">
+            <title>Фитнес-клуб ТерриториЯ</title>
+            <body>kamera90.html</body>
+			<description>Флоат-камера Miracle г. Елец</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera91">
+            <title>Флоат-центр DariSalt</title>
+            <body>kamera91.html</body>
+			<description>Флоат-камера Miracle г. Волгоград</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+
+<page id="kamera92">
+            <title>Центр йоги Yahmur Space</title>
+            <body>kamera92.html</body>
+			<description>Флоат-камера Miracle г. Москва</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+
+<page id="kamera93">
+            <title>Салон Fit X Body</title>
+            <body>kamera93.html</body>
+			<description>Флоат-камера Miracle г. Краснодар Fit</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+
+<page id="kamera94">
+            <title>Релакс-студия</title>
+            <body>kamera94.html</body>
+			<description>Флоат-камера Miracle г. Балашиха</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+
+<page id="kamera95">
+            <title>Флоат-студия AltaFloat</title>
+            <body>kamera95.html</body>
+			<description>Флоат-камера Miracle г. Лобня</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+
+
+<page id="kamera96">
+            <title>Клиника "БьютиДент"</title>
+            <body>kamera96.html</body>
+			<description>Флоат-камера Miracle г. Грозный</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera97">
+            <title>Флоат-центр Тишина</title>
+            <body>kamera97.html</body>
+			<description>Флоат-камера Miracle г. Нальчик</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+
+<page id="kamera98">
+            <title>Студия перерождения Floating</title>
+            <body>kamera98.html</body>
+			<description>Флоат-камера Miracle г. Казань</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+
+
+<page id="kamera99">
+            <title>Флоат-студия Нирвана</title>
+            <body>kamera99.html</body>
+			<description>Флоат-камера Miracle г. Нефтеюганск</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera100">
+            <title>Студия Floating</title>
+            <body>kamera100.html</body>
+			<description>Флоат-камера Miracle г. Кострома</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+		
+<page id="kamera101">
+            <title>OMY Space</title>
+            <body>kamera101.html</body>
+			<description>Флоат-камера Miracle г. Владивосток</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>	
+
+<page id="kamera102">
+            <title>МореСоль</title>
+            <body>kamera102.html</body>
+			<description>Флоат-камера Miracle г. Санкт-Петербург</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+<page id="kamera103">
+            <title>Float Now</title>
+            <body>kamera103.html</body>
+			<description>Флоат-камера Miracle г. Великий Новгород</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+		           
+
+
+<page id="kamera104">
+            <title>SSSR</title>
+            <body>kamera104.html</body>
+			<description>Флоат-камера Miracle г. Москва</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+<page id="kamera105">
+            <title>VIAZEN</title>
+            <body>kamera105.html</body>
+			<description>Флоат-камера Miracle г. Москва</description>
+			<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование</keywords>
+			<footer>Footer TEXT</footer>
+        </page>		
+		
+
+		<page id="zozh2014">
+            <title>Приглашение на выставку в Экспоцентре</title>
+            <body>zozh2014.html</body>
+			<description>Приглашение на выставку в Экспоцентре</description>
+			<footer>Footer TEXT</footer>
+        </page>
+
+<page id="zozh2016">
+            <title>Отчет с выставки ЗОЖ2016</title>
+            <body>zozh2016.html</body>
+			<description>выставка в Экспоцентре</description>
+<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование, здоровый образ жизни, выставка, экспоцентр</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+
+                <page id="zozhminsk">
+            <title>Отчет с выставки Здравоохранение Беларуси</title>
+            <body>zozhminsk.html</body>
+			<description>выставка в Белоруссии</description>
+<keywords>Флоат-камера, флоатинг, Miracle, спа-оборудование, здоровый образ жизни, выставка, Беларусь</keywords>
+			<footer>Footer TEXT</footer>
+        </page>
+
+                <page id="otzyv">
+            <title>Отзывы покупателей флоат-камеры</title>
+            <body>otzyv.html</body>
+			<description>Отзывы покупателей флоат-камеры Miracle</description>
+			<footer>Footer TEXT</footer>
+        </page>
+                <page id="piter">
+            <title>Флоат-камеры г. Санкт-Петербург</title>
+            <body>piter.html</body>
+			<description>Флоат-камеры г. Санкт-Петербург</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		        <page id="vologda">
+            <title>Флоат-камеры г. Вологда</title>
+            <body>vologda.html</body>
+			<description>Флоат-камеры г. Вологда</description>
+			<footer>Footer TEXT</footer>
+        </page>
+                <page id="chelyabinsk">
+            <title>Флоат-камеры г. Челябинск</title>
+            <body>chelyabinsk.html</body>
+			<description>Флоат-камеры г. Челябинск</description>
+			<footer>Footer TEXT</footer>
+        </page>
+                     <page id="moskwa">
+            <title>Флоат-камеры г. Москва</title>
+            <body>moskwa.html</body>
+			<description>Флоат-камеры г. Москва</description>
+			<footer>Footer TEXT</footer>
+         </page>
+                     <page id="cena">
+            <title>Цена на установку флоат-камер Miracle</title>
+            <body>cena.html</body>
+			<description>Цена</description>
+			<footer>Footer TEXT</footer>
+        </page>
+
+                     <page id="gde posetit">
+            <title>Где посетить флоат-камеру Miracle</title>
+            <body>gde posetit.html</body>
+			<description>Где посетить флоат-камеру Miracle</description>
+			<footer>Footer TEXT</footer>
+        </page>
+     
+       
+                     <page id="novosti">
+            <title>Новости</title>
+            <body>novosti.html</body>
+			<description>Новости</description>
+			<footer>Footer TEXT</footer>
+        </page>
+         
+        <page id="kalkulator">
+            <title>Рассчитать стоимость</title>
+            <body>kalkulator.html</body>
+			<description>Рассчитать стоимость</description>
+			<footer>Footer TEXT</footer>
+        </page>
+
+                   <page id="stati19">
+            <title>Как похудеть</title>
+            <body>stati19.html</body>
+			<description>Флоатинг и похудение</description>
+			<footer>Footer TEXT</footer>
+        </page>
+
+                   <page id="stati20">
+            <title>Флоатинг и йога</title>
+            <body>stati20.html</body>
+			<description>Флоатинг и йога</description>
+			<footer>Footer TEXT</footer>
+        </page>
+
+  
+                   <page id="stati21">
+            <title>Косметический эффект флоатинга</title>
+            <body>stati21.html</body>
+			<description>Косметический эффект флоатинга</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		           <page id="stati22">
+            <title>Боль в шее</title>
+            <body>stati22.html</body>
+			<description>флоат-терапия невероятно полезна для большинства больных сколиозом. 
+			Никакое другое лечение не предлагает того же самого уровня релаксации и облегчения боли.</description>
+			<footer>Footer TEXT</footer>
+        </page>
+
+                           <page id="stati23">
+            <title>Как избавиться от бессонницы</title>
+            <body>stati23.html</body>
+			<description>Один час, проведенный  в флоат-камере, может служить Вам полноценным 
+                          крепким сном, который полностью освежит Вас и даст Вам энергии. 
+                          Как бы то ни было, множество новичков-флоатеров всё ещё бояться утонуть. </description>
+			<footer>Footer TEXT</footer>
+        </page>
+
+                           <page id="stati24">
+            <title>Флоатинг – как профилактика рака молочной железы</title>
+            <body>stati24.html</body>
+			<description> Одним из ее советов для поддержания женского здоровья являются 20-минутные 
+                         ванны с солью Эпсома 3 раза в неделю. Она считает, что это простой и недорогой способ 
+                         получения магния в организм.</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		                   <page id="stati25">
+            <title>Как бороться с депрессией</title>
+            <body>stati25.html</body>
+			<description>Лечение флоатингом очень полезно в этих случаях, так как пациенты, достигающие глубокого уровня 
+			расслабления, ослабляют негативные факторы стресса, хронических болей  и депрессии.</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		                  <page id="stati26">
+            <title>Лечение псориаза</title>
+            <body>stati26.html</body>
+			<description>Объединенное использование  флоат-терапии  и психологической подготовки, 
+			включающей в себя  медитацию, визуализацию и повышение самооценки. .</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		                 <page id="stati27">
+            <title>Флоатинг и кожные заболевания</title>
+            <body>stati27.html</body>
+			<description>Находясь во флоат-камере и плавая на поверхности насыщенного соляного 
+			раствора можно получить еще два  дополнительных эффекта, которые  имеют, косвенный 
+			эффект на кожные заболевания психосоматического происхождения:</description>
+			<footer>Footer TEXT</footer>
+        </page>
+
+                                 <page id="stati28">
+            <title>Флоатинг - альтернатива пластическим операциям</title>
+            <body>stati28.html</body>
+			<description>Пластические операции и инъекции ботокса стали неотъемлемой частью 
+                        современной жизни, но всё-таки приятно сознавать, что есть более простые и естественные методы 
+                        для сокращения морщин. </description>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		                        <page id="stati29">
+            <title>Флоатинг-терапия показания</title>
+            <body>stati29.html</body>
+			<description>Многие люди страдают от различных зависимостей, причем не всегда отдавая себе отчет в этом. 
+			Так как принято лечить только наркотическую зависимость, большинство относится снисходительно к своим 
+			дурным привычкам </description>
+			<footer>Footer TEXT</footer>
+        </page>
+
+                                <page id="stati30">
+            <title>Эффекты флоатинга</title>
+            <body>stati30.html</body>
+			<description>Эта терапия использовалась в качестве первичной процедуры для лечения таких 
+                         расстройств, как гипертония, головная боль, бессонница и ревматоидный артрит</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		                        <page id="stati31">
+            <title>Флоатинг вызывает галлюцинации?</title>
+            <body>stati31.html</body>
+			<description>Многие люди настороженно относятся к флоатингу. они слышали рассказы о людях, испытывающих 
+			галлюцинации во флоат-камере, и не хотят испытать подобное неприятное состояние.</description>
+			<footer>Footer TEXT</footer>
+        </page>
+		
+		                       <page id="stati32">
+            <title>Снятие стресса, медитация</title>
+            <body>stati32.html</body>
+			<description>Флоатинг часто используется как метод облегчения физического состояния, 
+			но известна также его способность увеличивать ясность мышления. </description>
+			<footer>Footer TEXT</footer>
+        </page>
+		                      <page id="stati33">
+            <title>Флоатинг для самых стрессовых специальностей</title>
+            <body>stati33.html</body>
+			<description>Каждый год Forbes публикует свой список 10 самых напряженных рабочих мест. 
+			Среди них военнослужащие, пожарные, пилоты и руководители  </description>
+			<footer>Footer TEXT</footer>
+		</page>
+		
+		                      <page id="stati34">
+            <title>Аутизм - как флоатинг может помочь</title>
+            <body>stati34.html</body>
+			<description>Детям-аутистам полезно получить эти преимущества флоатинга из-за их уникальной физиологии. 
+			Все эти дети чувствуют давление мира вокруг них, который они только начинают открывать и для них это 
+			может стать очень серьезной проблемой. Флоатинг может помочь детям-аутистам, ежедневно 
+			остро ощущающим воздействие внешних стимулов – звуков, запахов, видов.
+  </description>
+            <keywords>Флоатинг-камера, флоатинг, аутизм, дети-аутисты</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+		
+		                      <page id="stati35">
+            <title>Снимаем стресс после работы</title>
+            <body>stati35.html</body>
+			<description>Флоатинг является одним из самых эффективных способов быстро справиться со стрессом.
+            Простой шестидесятиминутный сеанс не только снимает физические симптомы стресса, такие как телесные и 
+            головные боли, но и уменьшает стресс в его источнике, обеспечивая вашему организму  окружающую среду, 
+            свободную от внешних стимулов. 
+  </description>
+            <keywords>Флоатинг-камера, флоатинг, стресс, работа</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+		
+		                      <page id="stati36">
+            <title>Как выбрать флоат-камеру</title>
+            <body>stati36.html</body>
+			<description>Автоматизация всех процессов упрощает работу оператора флоат-камеры, сводит 
+			к минимуму его ошибки, делает процедуру флоатинга максимально комфортной для посетителя.   
+  </description>
+            <keywords>Флоатинг-камера, флоатинг, стресс, работа</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+
+                                      <page id="stati37">
+            <title>Выбираем флоат-камеру. ч2</title>
+            <body>stati37.html</body>
+			<description>Выбор обогревателя флоат-камеры   
+  </description>
+            <keywords>Флоатинг-камера, флоатинг, опции флоат-камеры</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+		
+		                              <page id="stati38">
+            <title>Улучшение бронхиального дыхания. Флоатинг и астма.</title>
+            <body>stati38.html</body>
+			<description>Улучшение бронхиального дыхания. Флоатинг и астма.  
+  </description>
+            <keywords>Флоатинг-камера, флоатинг, астма</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+
+                                              <page id="stati39">
+            <title>Новый эффективный бизнес</title>
+            <body>stati39.html</body>
+			<description>Франшиза
+  </description>
+            <keywords>Франшиза флоат-камеры Miracle</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+
+                                              <page id="stati40">
+            <title>9 причин просто побыть одному</title>
+            <body>stati40.html</body>
+			<description>9 причин просто побыть одному
+  </description>
+            <keywords>побыть одному, флоат-камера, флоатинг, тишина, спокойствие, гармония</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+
+<page id="stati41">
+            <title>Как стоять на гвоздях?</title>
+            <body>stati41.html</body>
+			<description>как стоять на гвоздях
+  </description>
+            <keywords>гвоздестояние, доска с гвоздями, медитация, йога, тишина, спокойствие, гармония</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+
+<page id="stati42">
+            <title>Гвоздестояние</title>
+            <body>stati42.html</body>
+			<description>как это бывает
+  </description>
+            <keywords>гвоздестояние, доска с гвоздями, медитация, йога, тишина, спокойствие, гармония</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+
+
+<page id="stati43">
+            <title>Флоатинг и мигрень</title>
+            <body>stati43.html</body>
+			<description>флоатинг и мигрень
+  </description>
+            <keywords>флоатинг, флоат-камера, флоат-терапия, мигрень, головная боль</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+
+<page id="stati44">
+            <title>Флотационные капсулы как лекарство от стресса и боли</title>
+            <body>stati44.html</body>
+			<description>Флотационные капсулы как лекарство от стресса и боли
+  </description>
+            <keywords>флоатинг, флоат-камера, флоат-терапия, стресс, головная боль, боль</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+
+
+<page id="stati45">
+            <title>Надежды на флоатинг</title>
+            <body>stati45.html</body>
+			<description>Флотинг как средство реабилитации
+  </description>
+            <keywords>флоатинг, флоат-камера, флоат-терапия, стресс, головная боль, боль, реабилитация</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+
+<page id="stati46">
+            <title>Флоат-терапия зависимостей</title>
+            <body>stati46.html</body>
+			<description>Флоат-терапия
+  </description>
+            <keywords>флоатинг, флоат-камера, флоат-терапия, стресс, головная боль, боль, реабилитация</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+
+<page id="stati47">
+            <title>Рекомендуем попробовать</title>
+            <body>stati47.html</body>
+			<description>Пробуем флоатинг хоть раз в жизни
+  </description>
+            <keywords>флоатинг, флоат-камера, флоат-терапия, стресс, головная боль, боль, реабилитация</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+
+<page id="stati48">
+            <title>Флоатинг  для кожи</title>
+            <body>stati48.html</body>
+			<description>Флоатинг полезен для кожи
+  </description>
+            <keywords>флоатинг, флоат-камера, флоат-терапия, стресс, головная боль, боль, реабилитация</keywords>
+			<footer>Footer TEXT</footer>
+</page>
+
+
+        <!--Redaction date: end 2023year-->
+
+
+        <page id="stati49">
+            <title>Бизнес с погружением.</title>
+            <body>stati49.html</body>
+            <description>Интервью с Алексеем Шуляковым</description>
+            <keywords>Как сделать людей счастливыми.</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+        <page id="stati50">
+            <title>Избавление от выгорания на работе.</title>
+            <body>stati50.html</body>
+            <description>Как избавиться от выгорания на работе?</description>
+            <keywords>флоатинг, флоат-камера, флоат-терапия, стресс, головная боль, боль, реабилитация</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+        <page id="stati51">
+            <title>Панацея</title>
+            <body>stati51.html</body>
+            <description>Панацея – теперь это возможно?!</description>
+            <keywords>флоатинг, флоат-камера, флоат-терапия, стресс, головная боль, боль, реабилитация</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+        <page id="stati52">
+            <title>Пост-флоатинг</title>
+            <body>stati52.html</body>
+            <description>Пост-флоатинг - как получить от сеанса максимум пользы?</description>
+            <keywords>флоатинг, флоат-камера, флоат-терапия, стресс, головная боль, боль, реабилитация</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+        <page id="stati53">
+            <title>Немножко закулисья</title>
+            <body>stati53.html</body>
+            <description>Конкурентное преимущество</description>
+            <keywords>флоатинг, флоат-камера, флоат-терапия, стресс, головная боль, боль, реабилитация</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+        <page id="stati54">
+            <title>Как «приплыть» в тета-состояние?</title>
+            <body>stati54.html</body>
+            <description>Тета-состояние</description>
+            <keywords>флоатинг, флоат-камера, флоат-терапия, стресс, головная боль, боль, реабилитация</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+        <page id="kamera106">
+            <title>RIVER SIDE RESORT SPA</title>
+            <body>kamera106.html</body>
+            <description>Премиальный эко-отель</description>
+            <keywords>флоатинг, флоат-камера, флоат-терапия, стресс, головная боль, боль, реабилитация</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+        <page id="kamera107">
+            <title>Анаэль.</title>
+            <body>kamera107.html</body>
+            <description>Центр красоты и здоровья Анаэль.</description>
+            <keywords>флоатинг, флоат-камера, флоат-терапия, стресс, головная боль, боль, реабилитация</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+        <page id="kamera108">
+            <title>«Цветок соли»</title>
+            <body>kamera108.html</body>
+            <description>Центр красоты и здоровья Анаэль.</description>
+            <keywords>флоатинг, флоат-камера, флоат-терапия, стресс, головная боль, боль, реабилитация</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+
+        <page id="kamera110">
+            <title>«Ocean Space»</title>
+            <body>kamera110.html</body>
+            <description>Центр флоатинга "Ocean Space".</description>
+            <keywords>флоатинг, флоат-камера, флоат-терапия, стресс, головная боль, боль, реабилитация</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+        <page id="kamera111">
+            <title>ЖК «Вавилово»</title>
+            <body>kamera111.html</body>
+            <description>Кабинет флоатинга в ЖК "Вавилово"</description>
+            <keywords>флоатинг, флоат-камера, флоат-терапия, стресс, головная боль, боль, реабилитация</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+        <page id="kamera112">
+            <title>«SPA-салон Евгении Акимовой»</title>
+            <body>kamera112.html</body>
+            <description>SPA-салон Евгении Акимовой</description>
+            <keywords>флоатинг, флоат-камера, флоат-терапия, стресс, головная боль, боль, реабилитация</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+        <page id="kamera113">
+            <title>«Баланс»</title>
+            <body>kamera113.html</body>
+            <description>студия флоатинга - "Баланс"</description>
+            <keywords>флоатинг, флоат-камера, флоат-терапия, стресс, головная боль, боль, реабилитация</keywords>
+            <footer>Footer TEXT</footer>
+        </page>
+
+        <!--/Redaction date: end 2023year-->
+
+         <page id="gvozdi">
+            <title>Доска с гвоздями</title>
+            <body>gvozdi.html</body>
+			<description>Доска с гвоздями в подарок
+  </description>
+            <keywords>доска с гвоздями, гвоздестояние, йога, доска Садху тишина, спокойствие, гармония</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+
+<page id="statigvozdi">
+            <title>Статьи о гвоздестоянии</title>
+            <body>statigvozdi.html</body>
+			<description>Статьи о гвоздестоянии
+  </description>
+            <keywords>доска с гвоздями, гвоздестояние, йога, доска Садху тишина, спокойствие, гармония</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+
+<page id="produkt">
+            <title>Доска Садху купить</title>
+            <body>produkt.html</body>
+			<description>Доска с гвоздями купить
+  </description>
+            <keywords>доска с гвоздями, гвоздестояние, йога, доска Садху тишина, спокойствие, гармония</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+
+
+<page id="doska1">
+            <title>Доска Садху 20мм</title>
+            <body>doska1.html</body>
+			<description>Доска с гвоздями производство
+  </description>
+            <keywords>доска с гвоздями, гвоздестояние, йога, доска Садху тишина, спокойствие, гармония</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+                                     
+
+                                        <page id="doska2">
+            <title>Доска Садху 80мм</title>
+            <body>doska2.html</body>
+			<description>Доска с гвоздями производство
+  </description>
+            <keywords>доска с гвоздями, гвоздестояние, йога, доска Садху тишина, спокойствие, гармония</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+
+<page id="doska3">
+            <title>Доска Садху с Вишну-янтрой 80мм</title>
+            <body>doska3.html</body>
+			<description>Доска с гвоздями производство
+  </description>
+            <keywords>доска с гвоздями, гвоздестояние, йога, доска Садху тишина, спокойствие, гармония</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+
+<page id="doska4">
+            <title>Двойная доска</title>
+            <body>doska4.html</body>
+			<description>Доска с гвоздями производство
+  </description>
+            <keywords>доска с гвоздями, гвоздестояние, йога, доска Садху тишина, спокойствие, гармония</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+
+<page id="doska5">
+            <title>Доска Садху с Вишну-янтрой 40мм</title>
+            <body>doska5.html</body>
+			<description>Доска с гвоздями производство
+  </description>
+            <keywords>доска с гвоздями, гвоздестояние, йога, доска Садху тишина, спокойствие, гармония</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+
+
+<page id="doska6">
+            <title>Доска Садху 60мм</title>
+            <body>doska6.html</body>
+			<description>Доска с гвоздями производство
+  </description>
+            <keywords>доска с гвоздями, гвоздестояние, йога, доска Садху тишина, спокойствие, гармония</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+
+<page id="doska7">
+            <title>Доска Садху с Вишну-янтрой 40мм</title>
+            <body>doska7.html</body>
+			<description>Доска с гвоздями производство
+  </description>
+            <keywords>доска с гвоздями, гвоздестояние, йога, доска Садху тишина, спокойствие, гармония</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+<page id="doska8">
+            <title>Сувенирные шлепки с гвоздями</title>
+            <body>doska8.html</body>
+			<description>Доска с гвоздями производство
+  </description>
+            <keywords>доска с гвоздями, гвоздестояние, йога, доска Садху тишина, спокойствие, гармония</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+
+<page id="spec">
+            <title>Спецпредложение</title>
+            <body>spec.html</body>
+			<description>Спецпредложение
+  </description>
+            <keywords>флоатинг, спа, флоат-камера, флоатинг-камера, санаторий</keywords>
+			<footer>Footer TEXT</footer>
+		</page>
+                                     
+    </pages>
+</content>

@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Riffic;
+    src: url("../font/RifficFree-Bold.ttf");
+    src: url("../font/RifficFree-Bold.ttf") format('ttf');
+    font-style: normal;
+
+}
+
+#acceptForm {
+    display: block;
+    position: relative;
+    text-align: center;
+    align-self: center;
+    border: 1px solid #017ebe;
+    border-radius: 20px;
+    background: #e2f6ff;
+
+}
+/*#e2f6ff */
+#headingForm {
+    color: #017ebe;
+    display: inline-block;
+    font-size: 2em;
+}
+
+#accept-circle {
+    display: block;
+    position: relative;
+    text-align: center;
+    justify-self: center;
+    height: 70px;
+    width: 70px;
+    margin: auto;
+    border: 3px solid transparent;
+    border-radius: 50px;
+    background: #017ebe;
+    font-size: 39px;
+    color: #e2f6ff;
+    transform: rotate(360deg);
+    transition: 1s;
+    user-select: none;
+}
+#accept-circle:hover {
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+
+#content {
+    background: transparent;
+    padding: 20px;
+}
+
+
+/*buttons*/
+.buttonSuccess {
+    padding: 5px;
+    -webkit-appearance: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+
+    background: #017ebe;
+}
+
+.buttonSuccess:hover {
+    -webkit-appearance: none;
+    color: black;
+    background: #e2f6ff;
+    border: 1px solid #017ebe;
+    transition: 1s;
+    font-weight: bold;
+}
+

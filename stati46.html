@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Флоат-терапия зависимостей | Miracle</title>
+    <link rel="icon" href="https://float-camera.ru/favicon.ico" type="image/x-icon">
+    <style>
+        /* БАЗОВЫЕ СТИЛИ */
+        :root { --primary: #00695c; --secondary: #004d40; --accent: #d81b60; --text: #333; --light-bg: #f8f9fa; --white: #fff; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; color: var(--text); line-height: 1.6; background: var(--light-bg); }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        
+        /* ШАПКА */
+        .top-bar { background: var(--secondary); color: white; padding: 8px 0; text-align: center; font-size: 0.9em; }
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: var(--primary); text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
+        .main-menu { display: flex; gap: 20px; }
+        .main-menu a { font-weight: 500; color: #555; }
+        .main-menu a:hover { color: var(--primary); }
+        .menu-toggle { display: none; font-size: 26px; cursor: pointer; }
+
+        /* МАКЕТ СТАТЬИ */
+        .layout-grid { display: grid; grid-template-columns: 3fr 1fr; gap: 40px; max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        
+        /* Контент статьи */
+        .article-content { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .article-content h1 { color: var(--secondary); margin-top: 0; text-align: center; line-height: 1.3; }
+        .article-content h3 { color: var(--primary); margin-top: 30px; margin-bottom: 10px; border-left: 4px solid var(--accent); padding-left: 15px; }
+        .article-content p { margin-bottom: 15px; text-align: left; }
+        
+        /* Списки */
+        .article-content ul { list-style: none; padding: 0; margin-bottom: 20px; }
+        .article-content li { margin-bottom: 10px; padding-left: 25px; position: relative; }
+        .article-content li::before { content: "✔"; color: var(--accent); position: absolute; left: 0; top: 0; }
+
+        /* Сайдбар */
+        aside { font-size: 0.95em; }
+        .sidebar-block { background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #eee; }
+        .sidebar-block h3 { margin-top: 0; color: var(--secondary); font-size: 1.1em; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 15px; }
+        .sidebar-menu { list-style: none; padding: 0; }
+        .sidebar-menu li { margin-bottom: 10px; border-bottom: 1px dotted #eee; padding-bottom: 5px; }
+        .sidebar-menu a:hover { color: var(--accent); }
+
+        footer { background: #263238; color: #cfd8dc; padding: 40px 0; margin-top: 50px; text-align: center; }
+
+        @media (max-width: 900px) {
+            .layout-grid { grid-template-columns: 1fr; }
+            .article-content { padding: 20px; }
+            .sidebar-block { display: none; }
+            .main-menu { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: white; padding: 20px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+            .main-menu.active { display: flex; }
+            .menu-toggle { display: block; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">Консультации: <a href="tel:89272528367" style="color:white">8-927-252-83-67</a></div>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+             <img src="https://float-camera.ru/media/images/logo.png" alt="Miracle" style="height: 40px;"> Miracle
+        </a>
+        <div class="menu-toggle" onclick="document.querySelector('.main-menu').classList.toggle('active')">☰</div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tovary.html">Наши работы</a></li>
+                <li><a href="stati.html" style="color:var(--primary); font-weight:bold;">Статьи</a></li>
+                <li><a href="dokument.html">Документация</a></li>
+                <li><a href="cena.html">Цена</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                 <li><a href="https://float-camera-bufo.ru" target="_blank" style="color: var(--accent); font-weight: bold; border: 1px solid var(--accent); padding: 5px 10px; border-radius: 4px;">Premium BUFO</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="layout-grid">
+    
+    <main class="article-content">
+        
+        <!-- Картинка статьи (Проверьте имя файла!) -->
+        <img src="https://float-camera.ru/media/gallery/stati46.jpg" alt="Флоатинг и зависимости" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
+
+        <h1>Флоат-терапия зависимостей</h1>
+        
+        <p>Флоатинг-терапия становится все более популярной среди тех, кто надеется избавиться от таких дурных привычек, как, например, курение. Релаксация и химические вещества, которые выделяются в вашем мозге во время сеанса флоатинга, могут помочь преодолеть те трудные моменты, когда вы испытываете тягу к сигарете, к примеру, или другие непростые минуты в процессе избавления от какой-либо зависимости.</p> 
+        <p>Вот некоторые особенности этой терапии, благодаря которым она помогает тем людям, которые хотят очистить свои тела от накопившихся вредных химических веществ и естественным образом избавиться от пагубных привычек.</p>
+        
+        <h3>Понять причины своей зависимости</h3>
+        <p>Для того, чтобы понять, как работает флоатинг-терапия, стоит посмотреть сначала на причины, вызвавшие вашу зависимость. Что такое зависимость? Это состояние, когда человек чувствует, что не может остановиться делать что-то, что наносит ему вред. Он не может себя контролировать и не может сказать «нет».</p>
+        <p>В то время как большинство людей пусть и позволяет себе изредка такое разрушительное поведение, как импульсивное переедание, запойное пьянство или компульсивный шоппинг, но может вовремя взять себя в руки, люди, страдающие от той или иной зависимости, остановиться не могут.</p>
+        <p>Зависимость приводит к сильному стрессу и вызывает острейшее чувство тревоги. Когда человек начинает бороться со своей зависимостью, абстинентный синдром заставляет его чувствовать себя еще более напряженно и некомфортно, часто подталкивая обратно к тем привычкам, от которых он пытается избавиться. На него начинает давить еще более тяжкое бремя вины, и он начинает испытывать еще больший стресс из-за того, что попытки измениться не имеют успеха, так что весь процесс превращается в порочный замкнутый круг.</p>
+        
+        <h3>Подтверждение того, что это работает</h3>
+        <p>Проводившиеся под контролем исследования показали, что <strong>25% людей</strong>, использовавших в борьбе с курением только флоатинг-терапию, смогли бросить курить, и пять лет спустя 80% из них по-прежнему не курили.</p>
+        <p>Флоатинг также помогает тем, кто склонен к перееданию. Испытуемые, проходившие флоатинг-терапию, смогли сбросить в среднем 14 фунтов (6,35 кг) за 6 месяцев. Когда эксперимент немного модифицировали и во время сеанса стали транслировать определенные записанные фразы, некоторым испытуемым удалось избавиться от 66 фунтов (29,93 кг) за 2 месяца.</p>
+        <p>Сильно пьющие используют флоатинг, чтобы бросить пить. Клиники, изучающие влияние флоатинга в таких случаях, подсчитали, что, благодаря флоатинг-терапии, объем потребления алкоголя у таких пациентов сокращается на 45%.</p>
+        
+        <h3>Как это работает?</h3>
+        <p>Флоат-камеры не только помогают людям расслабиться. Они меняют химию наших тел:</p>
+        
+        <ul>
+            <li>В кровь выбрасываются <strong>эндорфины</strong>, благодаря чему мы испытываем счастье, а наше самочувствие улучшается. Это помогает бороться с тягой к вредным субстанциям.</li>
+            <li>Благодаря <strong>сенсорной депривации</strong>, человек во флоат-камере может сфокусироваться на анализе внутренних проблем, ведущих к опасному поведению.</li>
+            <li>Увеличивается уровень <strong>дофамина</strong>, благодаря чему постепенно уходят тревожность и депрессия.</li>
+            <li>Мозг производит <strong>тета-волны</strong>, помогая людям проникнуть в свое подсознание, в котором и зародилась их зависимость.</li>
+            <li>В теле снижается уровень <strong>кортизола</strong>, сокращая симптомы стресса.</li>
+        </ul>
+        
+        <p>Флоатинг-терапия – это безопасный способ справляться со стрессом, особенно, если вы пытаетесь избавиться от вредных привычек и начать вести более здоровый образ жизни.</p>
+
+    </main>
+
+    <!-- Сайдбар -->
+    <aside>
+        <div class="sidebar-block">
+            <h3>Популярное</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati36.html">Как выбрать флоат-камеру?</a></li>
+                <li><a href="plan.html">Бизнес-план студии</a></li>
+                <li><a href="cena.html">Стоимость оборудования</a></li>
+                <li><a href="complect.html">Комплектация</a></li>
+                <li><a href="filtr.html">Система фильтрации</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-block">
+            <h3>Исследования</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati11.html">Флоатинг в спорте</a></li>
+                <li><a href="stati13.html">Беременность и флоатинг</a></li>
+                <li><a href="stati15.html">Лечение фибромиалгии</a></li>
+                <li><a href="stati16.html">Эндорфины и счастье</a></li>
+            </ul>
+        </div>
+        
+        <div class="sidebar-block" style="text-align: center; border:none; background: transparent;">
+             <a href="tel:89272528367" style="display:inline-block; background: var(--accent); color:white; padding: 10px 20px; border-radius:5px; font-weight:bold;">Заказать звонок</a>
+        </div>
+    </aside>
+
+</div>
+
+<footer>
+    <div class="container"><p>&copy; 2010-2025 Miracle. Производство флоат-камер.</p></div>
+</footer>
+
+</body>
+</html>

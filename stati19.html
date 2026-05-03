@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Флоатинг и похудение | Статья Miracle</title>
+    <link rel="icon" href="https://float-camera.ru/favicon.ico" type="image/x-icon">
+    <style>
+        /* БАЗОВЫЕ СТИЛИ */
+        :root { --primary: #00695c; --secondary: #004d40; --accent: #d81b60; --text: #333; --light-bg: #f8f9fa; --white: #fff; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; color: var(--text); line-height: 1.6; background: var(--light-bg); }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        
+        /* ШАПКА */
+        .top-bar { background: var(--secondary); color: white; padding: 8px 0; text-align: center; font-size: 0.9em; }
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: var(--primary); text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
+        .main-menu { display: flex; gap: 20px; }
+        .main-menu a { font-weight: 500; color: #555; }
+        .main-menu a:hover { color: var(--primary); }
+        .menu-toggle { display: none; font-size: 26px; cursor: pointer; }
+
+        /* МАКЕТ СТАТЬИ (Сайдбар + Контент) */
+        .layout-grid { display: grid; grid-template-columns: 3fr 1fr; gap: 40px; max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        
+        /* Статья */
+        .article-content { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .article-content h1 { color: var(--secondary); margin-top: 0; }
+        .article-content h2, .article-content h3 { color: var(--primary); margin-top: 30px; }
+        .article-content ul { list-style: disc; padding-left: 20px; margin-bottom: 20px; }
+        .article-content li { margin-bottom: 10px; }
+        
+        /* Сайдбар (Боковое меню) */
+        aside { font-size: 0.95em; }
+        .sidebar-block { background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #eee; }
+        .sidebar-block h3 { margin-top: 0; color: var(--secondary); font-size: 1.1em; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 15px; }
+        .sidebar-menu { list-style: none; padding: 0; }
+        .sidebar-menu li { margin-bottom: 10px; border-bottom: 1px dotted #eee; padding-bottom: 5px; }
+        .sidebar-menu a:hover { color: var(--accent); }
+
+        footer { background: #263238; color: #cfd8dc; padding: 40px 0; margin-top: 50px; text-align: center; }
+
+        @media (max-width: 900px) {
+            .layout-grid { grid-template-columns: 1fr; } /* На телефоне в одну колонку */
+            .article-content { padding: 20px; }
+            .sidebar-block { display: none; } /* Можно скрыть сайдбар на мобильном */
+            
+            .main-menu { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: white; padding: 20px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+            .main-menu.active { display: flex; }
+            .menu-toggle { display: block; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">Консультации: <a href="tel:89272528367" style="color:white">8-927-252-83-67</a></div>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+             <img src="https://float-camera.ru/media/images/logo.png" alt="Miracle" style="height: 40px;"> Miracle
+        </a>
+        <div class="menu-toggle" onclick="document.querySelector('.main-menu').classList.toggle('active')">☰</div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tovary.html">Наши работы</a></li>
+                <li><a href="stati.html" style="color:var(--primary); font-weight:bold;">Статьи</a></li>
+                <li><a href="dokument.html">Документация</a></li>
+                <li><a href="cena.html">Цена</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                 <li><a href="https://float-camera-bufo.ru" target="_blank" style="color: var(--accent); font-weight: bold; border: 1px solid var(--accent); padding: 5px 10px; border-radius: 4px;">Premium BUFO</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="layout-grid">
+    
+    <!-- Основной контент статьи -->
+    <main class="article-content">
+        
+        <h1>Флоатинг и похудение</h1>
+        
+        <p>Флоат-камера является действенным инструментом в программе снижения веса, а также при лечении зависимостей.</p> 
+
+        <p>Ученые считают, что флоатинг эффективен в борьбе с лишним весом и с зависимостями благодаря тому, что он положительно влияет на выработку <b style="color:var(--primary)">эндорфинов</b>. Естественные опиаты, вырабатываемые организмом, снижают негативные симптомы, проявляющиеся при отказе от предмета зависимости и взамен потребности в веществах, вызывающих привыкание, дарят приятные ощущения, возникающие в процессе флоатинга.</p>
+
+        <p>В состоянии сенсорной депривации оба полушария мозга начинают работать гармонично. Благодаря этому в норму приходит работа всех систем органов, улучшается обмен веществ и это способствует нормализации веса.</p>
+
+        <p>Борьба с лишним весом – это тоже своего рода борьба с вредными привычками. Поэтому всё, что мы писали в статье «флоатинг и вредные привычки» применимо и для снижения веса.</p>
+
+        <h3>Инструмент самомотивации</h3>
+        <p>Флоат-камера является эффективным инструментом самомотивации, поскольку она предоставляет следующее:</p>
+        <ul>
+            <li>Устраняет все внешние раздражители, чтобы вы могли сосредоточиться на себе самом;</li>
+            <li>Позволяет достичь очень глубокой релаксации, чтобы вы были открыты для предложений и позитивного отношения и мыслей;</li>
+            <li>В вашем теле происходят химические изменения, благодаря которым ваши мысли проясняются, улучшается память и способность справляться с проблемами.</li>
+        </ul>
+
+        <h3>Сила аффирмаций в невесомости</h3>
+        <p>Сеансы сенсорной депривации вместе с аффирмациями о снижении веса – очень эффективны. Согласно проведённому исследованию, те участники эксперимента, которые прошли флоат-терапию, теряли в среднем более шести килограммов в течение следующего полугода.</p>
+        
+        <p>В то же время, те, кто также был полон решимости похудеть, но только применял аффирмации или только подвергался сенсорной депривации, практически не потеряли в весе после шести месяцев.</p>
+
+        <div style="background: #e0f2f1; padding: 15px; border-left: 5px solid var(--primary); margin: 20px 0;">
+            <strong>Результаты исследования:</strong> Самый поразительный аспект исследования — люди, которые объединили сенсорную депривацию с аффирмациями, продолжали худеть устойчиво, месяц за месяцем, и все еще худели после шести месяцев, когда исследование было закончено.
+        </div>
+
+        <p>Фактически, за последние четыре месяца шестимесячного периода исследования, группа сенсорной депривации потеряла приблизительно два килограмма, в то время как другие группы набрали некоторый вес. Кроме того, удивительно, эта непрерывная и расширенная потеря веса была результатом только одного сеанса флоатинга.</p>
+
+        <p>В последующих клинических исследованиях метод был модифицирован путем персонализации сообщений, проигрываемых испытуемым внутри флоат-камеры. Результаты были еще более внушительными. Некоторые участники теряли целых <b style="color:var(--accent)">30 килограммов</b> в течение двух месяцев.</p>
+
+        <h3>Мгновенный визуальный эффект</h3>
+        <p>Кроме этого, многие посетители флоат-камеры замечают, что флоатинг — простой способ заметно «похудеть» буквально за 1 день. Конечно, эффект будет чисто визуальным и исчезнет буквально через 1-2 дня, так как обеспечивается исключительно за счет потери жидкости.</p> 
+        <p>Но если хочется выглядеть стройнее на свадьбе у подруги или на корпоративной вечеринке — это средство похудения вполне подойдет.</p>
+
+    </main>
+
+    <!-- Сайдбар (Боковое меню) -->
+    <aside>
+        <div class="sidebar-block">
+            <h3>Популярное</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati36.html">Как выбрать флоат-камеру?</a></li>
+                <li><a href="plan.html">Бизнес-план студии</a></li>
+                <li><a href="cena.html">Стоимость оборудования</a></li>
+                <li><a href="complect.html">Комплектация</a></li>
+                <li><a href="filtr.html">Система фильтрации</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-block">
+            <h3>Исследования</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati11.html">Флоатинг в спорте</a></li>
+                <li><a href="stati13.html">Беременность и флоатинг</a></li>
+                <li><a href="stati15.html">Лечение фибромиалгии</a></li>
+                <li><a href="stati16.html">Эндорфины и счастье</a></li>
+            </ul>
+        </div>
+        
+        <div class="sidebar-block" style="text-align: center; border:none; background: transparent;">
+             <a href="tel:89272528367" style="display:inline-block; background: var(--accent); color:white; padding: 10px 20px; border-radius:5px; font-weight:bold;">Заказать звонок</a>
+        </div>
+    </aside>
+
+</div>
+
+<footer>
+    <div class="container"><p>&copy; 2010-2025 Miracle. Производство флоат-камер.</p></div>
+</footer>
+
+</body>
+</html>

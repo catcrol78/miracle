@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О флоатинге | Флоат-камеры Miracle</title>
+    <link rel="icon" href="https://float-camera.ru/favicon.ico" type="image/x-icon">
+    <style>
+        /* БАЗОВЫЕ СТИЛИ */
+        :root { --primary: #00695c; --secondary: #004d40; --accent: #d81b60; --text: #333; --light-bg: #f8f9fa; --white: #fff; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; color: var(--text); line-height: 1.6; background: var(--light-bg); }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        
+        /* ШАПКА */
+        .top-bar { background: var(--secondary); color: white; padding: 8px 0; text-align: center; font-size: 0.9em; }
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: var(--primary); text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
+        .main-menu { display: flex; gap: 20px; }
+        .main-menu a { font-weight: 500; color: #555; }
+        .main-menu a:hover { color: var(--primary); }
+        .menu-toggle { display: none; font-size: 26px; cursor: pointer; }
+
+        /* МАКЕТ СТАТЬИ (Сайдбар + Контент) */
+        .layout-grid { display: grid; grid-template-columns: 3fr 1fr; gap: 40px; max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        
+        /* Статья */
+        .article-content { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .article-content h1 { color: var(--secondary); margin-top: 0; }
+        .article-content h2 { color: var(--primary); margin-top: 30px; }
+        .article-content h3 { color: var(--primary); margin-top: 25px; font-size: 1.3em; }
+        .article-content ul { list-style: disc; padding-left: 20px; margin-bottom: 20px; }
+        .article-content li { margin-bottom: 10px; }
+        .article-content p { margin-bottom: 15px; text-align: justify; }
+        
+        /* Сайдбар (Боковое меню) */
+        aside { font-size: 0.95em; }
+        .sidebar-block { background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #eee; }
+        .sidebar-block h3 { margin-top: 0; color: var(--secondary); font-size: 1.1em; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 15px; }
+        .sidebar-menu { list-style: none; padding: 0; }
+        .sidebar-menu li { margin-bottom: 10px; border-bottom: 1px dotted #eee; padding-bottom: 5px; }
+        .sidebar-menu a:hover { color: var(--accent); }
+
+        footer { background: #263238; color: #cfd8dc; padding: 40px 0; margin-top: 50px; text-align: center; }
+
+        @media (max-width: 900px) {
+            .layout-grid { grid-template-columns: 1fr; } 
+            .article-content { padding: 20px; }
+            .sidebar-block { display: none; }
+            
+            .main-menu { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: white; padding: 20px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+            .main-menu.active { display: flex; }
+            .menu-toggle { display: block; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">Консультации: <a href="tel:89272528367" style="color:white">8-927-252-83-67</a></div>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+             <img src="https://float-camera.ru/media/images/logo.png" alt="Miracle" style="height: 40px;"> Miracle
+        </a>
+        <div class="menu-toggle" onclick="document.querySelector('.main-menu').classList.toggle('active')">☰</div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tovary.html">Наши работы</a></li>
+                <li><a href="stati.html" style="color:var(--primary); font-weight:bold;">Статьи</a></li>
+                <li><a href="dokument.html">Документация</a></li>
+                <li><a href="cena.html">Цена</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                 <li><a href="https://float-camera-bufo.ru" target="_blank" style="color: var(--accent); font-weight: bold; border: 1px solid var(--accent); padding: 5px 10px; border-radius: 4px;">Premium BUFO</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="layout-grid">
+    
+    <!-- Основной контент статьи -->
+    <main class="article-content">
+        
+        <h1>О флоатинге</h1>
+        
+        <p>Иногда хочется отдохнуть от суеты, забыть обо всех проблемах, – словом, опять превратиться в ребенка в материнской утробе, которого ничего не волнует! Сегодня это возможно – с помощью процедуры со сложным названием «флоатинг».</p>
+
+        <p>Флоатинг (floating – «плавучий») – процедура особенная, не похожая ни на одну из известных тебе SPA-программ: в это сложно поверить, но на протяжении всего сеанса человек пребывает в состоянии невесомости, как астронавт в космическом корабле. При этом он не парит в воздухе, как многие думают, а находится в камере, наполненной сильноконцентрированным раствором английской соли. По своему составу эта жидкость одновременно очень близка к околоплодным водам, окружающим малютку в утробе матери, и к Мертвому морю.</p>
+        
+        <p>Но ощущения, которые испытывает человек во время флоатинга, все же гораздо больше похожи на те, что чувствует неродившийся человечек, а не отпускник, принимающий солнечные ванны. На пляже – гам, шум и солнце, а камера абсолютно герметична: в ней нет посторонних звуков и света, сплошная тишина и кромешная тьма, кроме того, температура воды составляет ровно 36,6° C. Благодаря этим факторам человек полностью растворяется в соленой жидкости, перестает ощущать свое тело и окружающий его воздух, расслабляется и погружается в состояние абсолютного покоя.</p>
+
+        <!-- Оформление цитаты/врезки в стиле сайта -->
+        <div style="background: var(--light-bg); padding: 20px; border-left: 5px solid var(--primary); margin: 25px 0; font-style: italic;">
+            Почувствовать невесомость, ощутить себя космонавтом, вернуться в утробу матери – опыт интересный, но что хорошего в этом аттракционе с практической точки зрения? Зайдя в чудо-камеру, можно снять стресс, поправить здоровье и даже избавиться от целлюлита!
+        </div>
+
+        <h3>Хронический стресс и гормоны</h3>
+        <p>Хронический стресс – первое и главное показание для флоатинга. Если Вас преследует усталость, одолевает бессонница, накатывает волнами депрессия, Вы недавно развелись или уволились с работы – Вам нужно срочно отправиться в камеру, наполненную раствором английской соли.</p>
+        
+        <p>Эксперименты показывают, что состояние невесомости, которое ощущаешь во время процедуры, стимулирует выработку эндорфинов – гормонов удовольствия и снижает производство адреналина и кортизола – виновников возникновения напряжения и беспокойства. Кроме того, чувство полного покоя – настоящий отдых для измученной нервной системы. Его нельзя сравнить ни со сном, ни с ванной или бокалом вина, которые лишь немного успокаивают, тогда как флоатинг полностью выключает сознание.</p>
+
+        <h3>Сознание и подсознание</h3>
+        <p>Всем известно, что деятельность мозга человека осуществляется на сознательном и подсознательном уровне. Первый – всего лишь верхушка айсберга, второй – его гигантская часть, скрытая под толщей воды. Флоатинг выключает сознание и одновременно включает подсознание, то есть создает условия, в которых человек может полностью активизировать свой творческий потенциал.</p>
+        
+        <p>Например, у Вас не получается собраться с силами и написать годовой отчет или подготовить важный доклад. Это происходит из-за того, что сознание загружено текущими делами и не в состоянии сконцентрироваться на чем-нибудь другом. Флоатинг не только поможет очистить его от накопившейся шелухи, но и выведет на сцену подсознание. Большинство людей, прошедших через процедуру, отмечали, что сразу после нее находили пути решения проблем.</p>
+
+        <h3>Здоровье и красота</h3>
+        <!-- Картинка с адаптивным стилем (обтекание слева) -->
+        <img src="http://float-camera.ru/media/images/float-camera.jpg" alt="Сертификат флоат-камера MIRACLE" style="float: left; margin: 0 20px 10px 0; max-width: 300px; width: 100%; border-radius: 5px; border: 1px solid #eee;">
+
+        <p>Помимо положительного влияния на нервную систему у флоатинга есть еще один рычаг воздействия на здоровье. Благодаря своему составу раствор английской соли через кожу выводит из организма мочевину, вредные кислоты и шлаки. Подобная чистка не может не отразиться и на внешности, ведь токсины негативно влияют на состояние кожи.</p>
+        
+        <p>Неудивительно, что после флоатинга она становится шелковистой. А еще во время сеанса в организме человека усиливаются обменные процессы, в итоге на бедрах сглаживаются бугорки целлюлита. Конечно, они вряд ли исчезнут бесследно, но состояние кожи, как обещают специалисты, улучшится в значительной степени.</p>
+        <div style="clear:both;"></div>
+
+        <h3>Польза при беременности</h3>
+        <p>Беременных женщин терзают самые противоречивые эмоции: ощущение радости от предстоящего материнства постоянно омрачается раздражением из-за ноющей боли в пояснице, отекших ног и чувства неуклюжести.</p>
+        
+        <p>Забыть о проблемах поможет флоатинг: невесомость сделает девушку в интересном положении легкой, снимет напряжение, выведет лишнюю воду из организма. Но, что самое главное, в камере с соляным раствором женщина сможет сосредоточиться исключительно на себе и крохе.</p>
+
+    </main>
+
+    <!-- Сайдбар (Боковое меню) -->
+    <aside>
+        <div class="sidebar-block">
+            <h3>Популярное</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati36.html">Как выбрать флоат-камеру?</a></li>
+                <li><a href="plan.html">Бизнес-план студии</a></li>
+                <li><a href="cena.html">Стоимость оборудования</a></li>
+                <li><a href="complect.html">Комплектация</a></li>
+                <li><a href="filtr.html">Система фильтрации</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-block">
+            <h3>Исследования</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati11.html">Флоатинг в спорте</a></li>
+                <li><a href="stati13.html">Беременность и флоатинг</a></li>
+                <li><a href="stati15.html">Лечение фибромиалгии</a></li>
+                <li><a href="stati16.html">Эндорфины и счастье</a></li>
+            </ul>
+        </div>
+        
+        <div class="sidebar-block" style="text-align: center; border:none; background: transparent;">
+             <a href="tel:89272528367" style="display:inline-block; background: var(--accent); color:white; padding: 10px 20px; border-radius:5px; font-weight:bold;">Заказать звонок</a>
+        </div>
+    </aside>
+
+</div>
+
+<footer>
+    <div class="container"><p>&copy; 2010-2025 Miracle. Производство флоат-камер.</p></div>
+</footer>
+
+</body>
+</html>

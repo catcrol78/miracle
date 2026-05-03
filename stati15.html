@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Флоатинг и фибромиалгия | Статья Miracle</title>
+    <link rel="icon" href="https://float-camera.ru/favicon.ico" type="image/x-icon">
+    <style>
+        /* БАЗОВЫЕ СТИЛИ */
+        :root { --primary: #00695c; --secondary: #004d40; --accent: #d81b60; --text: #333; --light-bg: #f8f9fa; --white: #fff; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; color: var(--text); line-height: 1.6; background: var(--light-bg); }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        
+        /* ШАПКА */
+        .top-bar { background: var(--secondary); color: white; padding: 8px 0; text-align: center; font-size: 0.9em; }
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: var(--primary); text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
+        .main-menu { display: flex; gap: 20px; }
+        .main-menu a { font-weight: 500; color: #555; }
+        .main-menu a:hover { color: var(--primary); }
+        .menu-toggle { display: none; font-size: 26px; cursor: pointer; }
+
+        /* МАКЕТ СТАТЬИ (Сайдбар + Контент) */
+        .layout-grid { display: grid; grid-template-columns: 3fr 1fr; gap: 40px; max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        
+        /* Статья */
+        .article-content { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .article-content h1 { color: var(--secondary); margin-top: 0; }
+        .article-content h2, .article-content h3 { color: var(--primary); margin-top: 30px; }
+        .article-content ul { list-style: disc; padding-left: 20px; margin-bottom: 20px; }
+        .article-content li { margin-bottom: 10px; }
+        
+        /* Сайдбар (Боковое меню) */
+        aside { font-size: 0.95em; }
+        .sidebar-block { background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #eee; }
+        .sidebar-block h3 { margin-top: 0; color: var(--secondary); font-size: 1.1em; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 15px; }
+        .sidebar-menu { list-style: none; padding: 0; }
+        .sidebar-menu li { margin-bottom: 10px; border-bottom: 1px dotted #eee; padding-bottom: 5px; }
+        .sidebar-menu a:hover { color: var(--accent); }
+
+        footer { background: #263238; color: #cfd8dc; padding: 40px 0; margin-top: 50px; text-align: center; }
+
+        @media (max-width: 900px) {
+            .layout-grid { grid-template-columns: 1fr; } /* На телефоне в одну колонку */
+            .article-content { padding: 20px; }
+            .sidebar-block { display: none; } /* Можно скрыть сайдбар на мобильном */
+            
+            .main-menu { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: white; padding: 20px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+            .main-menu.active { display: flex; }
+            .menu-toggle { display: block; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">Консультации: <a href="tel:89272528367" style="color:white">8-927-252-83-67</a></div>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+             <img src="https://float-camera.ru/media/images/logo.png" alt="Miracle" style="height: 40px;"> Miracle
+        </a>
+        <div class="menu-toggle" onclick="document.querySelector('.main-menu').classList.toggle('active')">☰</div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tovary.html">Наши работы</a></li>
+                <li><a href="stati.html" style="color:var(--primary); font-weight:bold;">Статьи</a></li>
+                <li><a href="dokument.html">Документация</a></li>
+                <li><a href="cena.html">Цена</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                 <li><a href="https://float-camera-bufo.ru" target="_blank" style="color: var(--accent); font-weight: bold; border: 1px solid var(--accent); padding: 5px 10px; border-radius: 4px;">Premium BUFO</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="layout-grid">
+    
+    <!-- Основной контент статьи -->
+    <main class="article-content">
+        
+        <h1>Флоатинг и фибромиалгия</h1>
+        
+        <p><b>Фибромиалгия</b> – это болезнь, для которой характерна тупая скелетно-мышечная боль, обычно начинающаяся в мышцах. Она поражает около 2% населения, и женщины страдают ею в 9 раз чаще мужчин.</p>
+
+        <p>Это изнуряющее и часто непредсказуемое состояние, которое приводит к ужасным болям и оказывает негативное влияние на жизнь человека, поскольку мешает его полноценной подвижности. Хотя это заболевание еще не достаточно глубоко изучено, в настоящее время считается, что его причиной является повышенная чувствительность к боли, вызванная травмой, либо сформировавшаяся постепенно в течение жизни.</p> 
+
+        <p>Кроме того, выдвинуто предположение, что люди, страдающие фибромиалгией, испытывают <b style="color:var(--primary)">недостаточность магния</b> в организме, вызванную стрессом или недостатком здорового сна, что в дальнейшем заставляет нервы реагировать даже на малейшие раздражители (Лондон, 2007).</p>
+
+        <h3>Международное исследование</h3>
+        <p>Флоатинг перекрывает практически полностью негативные симптомы фибромиалгии. С 2011 года международная ассоциация флоатинга проводит исследование влияния флоатинга на субъективные ощущения больных фибромиалгией до и после сеансов.</p>
+        
+        <p>Количество участников исследования – 81 (Германия, Англия, Швеция, США, Нидерланды). После каждого сеанса участники должны были оценить следующие параметры по 10-бальной шкале: боль, энергичность, мышечное напряжение, уровень стресса и т.д.</p>
+
+        <p><b>Исследование ставило целью оценить:</b></p>
+        <ol style="margin-bottom: 20px;">
+            <li>Немедленный эффект от флоатинга;</li>
+            <li>Аккумулируется ли эффект или снижается с каждой процедурой;</li>
+            <li>Долгосрочный эффект.</li>
+        </ol>
+
+        <p><b>Результаты:</b></p>
+        <ul>
+            <li>Без исключения, мгновенный эффект у всех страдающих фибромиалгией был значительным (в среднем болевые ощущения снизились на 2.3 пункта по 10-бальной шкале).</li>
+            <li>С небольшими исключениями наблюдалась аккумуляция положительного эффекта с каждым сеансом (линейные изменения), то есть можно говорить о долгосрочном положительном эффекте.</li>
+        </ul>
+
+        <h3>История Тины Грэхэм</h3>
+        <p>Одна из участниц исследования, Тина Грэхэм, испытывала хроническую усталость, большую часть время была прикована к постели и страдала от боли, как будто все тело было покрыто синяками. Ей было больно, когда к ней прикасались. Она находилась в депрессии и не могла работать. Ее фибромиалгия была связана с серьезной автомобильной аварией, произошедшей в 1998 году, в которой она получила серьезную травму шеи.</p>
+
+        <p>Тина безуспешно пыталась бороться со жгучей болью по всему телу при помощи прописанного ей коктейля из диазепама, напроксема, ибупрофена, трамадола и фентаниловых пластырей. После едва не стоившей ей жизни передозировки фентанила Тина пришла к выводу, что нужно искать другие подходы к ее проблеме.</p> 
+        
+        <p>Она изучала психологию и заинтересовалась связью между состояниями глубокой релаксации и исцелением, узнала о флоат-терапии и решила попробовать.</p>
+
+        <p>В возрасте 43 лет Тина впервые попробовала флоатинг и описала вхождение в камеру следующим образом:</p>
+
+        <div style="background: #f3e5f5; padding: 20px; border-left: 5px solid #ab47bc; margin: 25px 0; font-style: italic;">
+            «Это было, как будто ты входишь в такое тепло, которое сложно описать. Я чувствовала себя защищенной, чувствовала себя в безопасности, чувствовала как меня обволакивает и окружает эта чудесная вода, в которой мое полное боли тело чувствовало себя прекрасно. У меня тут же утихла боль и 17 часов после моего первого сеанса флоатинга у меня не было острой боли».
+        </div>
+
+        <p>После этого первого опыта Тина старалась проходить сеансы флоатинга каждые две недели. После семи сеансов по оценке Тины ее боли уменьшились на 90%, и она чувствовала, что эффект от процедур имел накопительный характер. С каждым сеансом Тина испытывала все более и более глубокую релаксацию, и все более длительный обезболивающий эффект.</p> 
+
+        <p style="font-size: 1.1em; border-top: 1px solid #eee; padding-top: 20px;">
+            Поэтому, если Вы серьезно хотите улучшить свое самочувствие, повысить эффективность уже назначенного лечения, снизить прием болеутоляющих средств – <b style="color:var(--accent)">попробуйте флоат-терапию</b>.
+        </p>
+
+    </main>
+
+    <!-- Сайдбар (Боковое меню) -->
+    <aside>
+        <div class="sidebar-block">
+            <h3>Популярное</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati36.html">Как выбрать флоат-камеру?</a></li>
+                <li><a href="plan.html">Бизнес-план студии</a></li>
+                <li><a href="cena.html">Стоимость оборудования</a></li>
+                <li><a href="complect.html">Комплектация</a></li>
+                <li><a href="filtr.html">Система фильтрации</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-block">
+            <h3>Исследования</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati11.html">Флоатинг в спорте</a></li>
+                <li><a href="stati13.html">Беременность и флоатинг</a></li>
+                <li><a href="stati15.html">Лечение фибромиалгии</a></li>
+                <li><a href="stati16.html">Эндорфины и счастье</a></li>
+            </ul>
+        </div>
+        
+        <div class="sidebar-block" style="text-align: center; border:none; background: transparent;">
+             <a href="tel:89272528367" style="display:inline-block; background: var(--accent); color:white; padding: 10px 20px; border-radius:5px; font-weight:bold;">Заказать звонок</a>
+        </div>
+    </aside>
+
+</div>
+
+<footer>
+    <div class="container"><p>&copy; 2010-2025 Miracle. Производство флоат-камер.</p></div>
+</footer>
+
+</body>
+</html>

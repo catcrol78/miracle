@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Флоат-камеры Miracle | Производство и продажа</title>
+  <meta name="description" content="Производство, продажа и установка оборудования для флоатинга по всей России.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/miracle-redesign.css">
+</head>
+<body class="miracle-page">
+<!-- HEADER_START -->
+<div class="miracle-top-bar">
+  Консультации круглосуточно: <a href="tel:89272528367">8-927-252-83-67</a>
+</div>
+<header class="miracle-header">
+  <div class="miracle-shell miracle-header__inner">
+    <a href="index.html" class="miracle-logo" aria-label="MIRACLE">MIRACLE</a>
+    <button class="miracle-menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-miracle-menu-toggle><span></span><span></span><span></span></button>
+    <nav class="miracle-nav" aria-label="Основная навигация" data-miracle-nav>
+      <a href="index.html" aria-current="page">Главная</a>
+      <a href="tovary.html">Наши работы</a>
+      <a href="stati.html">Статьи</a>
+      <a href="dokument.html">Документация</a>
+      <a href="cena.html">Цена</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+    <a class="miracle-premium-btn" href="https://float-camera-bufo.ru" target="_blank" rel="noopener">Premium BUFO</a>
+  </div>
+</header>
+<!-- HEADER_END -->
+
+<section class="miracle-hero">
+  <div class="miracle-shell miracle-hero__grid">
+    <div>
+      <span class="miracle-badge">Производство с 2010 года</span>
+      <h1>Флоат-камеры Miracle</h1>
+      <p>Производство, продажа и установка оборудования для флоатинга по всей России</p>
+      <div class="miracle-actions">
+        <a class="miracle-btn miracle-btn--primary" href="cena.html">Рассчитать стоимость</a>
+        <a class="miracle-btn miracle-btn--ghost" href="tovary.html">Смотреть проекты</a>
+      </div>
+      <div class="miracle-benefits">
+        <span class="miracle-chip">16 лет опыта</span>
+        <span class="miracle-chip">Собственное производство</span>
+        <span class="miracle-chip">Монтаж по РФ</span>
+      </div>
+    </div>
+    <div class="miracle-slider" data-miracle-slider>
+      <div class="miracle-slides">
+        <figure class="miracle-slide is-active">
+          <svg viewBox="0 0 720 360" role="img" aria-label="Общая схема камеры">
+            <rect width="720" height="360" fill="transparent"></rect>
+            <g fill="none" stroke="#87ffe8" stroke-width="2">
+              <path d="M150 90h370l70 45v140H150z"></path>
+              <path d="M520 90v185M590 135l60-30v175l-60-20"></path>
+              <rect x="210" y="130" width="120" height="88"></rect>
+            </g>
+            <g fill="#ccfff7" font-size="15" font-family="Segoe UI, Arial">
+              <text x="72" y="120">Панель управления</text>
+              <text x="576" y="98">Герметичная дверь</text>
+              <text x="70" y="274">Модульная конструкция</text>
+            </g>
+          </svg>
+          <figcaption>Общая схема камеры</figcaption>
+        </figure>
+        <figure class="miracle-slide">
+          <svg viewBox="0 0 720 360" role="img" aria-label="Вид изнутри">
+            <g fill="none" stroke="#88ffe7" stroke-width="2">
+              <path d="M120 320L280 80h170l150 240z"></path>
+              <path d="M280 80v200M450 80v200M180 280h360"></path>
+            </g>
+            <g fill="#98fdeb">
+              <circle cx="320" cy="118" r="2"></circle><circle cx="360" cy="106" r="2"></circle><circle cx="400" cy="120" r="2"></circle><circle cx="420" cy="94" r="2"></circle>
+            </g>
+            <g fill="#d4fff8" font-size="15" font-family="Segoe UI, Arial">
+              <text x="470" y="112">Звёздное небо</text>
+              <text x="490" y="210">Просторный интерьер</text>
+              <text x="470" y="300">Антискользящее покрытие</text>
+            </g>
+          </svg>
+          <figcaption>Вид изнутри</figcaption>
+        </figure>
+        <figure class="miracle-slide">
+          <svg viewBox="0 0 720 360" role="img" aria-label="Конструкция и обслуживание">
+            <g fill="none" stroke="#93ffe9" stroke-width="2">
+              <path d="M160 100h340l80 55v130H160z"></path>
+              <rect x="220" y="140" width="95" height="75"></rect>
+              <path d="M495 170h50v85h-50M580 155l58-25v175l-58-25"></path>
+            </g>
+            <g fill="#d9fff8" font-size="15" font-family="Segoe UI, Arial">
+              <text x="72" y="120">Удобное управление</text>
+              <text x="570" y="145">Прочный корпус</text>
+              <text x="72" y="286">Сервисный доступ</text>
+            </g>
+          </svg>
+          <figcaption>Конструкция и обслуживание</figcaption>
+        </figure>
+      </div>
+      <div class="miracle-slider__controls">
+        <button class="miracle-arrow" type="button" data-miracle-prev aria-label="Предыдущий">‹</button>
+        <button class="miracle-dot is-active" type="button" data-miracle-dot aria-label="Слайд 1"></button>
+        <button class="miracle-dot" type="button" data-miracle-dot aria-label="Слайд 2"></button>
+        <button class="miracle-dot" type="button" data-miracle-dot aria-label="Слайд 3"></button>
+        <button class="miracle-arrow" type="button" data-miracle-next aria-label="Следующий">›</button>
+      </div>
+    </div>
+  </div>
+  <div class="miracle-shell miracle-kpis">
+    <div class="miracle-kpi"><strong>16 лет</strong>опыта производства и установки</div>
+    <div class="miracle-kpi"><strong>№1 в России</strong>узнаваемый бренд в нише</div>
+    <div class="miracle-kpi"><strong>Полный цикл</strong>от проекта до обучения</div>
+    <div class="miracle-kpi"><strong>Сервис и поддержка</strong>сопровождение на всех этапах</div>
+  </div>
+</section>
+
+<section class="miracle-section">
+  <div class="miracle-shell miracle-grid">
+    <article class="miracle-surface miracle-info">
+      <h2>Miracle — эксперт №1 в производстве флоат-камер в России</h2>
+      <p>Мы создаем пространство для глубокого расслабления и восстановления, объединяя передовые технологии и многолетний опыт.</p>
+      <div class="miracle-card">
+        <h3>Почему выбирают Miracle?</h3>
+        <p>Настраиваем камеры под формат объекта и сопровождаем запуск до стабильной работы.</p>
+      </div>
+    </article>
+    <aside class="miracle-surface miracle-info miracle-links">
+      <h3>Полезная информация</h3>
+      <ul>
+        <li><a href="stati36.html">Как выбрать флоат-камеру?</a></li>
+        <li><a href="complect.html">Комплектация камеры</a></li>
+        <li><a href="plan.html">Бизнес-план</a></li>
+        <li><a href="filtr.html">Система фильтрации</a></li>
+        <li><a href="otzyv.html">Отзывы заказчиков</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <div class="miracle-shell miracle-cards4">
+    <article class="miracle-card"><h3>16 лет лидерства</h3><p>Стабильная экспертиза в разработке и поставках.</p></article>
+    <article class="miracle-card"><h3>Федеральный масштаб</h3><p>Проекты для частных студий и крупных комплексов.</p></article>
+    <article class="miracle-card"><h3>Окупаемость проекта</h3><p>Помогаем подобрать формат с понятной экономикой.</p></article>
+    <article class="miracle-card"><h3>Обучение и поддержка</h3><p>Наставничество для команды после запуска.</p></article>
+  </div>
+
+  <div class="miracle-shell miracle-surface miracle-info miracle-works">
+    <h2>Наши работы</h2>
+    <p>Реализуем проекты любой сложности — от частных студий до крупных SPA-комплексов и медицинских центров.</p>
+    <a class="miracle-btn miracle-btn--ghost" href="tovary.html">Смотреть проекты</a>
+  </div>
+
+  <div class="miracle-shell miracle-surface miracle-info miracle-cta">
+    <div>
+      <h2>Готовы обсудить ваш проект?</h2>
+      <p>Оставьте заявку — мы подберем оптимальное решение и рассчитаем стоимость в кратчайшие сроки.</p>
+    </div>
+    <a class="miracle-btn miracle-btn--primary" href="contact.html">Связаться с нами</a>
+  </div>
+</section>
+
+<!-- FOOTER_START -->
+<footer class="miracle-footer">
+  <div class="miracle-shell miracle-footer__grid">
+    <div><div class="miracle-footer__logo">MIRACLE</div><p>Флоат-камеры и оборудование для флоатинга с 2010 года</p></div>
+    <div><h4>Навигация</h4><a href="index.html">Главная</a><a href="tovary.html">Наши работы</a><a href="stati.html">Статьи</a><a href="dokument.html">Документация</a><a href="cena.html">Цена</a><a href="contact.html">Контакты</a></div>
+    <div><h4>Контакты</h4><a href="tel:89272528367">8-927-252-83-67</a><a href="mailto:info@miracle-float.ru">info@miracle-float.ru</a><p>Россия, Самара</p></div>
+  </div>
+</footer>
+<!-- FOOTER_END -->
+
+<script src="assets/js/miracle-redesign.js"></script>
+</body>
+</html>

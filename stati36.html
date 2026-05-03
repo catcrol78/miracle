@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статья | Флоат-камеры Miracle</title>
+    <link rel="icon" href="https://float-camera.ru/favicon.ico" type="image/x-icon">
+    <style>
+        /* БАЗОВЫЕ СТИЛИ */
+        :root { --primary: #00695c; --secondary: #004d40; --accent: #d81b60; --text: #333; --light-bg: #f8f9fa; --white: #fff; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; color: var(--text); line-height: 1.6; background: var(--light-bg); }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+		
+        ul.main-menu, ul.main-menu li {
+    list-style: none !important; /* Убирает точки принудительно */
+    margin: 0;
+    padding: 0;
+}
+        /* ШАПКА */
+        .top-bar { background: var(--secondary); color: white; padding: 8px 0; text-align: center; font-size: 0.9em; }
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: var(--primary); text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
+        .main-menu { display: flex; gap: 20px; }
+        .main-menu a { font-weight: 500; color: #555; }
+        .main-menu a:hover { color: var(--primary); }
+        .menu-toggle { display: none; font-size: 26px; cursor: pointer; }
+
+        /* МАКЕТ СТАТЬИ (Сайдбар + Контент) */
+        .layout-grid { display: grid; grid-template-columns: 3fr 1fr; gap: 40px; max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        
+        /* Статья */
+        .article-content { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .article-content h1 { color: var(--secondary); margin-top: 0; }
+        .article-content h2 { color: var(--primary); margin-top: 30px; }
+        .article-content ul { list-style: disc; padding-left: 20px; margin-bottom: 20px; }
+        .article-content li { margin-bottom: 10px; }
+        
+        /* Сайдбар (Боковое меню) */
+        aside { font-size: 0.95em; }
+        .sidebar-block { background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #eee; }
+        .sidebar-block h3 { margin-top: 0; color: var(--secondary); font-size: 1.1em; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 15px; }
+        .sidebar-menu { list-style: none; padding: 0; }
+        .sidebar-menu li { margin-bottom: 10px; border-bottom: 1px dotted #eee; padding-bottom: 5px; }
+        .sidebar-menu a:hover { color: var(--accent); }
+
+        /* ФУТЕР (ПОЛНЫЙ КОД) */
+footer {
+    background: #004d40; /* Фирменный зеленый */
+    color: white;
+    padding: 40px 0;
+    margin-top: 60px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-inner {
+    max-width: 1200px; /* Ограничиваем ширину контента по центру */
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex; /* <--- ЭТО ВАЖНО: Выстраивает колонки в ряд */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-inner > div {
+    flex: 1; /* Колонки одинаковой ширины */
+    min-width: 250px; /* Чтобы не сжимались слишком сильно на телефоне */
+}
+
+.footer-inner h4 {
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer-inner p, .footer-inner a { 
+    line-height: 1.6; 
+    color: #e0f2f1; /* Светлый оттенок */
+    text-decoration: none; 
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.footer-inner a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+        @media (max-width: 900px) {
+            .layout-grid { grid-template-columns: 1fr; } /* На телефоне в одну колонку */
+            .article-content { padding: 20px; }
+            .sidebar-block { display: none; } /* Можно скрыть сайдбар на мобильном, чтобы не мешал, или убрать эту строку */
+            
+            .main-menu { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: white; padding: 20px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+            .main-menu.active { display: flex; }
+            .menu-toggle { display: block; }
+        }
+    </style>
+	
+	
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://float-camera.ru/stati36.html" 
+  },
+  "headline": "Как выбрать флоат-камеру? Важные советы при покупке оборудования",
+  "description": "Профессиональное руководство по выбору флоат-камеры от производителя Miracle. На что обратить внимание при выборе оборудования для спа-центров, отелей и частного использования.",
+  "image": "https://float-camera.ru/media/images/logo.png",
+  "author": {
+    "@type": "Organization",
+    "name": "Компания Miracle",
+    "url": "https://float-camera.ru/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Компания Miracle",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://float-camera.ru/media/images/logo.png"
+    }
+  },
+  "datePublished": "2026-02-10",
+  "dateModified": "2026-02-10"
+}
+</script>
+</head>
+<body>
+
+<div class="top-bar">Консультации: <a href="tel:89272528367" style="color:white">8-927-252-83-67</a></div>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+             <img src="https://float-camera.ru/media/images/logo.png" alt="Miracle" style="height: 40px;"> Miracle
+        </a>
+        <div class="menu-toggle" onclick="document.querySelector('.main-menu').classList.toggle('active')">☰</div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tovary.html">Наши работы</a></li>
+                <li><a href="stati.html" style="color:var(--primary); font-weight:bold;">Статьи</a></li>
+                <li><a href="dokument.html">Документация</a></li>
+                <li><a href="cena.html">Цена</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                 <li><a href="https://float-camera-bufo.ru" target="_blank" style="color: var(--accent); font-weight: bold; border: 1px solid var(--accent); padding: 5px 10px; border-radius: 4px;">Premium BUFO</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="layout-grid">
+    
+    <!-- Основной контент статьи -->
+    <main class="article-content">
+        
+        <!-- СЮДА ВСТАВЛЯТЬ ЗАГОЛОВОК -->
+        <h1>Как выбрать флоат-камеру?</h1>
+        
+        <!-- СЮДА ВСТАВЛЯТЬ ТЕКСТ СТАТЬИ -->
+       <p>Как Вы уже знаете, основой флоатинга является <b style="color:var(--primary)">сенсорная депривация</b>, то есть изоляция – от звука, света, ощущения гравитации и тактильных ощущений.</p>
+
+<h3>Толщина стенок</h3>
+<p>При выборе флоат-камеры обратите особое внимание на <b style="color:var(--primary)">толщину стенок</b>: чем толще стенка флоат-камеры, тем более она звукоизолированна. Также, немаловажно, чтобы внутреннее пространство камеры, включая чашу, не было выполнено из «звонких» материалов, таких как акрил и пластик. У пластика и акрила очень высокая звукопроводящая способность.</p>
+
+<h3>Светоизоляция</h3>
+<p>Дверь – это одно из самых слабых мест в плане свето- и шумоизоляции. Дверь в камеру должна быть достаточно толстой и герметично установленной – не должна пропускать лучи света извне.</p>
+
+<h3>Контроль температуры (Самое важное)</h3>
+<p>Принципиально важное значение в процедуре имеет баланс температуры раствора и температуры воздуха внутри камерного пространства. Если температуры сильно разнятся, то процедура теряет свою суть.</p> 
+<p>Также, в результате образуется конденсат на потолке камеры. Капли, падающие с потолка на посетителя, сводят к нулю процесс глубокого расслабления. Температура раствора и воздуха должна быть стабильной и эффективно поддерживаемой на нужных установках. Поинтересуйтесь у производителя, какова точность контроля температуры.</p>
+
+<div style="background: #ffebee; padding: 15px; border-left: 5px solid #d32f2f; margin: 20px 0;">
+    <strong>Важно!</strong> Поинтересуйтесь у производителя, каким типом обогревателя поддерживается температура раствора!
+</div>
+
+<p>Некоторые производители используют в конструкции флоат-камер проточные водонагреватели. Устройство и принцип работы таких нагревателей даёт большую погрешность в температурных показателях, что делает невозможным эффективное поддержание температуры раствора на заданных установках.</p> 
+<p>Проточный нагреватель работает только во время циркуляции раствора. Во время сеанса циркуляция отсутствует. Соответственно раствор не подогревается и остывает. Человек, находящийся в камере, уже к середине сеанса начинает ощущать прохладу и процедура теряет смысл.</p>
+
+<h3>Опасность ИК-нагревателей</h3>
+<p>Еще встречаются флоат-камеры с использованием инфракрасного пленочного нагревателя (пленочный теплый пол), что <strong>категорически нельзя делать</strong>, это опасно для здоровья. Мало того, использование такого типа обогревателей в корне противоречит сути процедуры.</p>
+
+<p>Исследования, изучающие действие инфракрасных лучей на людей, ведутся довольно давно. В лечебных целях это излучение используется в физиотерапевтических процедурах, ОГРАНИЧЕННЫХ ПО ВРЕМЕНИ!</p>
+
+<h4>Как работает ИК-обогреватель?</h4>
+<!-- Картинка с адаптивным стилем -->
+<img src="ik.jpg" alt="Схема ИК излучения" style="float: left; margin: 0 20px 10px 0; max-width: 300px; width: 100%; border-radius: 5px; border: 1px solid #eee;">
+
+<p>ИК-обогреватель не греет воздух, а нагревает предметы, которые в свою очередь отдают тепло в воздух. Если установки излучают длинные волны, они лишь повышают температуру тела. А коротковолновые лучи изменяют температуру внутренних органов человека. В этом и заключается главный вред подобных установок.</p>
+
+<p>Как он проявляется? Если на один градус повышается температура головного мозга, развивается эффект солнечного удара. У человека возникает тошнота и головокружение, пульс учащается, в глазах темнеет. Увеличение температуры головного мозга на 2 градуса приводит к развитию менингита. Попадание коротких волн в глаза приводит к образованию катаракты. Поэтому находиться вблизи обогревателей с таким излучением в течение длительного времени нельзя.</p>
+<div style="clear:both;"></div>
+
+<p>В таких условиях воздействие ИК-нагревателя особенно ощутимо в области головы – мозг как в микроволновке «закипает», а также расширяются сосуды, и это всё ощущается физически – неприятно и опасно для здоровья.</p> 
+<p>Данное обстоятельство противоречит требованиям флоатинга – лишение всех внешних раздражителей и воздействий. Флоат-камеры с таким типом обогревателя априори не могут предоставить полноценный качественный сеанс.</p>
+
+<h3>Вентиляция</h3>
+<p>Должна быть бесшумной и не пропускать свет.</p>
+
+<h3>Эксплуатационные требования</h3>
+<p>Автоматизация всех процессов упрощает работу оператора флоат-камеры, сводит к минимуму его ошибки, делает процедуру флоатинга максимально комфортной для посетителя. Плавность включения и выключения света и музыки имеет огромное влияние на глубину расслабления и качество процедуры.</p>
+
+<h3>Фильтрация</h3>
+<p>Для очистки гипертонического раствора соли достаточно многоступенчатого фильтра механической очистки и УФ стерилизатора. Хлорирование раствора крайне нежелательно в условиях замкнутого пространства камеры. Поинтересуйтесь у производителя о составляющих системы фильтрации и о доступности расходников.</p>
+
+<h3>Акустическая система</h3>
+<p>Большинство камер снабжено акустическими системами. Их два вида: это обычные внешние динамики и <b style="color:var(--primary)">подводные</b>. Вторые – предпочтительнее, так как музыку Вы чувствуете всем телом.</p>
+
+<p>Поинтересуйтесь у производителя о наличии плеера, чтобы Вам не пришлось "изобретать велосипед". Акустическая система должна быть неразрывно связана с таймером сеанса.</p>
+
+<ul>
+    <li>Для спокойствия вашего клиента необходимо наличие <b>тревожной кнопки</b> внутри камеры.</li>
+    <li>Возможность <b>выбора цвета освещения</b> расширяет спектр оказываемых услуг (хромотерапия).</li>
+    <li>Огромное значение имеет <b>объем внутреннего пространства</b>. Если человек может стоять в полный рост в камере – то это замечательно.</li>
+</ul>
+
+    </main>
+
+    <!-- Сайдбар (Боковое меню) -->
+    <aside>
+        <div class="sidebar-block">
+            <h3>Популярное</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati36.html">Как выбрать флоат-камеру?</a></li>
+                <li><a href="plan.html">Бизнес-план студии</a></li>
+                <li><a href="cena.html">Стоимость оборудования</a></li>
+                <li><a href="complect.html">Комплектация</a></li>
+                <li><a href="filtr.html">Система фильтрации</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-block">
+            <h3>Исследования</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati11.html">Флоатинг в спорте</a></li>
+                <li><a href="stati13.html">Беременность и флоатинг</a></li>
+                <li><a href="stati15.html">Лечение фибромиалгии</a></li>
+                <li><a href="stati16.html">Эндорфины и счастье</a></li>
+            </ul>
+        </div>
+        
+        <div class="sidebar-block" style="text-align: center; border:none; background: transparent;">
+             <a href="tel:89272528367" style="display:inline-block; background: var(--accent); color:white; padding: 10px 20px; border-radius:5px; font-weight:bold;">Заказать звонок</a>
+        </div>
+    </aside>
+
+</div>
+
+<footer>
+    <div class="footer-inner">
+        <div>
+            <h4>Miracle Float</h4>
+            <p>&copy; 2010-2026 Производство флоат-камер.</p>
+        </div>
+        <div>
+            <h4>Связаться с нами</h4>
+            <p>📞 8-927-252-83-67<br>📞 8-927-253-51-51</p>
+            <p>📧 float-camera@mail.ru</p>
+        </div>
+        <div>
+            <h4>Информация</h4>
+            <p><a href="dokument.html" style="color:inherit;">Документация</a></p>
+            <p><a href="tovary.html" style="color:inherit;">Наши работы</a></p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

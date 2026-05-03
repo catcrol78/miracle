@@ -1,0 +1,117 @@
+<div id="successMessage" class="container p-2 animate__animated animate__fadeIn" style="display: none;">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 animate__animated animate__fadeIn">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 animate__animated animate__fadeIn" id="acceptForm">
+                    <div class="animate__animated animate__fadeIn" id="content">
+                        <h2 class="animate__animated animate__fadeIn" id="headingForm">Вы успешно отправили сообщение.</h2>
+                        <div class="animate__animated animate__fadeIn" id="accept-circle">
+                            &#10004
+                        </div>
+                        <div class="container d-none d-xxl-block animate__animated animate__fadeIn d-flex justify-content-between m-0">
+                            <button type="button" class="buttonSuccess animate__animated animate__fadeIn" style="width: 30%; text-align: center;  margin-top: 10px" onclick="{document.location='https://float-camera.ru/pages/main.html'}">
+                                Главная
+                            </button >
+                            <button type="button" class="buttonSuccess animate__animated animate__fadeIn" style="width: 30%; text-align: center;  margin-top: 10px" onclick="{document.location='https://float-camera.ru/pages/tovary.html'}">
+                                Наши работы
+                            </button>
+                            <button type="button" class="buttonSuccess animate__animated animate__fadeIn" style="width: 30%; text-align: center;  margin-top: 10px" onclick="{
+                                document.querySelector('#successMessage').setAttribute('style', 'display: none; transition: 1s;')
+                                window.location.reload();
+                            }">
+                                Продолжить
+                            </button>
+                        </div>
+                        <div class="container d-lg-none p-2 animate__animated animate__fadeIn">
+                            <button type="button" class="buttonSuccess animate__animated animate__fadeIn" style="width: 100%; text-align: center; margin-top: 10px" onclick="{document.location='https://float-camera.ru/pages/main.html'}">
+                                Главная
+                            </button >
+                            <button type="button" class="buttonSuccess animate__animated animate__fadeIn" style="width: 100%; text-align: center; margin-top: 10px" onclick="{document.location='https://float-camera.ru/pages/tovary.html'}">
+                                Наши работы
+                            </button>
+                            <button type="button" class="buttonSuccess animate__animated animate__fadeIn" style="width: 100%; text-align: center; margin-top: 10px" onclick="{
+                                document.querySelector('#successMessage').setAttribute('style', 'display: none; transition: 1s;')
+                                window.location.reload();
+                            }">
+                                Продолжить
+                            </button>
+                        </div>
+                        <div class="container d-none d-xl-block d-lg-block p-2 d-xxl-none animate__animated animate__fadeIn d-flex justify-content-between m-0">
+                            <button type="button" class="buttonSuccess animate__animated animate__fadeIn" style="width: 30%; text-align: center;  margin-top: 10px" onclick="{document.location='https://float-camera.ru/pages/main.html'}">
+                                Главная
+                            </button >
+                            <button type="button" class="buttonSuccess animate__animated animate__fadeIn" style="width: 30%; text-align: center;  margin-top: 10px" onclick="{document.location='https://float-camera.ru/pages/tovary.html'}">
+                                Наши работы
+                            </button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<div id="containerForm" class="container p-2" style="background: #c1eaff6e; border-radius: 3px 3px 3px 3px; border: 1px solid #a2dcff">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <h1 style="text-align: center"><b>Рассчитать стоимость</b></h1>
+            <form id="mail-form" action="../../email/mail.php" method="post">
+                <div class="mb-1">
+                    <label for="name" class="form-label" >Ваше имя</label>
+                    <input type="text" class="form-control" id="name" placeholder="Имя">
+                    <div id="nameError" class="form-text" style="display: none; color: #ff6b6b;"></div>
+                </div>
+                <div class="mb-1">
+                    <label for="email" class="form-label">Ваш E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="E-mail">
+                    <div id="emailError" class="form-text" style="display: none; color: #ff6b6b;"></div>
+                    <div id="emailHelp" class="form-text">Мы никогда не передадим Ваш адрес электронной почты кому-либо еще.</div>
+                </div>
+                <div class="mb-1">
+                    <label for="phone" class="form-label">Контактный телефон</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Телефон">
+                    <div id="phoneError" class="form-text" style="display: none; color: #ff6b6b;"></div>
+                </div>
+                <div class="mb-1">
+                    <label for="social-web" class="form-label">Ссылка на соц. сеть(Telegram, VK)</label>
+                    <input type="tel" class="form-control" id="social-web" placeholder="@Имя_Пользователя / https://t.me/Имя_Пользователя - tg или https://vk.com/id - vk    *необязательно">
+                </div>
+                <div class="mb-1">
+                    <label for="size-float" class="form-label">Длина/ширина/высота (см)</label>
+                    <input type="text" class="form-control" id="size-float" placeholder="Длина/ширина/высота">
+                    <div id="sizeError" class="form-text" style="display: none; color: #ff6b6b;"></div>
+                </div>
+                <div class="mb-1">
+                    <label for="limit-day" class="form-label">Желаемый срок изготовления (в днях)</label>
+                    <input type="text" class="form-control" id="limit-day" placeholder="Срок изготовления">
+                    <div id="limitError" class="form-text" style="display: none; color: #ff6b6b;"></div>
+                </div>
+                <div class="mb-1">
+                    <label for="count-float" class="form-label">Количество камер (шт)</label>
+                    <input type="text" class="form-control" id="count-float" placeholder="Количество камер">
+                    <div id="countError" class="form-text" style="display: none; color: #ff6b6b;"></div>
+                </div>
+                <div class="mb-1">
+                    <label for="address" class="form-label">Куда доставлять (Область, город)</label>
+                    <input type="text" class="form-control" id="address" placeholder="Адрес доставки">
+                    <div id="addressError" class="form-text" style="display: none; color: #ff6b6b;"></div>
+                </div>
+                <div class="mb-1">
+                    <label for="message" class="form-label">Сообщение</label>
+                    <textarea class="form-control" id="message" placeholder="Примечания" ></textarea>
+                    <div id="messageError" class="form-text" style="display: none; color: #ff6b6b;"></div>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LcdBjgpAAAAAC_6Uq1Uvjm2pBoNrJwV1NKo-ItO"></div>
+                <div class="text-danger" id="recaptchaError"></div>
+                <div class="mb-2 form-check">
+                    <input type="checkbox" class="form-check-input" id="agreement">
+                    <label class="form-check-label" for="agreement">Даю согласие на обработку персональных данных</label>
+                    <div id="agreementError" class="form-text" style="display: none; color: #ff6b6b;"></div>
+                </div>
+                <button type="button" id="submitEmail"  class="btn btn-outline-primary">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+

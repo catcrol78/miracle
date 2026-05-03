@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Правила успешного флоатинга | Флоат-камеры Miracle</title>
+    <link rel="icon" href="https://float-camera.ru/favicon.ico" type="image/x-icon">
+    <style>
+        /* БАЗОВЫЕ СТИЛИ */
+        :root { --primary: #00695c; --secondary: #004d40; --accent: #d81b60; --text: #333; --light-bg: #f8f9fa; --white: #fff; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; color: var(--text); line-height: 1.6; background: var(--light-bg); }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        
+        /* ШАПКА */
+        .top-bar { background: var(--secondary); color: white; padding: 8px 0; text-align: center; font-size: 0.9em; }
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: var(--primary); text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
+        .main-menu { display: flex; gap: 20px; }
+        .main-menu a { font-weight: 500; color: #555; }
+        .main-menu a:hover { color: var(--primary); }
+        .menu-toggle { display: none; font-size: 26px; cursor: pointer; }
+
+        /* МАКЕТ СТАТЬИ (Сайдбар + Контент) */
+        .layout-grid { display: grid; grid-template-columns: 3fr 1fr; gap: 40px; max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        
+        /* Статья */
+        .article-content { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .article-content h1 { color: var(--secondary); margin-top: 0; }
+        .article-content h3 { color: var(--primary); margin-top: 25px; font-size: 1.3em; }
+        .article-content ul { list-style: disc; padding-left: 20px; margin-bottom: 20px; }
+        .article-content li { margin-bottom: 10px; }
+        .article-content p { margin-bottom: 15px; text-align: justify; }
+
+        /* Изображение справа */
+        .rightimg { float: right; margin: 0 0 10px 20px; max-width: 300px; width: 100%; border-radius: 5px; border: 1px solid #eee; }
+        
+        /* Сайдбар (Боковое меню) */
+        aside { font-size: 0.95em; }
+        .sidebar-block { background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #eee; }
+        .sidebar-block h3 { margin-top: 0; color: var(--secondary); font-size: 1.1em; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 15px; }
+        .sidebar-menu { list-style: none; padding: 0; }
+        .sidebar-menu li { margin-bottom: 10px; border-bottom: 1px dotted #eee; padding-bottom: 5px; }
+        .sidebar-menu a:hover { color: var(--accent); }
+
+        footer { background: #263238; color: #cfd8dc; padding: 40px 0; margin-top: 50px; text-align: center; }
+
+        @media (max-width: 900px) {
+            .layout-grid { grid-template-columns: 1fr; } 
+            .article-content { padding: 20px; }
+            .sidebar-block { display: none; }
+            .rightimg { float: none; margin: 0 auto 20px auto; display: block; } /* Картинка по центру на мобильных */
+            
+            .main-menu { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: white; padding: 20px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+            .main-menu.active { display: flex; }
+            .menu-toggle { display: block; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">Консультации: <a href="tel:89272528367" style="color:white">8-927-252-83-67</a></div>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+             <img src="https://float-camera.ru/media/images/logo.png" alt="Miracle" style="height: 40px;"> Miracle
+        </a>
+        <div class="menu-toggle" onclick="document.querySelector('.main-menu').classList.toggle('active')">☰</div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tovary.html">Наши работы</a></li>
+                <li><a href="stati.html" style="color:var(--primary); font-weight:bold;">Статьи</a></li>
+                <li><a href="dokument.html">Документация</a></li>
+                <li><a href="cena.html">Цена</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                 <li><a href="https://float-camera-bufo.ru" target="_blank" style="color: var(--accent); font-weight: bold; border: 1px solid var(--accent); padding: 5px 10px; border-radius: 4px;">Premium BUFO</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="layout-grid">
+    
+    <!-- Основной контент статьи -->
+    <main class="article-content">
+        
+        <h1>Правила успешного флоатинга</h1>
+
+        <p>Чтобы у вас получилось опробовать на себе состояние невесомости со всеми вытекающими из него положительными последствиями, недостаточно просто прийти и «плюхнуться» в соленую водичку. Важен эмоциональный настрой, умение расслабляться и даже интервал между последним приемом пищи и сеансом флоатинга.</p>
+
+        <h3>Выбор времени</h3>
+        <img src="http://float-camera.ru/media/images/float-camera1.jpg" class="rightimg" alt="Флоат-камера Miracle">
+        
+        <p>Прежде чем заказывать процедуру, выберите время. Не стоит устраивать сеанс флоатинга в обеденный перерыв, на часок сбежав из офиса. Чтобы не только ощутить невесомость, но и снять напряжение и очистить сознание, необходимо немного прийти в себя после работы, вождения автомобиля или поездки в общественном транспорте.</p>
+        
+        <p>Поэтому между вашим прибытием в салон и началом флоатинга должно пройти не меньше 15 минут. Чуть больше времени требуется на реабилитацию после сеанса: не забывайте, вы будете расслаблены на все 100%, и перестроиться после фантастических ощущений на рабочий лад еще ни у кого не получалось. В идеале флоатинг хорош в конце трудового дня и в выходной, на который у вас не запланирована масса дел.</p>
+
+        <h3>Подготовка к сеансу</h3>
+        <p>Когда вы придете на сеанс флоатинга, вас проводят в специальную комнату, где вы разденетесь, примете душ, снимете украшения и вставите в уши беруши. Если на теле имеются царапины, их придется замазать имеющимся там специально для этих целей вазелином. Иначе соленая вода попадет в ранки и сеанс будет омрачен болевыми ощущениями.</p>
+        
+        <p>Камера представляет собой герметичное помещение, нечто среднее между большой ванной и маленьким бассейном, заполненное водой на полметра. Если вы встанете, соляной раствор будет по колено, так что утонуть во время сеанса не получится. Не стоит бояться, что вы, как в омут, с головой нырнете в темную комнату. Когда вы войдете в него, свет будет гореть.</p>
+        <div style="clear: both;"></div>
+
+        <h3>Питание перед процедурой</h3>
+        <p>Имейте в виду: если вы придете на флоатинг с полным желудком, ваш организм, вместо того чтобы вырабатывать эндорфины и очищать сознание, будет вынужден переваривать пищу. Впрочем, и голодным нырять в соляной раствор не стоит: когда все мысли вертятся вокруг обеда, расслабиться не получится. <br><strong>Рекомендация:</strong> следует поесть часа за полтора-два до сеанса.</p>
+
+        <h3>Техники расслабления</h3>
+        <p>Состояние невесомости – не главное в сеансе флоатинга. Важно полностью расслабиться, раствориться во времени и пространстве. Лучше всего с этим справляются люди, имеющие опыт медитации.</p>
+        
+        <p>Но существует несколько способов абстрагироваться от мира и приблизиться к нирване и без опыта:</p>
+        <ul>
+            <li><strong>Визуализация:</strong> Мысленно перенеситесь в приятное место. Увидьте себя, смотрящего на океан, или вновь окажитесь на даче в сентябре, когда сад горит листвой.</li>
+            <li><strong>Концентрация на теле:</strong> Постарайтесь сосредоточиться на какой-нибудь части своего тела: допустим, на большом пальце правой ноги. Думайте и ощущайте только его, и тогда напряжение незаметно покинет вас.</li>
+        </ul>
+        
+        <p>Говорят, что автоматически отключаться от внешнего мира и получать максимум пользы от флоатинга у людей получается примерно после третьего сеанса.</p>
+
+        <!-- Выделенный блок внимания -->
+        <div style="background: #fff3e0; padding: 20px; border-left: 5px solid #ff9800; margin: 25px 0;">
+            <h3>Доверьтесь воде</h3>
+            <p style="margin-bottom:0">Достигнуть состояния нирваны у многих людей не получается из-за того, что они боятся расслабить шею, довериться воде и опустить в нее голову. Это напряжение не позволяет им сосредоточиться на приятных ощущениях. <strong>Не волнуйтесь, соляной раствор не позволит вам погрузиться под воду целиком. Смело ложитесь на нее, как на кровать.</strong></p>
+        </div>
+
+    </main>
+
+    <!-- Сайдбар (Боковое меню) -->
+    <aside>
+        <div class="sidebar-block">
+            <h3>Популярное</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati36.html">Как выбрать флоат-камеру?</a></li>
+                <li><a href="plan.html">Бизнес-план студии</a></li>
+                <li><a href="cena.html">Стоимость оборудования</a></li>
+                <li><a href="complect.html">Комплектация</a></li>
+                <li><a href="filtr.html">Система фильтрации</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-block">
+            <h3>Исследования</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati11.html">Флоатинг в спорте</a></li>
+                <li><a href="stati13.html">Беременность и флоатинг</a></li>
+                <li><a href="stati15.html">Лечение фибромиалгии</a></li>
+                <li><a href="stati16.html">Эндорфины и счастье</a></li>
+            </ul>
+        </div>
+        
+        <div class="sidebar-block" style="text-align: center; border:none; background: transparent;">
+             <a href="tel:89272528367" style="display:inline-block; background: var(--accent); color:white; padding: 10px 20px; border-radius:5px; font-weight:bold;">Заказать звонок</a>
+        </div>
+    </aside>
+
+</div>
+
+<footer>
+    <div class="container"><p>&copy; 2010-2025 Miracle. Производство флоат-камер.</p></div>
+</footer>
+
+</body>
+</html>

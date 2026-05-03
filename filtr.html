@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система фильтрации флоат-камер Miracle | Чистота и безопасность</title>
+    <link rel="icon" href="https://float-camera.ru/favicon.ico" type="image/x-icon">
+	<meta name="description" content="Узнайте, как обеспечивается идеальная чистота воды во флоат-камерах Miracle. Профессиональная многоступенчатая система фильтрации и дезинфекции, соответствующая нормам гигиены для SPA-центров и отелей.">
+
+<link rel="canonical" href="https://float-camera.ru/filtr.html">
+    <style>
+        /* БАЗОВЫЕ СТИЛИ */
+        :root { --primary: #00695c; --secondary: #004d40; --accent: #d81b60; --text: #333; --light-bg: #f8f9fa; --white: #fff; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; color: var(--text); line-height: 1.6; background: var(--light-bg); }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        
+		ul.main-menu, ul.main-menu li {
+    list-style: none !important; /* Убирает точки принудительно */
+    margin: 0;
+    padding: 0;
+}
+
+
+        /* ШАПКА */
+        .top-bar { background: var(--secondary); color: white; padding: 8px 0; text-align: center; font-size: 0.9em; }
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: var(--primary); text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
+        .main-menu { display: flex; gap: 20px; }
+        .main-menu a { font-weight: 500; color: #555; }
+        .main-menu a:hover { color: var(--primary); }
+        .menu-toggle { display: none; font-size: 26px; cursor: pointer; }
+
+        /* МАКЕТ СТАТЬИ */
+        .layout-grid { display: grid; grid-template-columns: 3fr 1fr; gap: 40px; max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        
+        /* Статья */
+        .article-content { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .article-content h1 { color: var(--secondary); margin-top: 0; margin-bottom: 25px; text-align: center; }
+        .article-content h3 { color: var(--primary); margin-top: 0; font-size: 1.2em; margin-bottom: 10px; }
+        .article-content p { margin-bottom: 15px; text-align: justify; }
+
+        /* Изображение */
+        .leftimg { float: left; margin: 0 20px 20px 0; max-width: 300px; width: 100%; border-radius: 5px; border: 1px solid #eee; }
+        
+        /* Блоки этапов фильтрации */
+        .filter-steps { margin-top: 30px; }
+        .filter-item { background: #f0f7f6; padding: 20px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid var(--primary); position: relative; }
+        .filter-icon { font-size: 1.5em; margin-right: 10px; vertical-align: middle; }
+
+        /* Сайдбар */
+        aside { font-size: 0.95em; }
+        .sidebar-block { background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #eee; }
+        .sidebar-block h3 { margin-top: 0; color: var(--secondary); font-size: 1.1em; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 15px; }
+        .sidebar-menu { list-style: none; padding: 0; }
+        .sidebar-menu li { margin-bottom: 10px; border-bottom: 1px dotted #eee; padding-bottom: 5px; }
+        .sidebar-menu a:hover { color: var(--accent); }
+
+        /* ФУТЕР (ПОЛНЫЙ КОД) */
+footer {
+    background: #004d40; /* Фирменный зеленый */
+    color: white;
+    padding: 40px 0;
+    margin-top: 60px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-inner {
+    max-width: 1200px; /* Ограничиваем ширину контента по центру */
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex; /* <--- ЭТО ВАЖНО: Выстраивает колонки в ряд */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-inner > div {
+    flex: 1; /* Колонки одинаковой ширины */
+    min-width: 250px; /* Чтобы не сжимались слишком сильно на телефоне */
+}
+
+.footer-inner h4 {
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer-inner p, .footer-inner a { 
+    line-height: 1.6; 
+    color: #e0f2f1; /* Светлый оттенок */
+    text-decoration: none; 
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.footer-inner a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+        
+        .clearfix::after { content: ""; clear: both; display: table; }
+
+        @media (max-width: 900px) {
+            .layout-grid { grid-template-columns: 1fr; } 
+            .article-content { padding: 20px; }
+            .sidebar-block { display: none; }
+            .leftimg { float: none; margin: 0 auto 20px auto; display: block; }
+            
+            .main-menu { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: white; padding: 20px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+            .main-menu.active { display: flex; }
+            .menu-toggle { display: block; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">Консультации: <a href="tel:89272528367" style="color:white">8-927-252-83-67</a></div>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+             <img src="https://float-camera.ru/media/images/logo.png" alt="Miracle" style="height: 40px;"> Miracle
+        </a>
+        <div class="menu-toggle" onclick="document.querySelector('.main-menu').classList.toggle('active')">☰</div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tovary.html">Наши работы</a></li>
+                <li><a href="stati.html" style="color:var(--primary); font-weight:bold;">Статьи</a></li>
+                <li><a href="dokument.html">Документация</a></li>
+                <li><a href="cena.html">Цена</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                 <li><a href="https://float-camera-bufo.ru" target="_blank" style="color: var(--accent); font-weight: bold; border: 1px solid var(--accent); padding: 5px 10px; border-radius: 4px;">Premium BUFO</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="layout-grid">
+    
+    <!-- Основной контент статьи -->
+    <main class="article-content clearfix">
+        
+        <h1>Система фильтрации</h1>
+        
+        <img src="http://float-camera.ru/media/images/filtr.jpg" class="leftimg" alt="Система фильтрации Miracle">
+        
+        <p>Чистота раствора — залог безопасного и приятного флоатинга. Система фильтрации камер Miracle построена по многоступенчатому принципу, обеспечивая кристальную прозрачность и стерильность воды.</p>
+        
+        <p>Мы используем комбинацию механической очистки, ультрафиолетового излучения и химической дезинфекции на основе активного кислорода.</p>
+
+        <div class="clearfix"></div>
+
+        <div class="filter-steps">
+            
+            <div class="filter-item">
+                <h3><span class="filter-icon">⚙️</span> Фильтр механической очистки</h3>
+                <p>Предназначен для механической задержки органических отходов, удаления из раствора крупных взвесей, волос, частичек кожи и токсичных соединений.</p>
+            </div>
+
+            <div class="filter-item">
+                <h3><span class="filter-icon">☀️</span> Ультрафиолетовый стерилизатор</h3>
+                <p>Благодаря мощному воздействию ультрафиолета уничтожаются бактерии, вирусы и болезнетворные микробы. Это самый эффективный безреагентный способ обеззараживания, который также способствует прозрачности воды.</p>
+            </div>
+
+            <div class="filter-item">
+                <h3><span class="filter-icon">💧</span> Перекись водорода</h3>
+                <p>Перекись водорода (пергидроль) — это лучшее средство для уничтожения патогенной флоры, дезинфекция на основе активного кислорода. В воде перекись водорода под воздействием УФ распадается на кислород и воду.</p>
+                <p style="margin-bottom:0">Кислород, растворенный в воде, обеспечивает её идеальную чистоту. Кроме того, активные пузырьки кислорода поднимают мелкий мусор на поверхность, где его можно легко собрать сачком.</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Сайдбар (Боковое меню) -->
+    <aside>
+        <div class="sidebar-block">
+            <h3>Популярное</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati36.html">Как выбрать флоат-камеру?</a></li>
+                <li><a href="plan.html">Бизнес-план студии</a></li>
+                <li><a href="cena.html">Стоимость оборудования</a></li>
+                <li><a href="complect.html">Комплектация</a></li>
+                <li><a href="filtr.html">Система фильтрации</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-block">
+            <h3>Исследования</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati11.html">Флоатинг в спорте</a></li>
+                <li><a href="stati13.html">Беременность и флоатинг</a></li>
+                <li><a href="stati15.html">Лечение фибромиалгии</a></li>
+                <li><a href="stati16.html">Эндорфины и счастье</a></li>
+            </ul>
+        </div>
+        
+        <div class="sidebar-block" style="text-align: center; border:none; background: transparent;">
+             <a href="tel:89272528367" style="display:inline-block; background: var(--accent); color:white; padding: 10px 20px; border-radius:5px; font-weight:bold;">Заказать звонок</a>
+        </div>
+    </aside>
+
+</div>
+
+<footer>
+    <div class="footer-inner">
+        <div>
+            <h4>Miracle Float</h4>
+            <p>&copy; 2010-2026 Производство флоат-камер.</p>
+        </div>
+        <div>
+            <h4>Связаться с нами</h4>
+            <p>📞 8-927-252-83-67<br>📞 8-927-253-51-51</p>
+            <p>📧 float-camera@mail.ru</p>
+        </div>
+        <div>
+            <h4>Информация</h4>
+            <p><a href="dokument.html" style="color:inherit;">Документация</a></p>
+            <p><a href="tovary.html" style="color:inherit;">Наши работы</a></p>
+        </div>
+    </div>
+</footer>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(98871717, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/98871717" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</body>
+</html>
+
+
+
+

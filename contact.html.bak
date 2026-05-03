@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты производителя Miracle | Свяжитесь с нами напрямую</title>
+    <link rel="icon" href="https://float-camera.ru/favicon.ico" type="image/x-icon">
+	<meta name="description" content="Контактная информация производителя флоат-камер Miracle. Свяжитесь с нами для консультации, заказа оборудования или обсуждения сотрудничества для вашего отеля или SPA-центра. Работаем по всей России.">
+
+<link rel="canonical" href="https://float-camera.ru/contact.html">
+    <link rel="stylesheet" href="assets/css/miracle-redesign.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Miracle Float",
+      "legalName": "ИП Шуляков А.Г.",
+      "url": "https://float-camera.ru/",
+      "logo": "https://float-camera.ru/media/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+7-927-252-83-67",
+        "contactType": "customer service",
+        "areaServed": "RU",
+        "availableLanguage": "Russian"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Камышин",
+        "addressCountry": "RU"
+      },
+      "email": "float-camera@mail.ru"
+    }
+    </script>
+
+    <style>
+        /* БАЗОВЫЕ СТИЛИ */
+        :root { --primary: #00695c; --secondary: #004d40; --accent: #d81b60; --text: #333; --light-bg: #f8f9fa; --white: #fff; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; color: var(--text); line-height: 1.6; background: var(--light-bg); }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        
+        /* ШАПКА */
+        .top-bar { background: var(--secondary); color: white; padding: 8px 0; text-align: center; font-size: 0.9em; }
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: var(--primary); text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
+        
+        /* МЕНЮ (Десктоп) */
+        .main-menu { display: flex; gap: 20px; list-style: none; margin: 0; padding: 0; }
+        .main-menu a { font-weight: 500; color: #555; display: block; padding: 5px 0; }
+        .main-menu a:hover { color: var(--primary); }
+        .menu-toggle { display: none; font-size: 26px; cursor: pointer; color: var(--primary); }
+
+        /* МОБИЛЬНОЕ МЕНЮ (Логика отображения) */
+        @media (max-width: 992px) {
+            .menu-toggle { display: block; }
+            .main-menu { 
+                display: none; /* Скрыто по умолчанию */
+                flex-direction: column; 
+                position: absolute; 
+                top: 100%; 
+                left: 0; 
+                width: 100%; 
+                background: white; 
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1); 
+                padding: 20px; 
+                box-sizing: border-box;
+                gap: 15px;
+            }
+            .main-menu.active { 
+                display: flex; /* Показываем при нажатии */
+            }
+        }
+
+        /* КОНТАКТЫ */
+        .container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+        h1 { text-align: center; color: var(--secondary); margin-bottom: 40px; }
+        .contact-card { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; }
+        .contact-item { margin-bottom: 30px; }
+        .contact-item h3 { margin: 0 0 10px; color: #666; font-size: 1em; text-transform: uppercase; letter-spacing: 1px; }
+        .contact-val { font-size: 1.4em; color: var(--text); font-weight: bold; }
+        .contact-val a:hover { color: var(--accent); }
+
+        /* КНОПКИ МЕССЕНДЖЕРОВ */
+        .social-links { display: flex; justify-content: center; gap: 15px; margin-top: 30px; flex-wrap: wrap; }
+        .social-btn { display: inline-block; padding: 10px 25px; border-radius: 50px; color: white !important; font-weight: bold; min-width: 120px; }
+        .wa { background: #25D366; }
+        .tg { background: #0088cc; }
+        .max { background: #E60023; }
+        .social-btn:hover { opacity: 0.9; transform: translateY(-2px); }
+        
+        .reqs { margin-top: 40px; font-size: 0.9em; color: #777; border-top: 1px solid #eee; padding-top: 20px; }
+
+        /* ФУТЕР */
+        footer { background: #004d40; color: white; padding: 40px 0; margin-top: 60px; width: 100%; position: relative; z-index: 10; }
+        .footer-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px; }
+        .footer-inner > div { flex: 1; min-width: 250px; }
+        .footer-inner h4 { border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 10px; margin-bottom: 15px; color: white; }
+        .footer-inner p, .footer-inner a { line-height: 1.6; color: #e0f2f1; display: block; margin-bottom: 5px; }
+    </style>
+</head>
+<body class="miracle-page">
+
+<!-- HEADER_START -->
+<div class="top-bar">Консультации: <a href="tel:89272528367" style="color:white">8-927-252-83-67</a></div>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+             <img src="https://float-camera.ru/media/images/logo.png" alt="Miracle" style="height: 40px;"> Miracle
+        </a>
+        <div class="menu-toggle" onclick="document.querySelector('.main-menu').classList.toggle('active')">☰</div>
+        
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tovary.html">Наши работы</a></li>
+                <li><a href="stati.html">Статьи</a></li>
+                <li><a href="dokument.html">Документация</a></li>
+                <li><a href="cena.html">Цена</a></li>
+                <li><a href="contact.html" style="color:var(--primary); font-weight:bold;">Контакты</a></li>
+                <li><a href="https://float-camera-bufo.ru" target="_blank" style="color: var(--accent); font-weight: bold; border: 1px solid var(--accent); padding: 5px 10px; border-radius: 4px;">Premium BUFO</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- HEADER_END -->
+
+<div class="container">
+    <h1>Свяжитесь с нами</h1>
+    
+    <div class="contact-card">
+        <div class="contact-item">
+            <h3>Телефоны (круглосуточно)</h3>
+            <div class="contact-val"><a href="tel:89272528367">8-927-252-83-67</a></div>
+            <div class="contact-val"><a href="tel:89272535151">8-927-253-51-51</a></div>
+            <!--<p><small>Звонки по России бесплатны</small></p>-->
+        </div>
+
+        <div class="contact-item">
+            <h3>Электронная почта</h3>
+            <div class="contact-val"><a href="mailto:float-camera@mail.ru">float-camera@mail.ru</a></div>
+        </div>
+
+        <div class="social-links">
+            <a href="https://wa.me/+79272528367" class="social-btn wa" target="_blank">WhatsApp</a>
+            <a href="https://t.me/+79272535151" class="social-btn tg" target="_blank">Telegram</a>
+            <a href="https://max.ru/u/f9LHodD0cOKl5EAM667DlSemAIIP_fjs0OUJh1Ni7Hxkt0jk7AFczoJpCQA" class="social-btn max" target="_blank">Max</a>
+        </div>
+
+        <div class="reqs">
+            <p><b>ИП Шуляков А.Г.</b></p>
+            <p>Производство находится в <b>г. Камышин</b>.</p>
+            <p>Мы работаем по всей России и СНГ.</p>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER_START -->
+<footer>
+    <div class="footer-inner">
+        <div>
+            <h4>Miracle Float</h4>
+            <p>&copy; 2010-2026 Производство флоат-камер.</p>
+        </div>
+        <div>
+            <h4>Связаться с нами</h4>
+            <p>📞 8-927-252-83-67<br>📞 8-927-253-51-51</p>
+            <p>📧 float-camera@mail.ru</p>
+        </div>
+        <div>
+            <h4>Информация</h4>
+            <p><a href="dokument.html">Документация</a></p>
+            <p><a href="tovary.html">Наши работы</a></p>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER_END -->
+
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+   ym(98871717, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true });
+</script>
+<script src="assets/js/miracle-redesign.js"></script>
+</body>
+</html>

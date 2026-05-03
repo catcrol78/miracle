@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результаты исследований | Статья Miracle</title>
+    <link rel="icon" href="https://float-camera.ru/favicon.ico" type="image/x-icon">
+    <style>
+        /* БАЗОВЫЕ СТИЛИ */
+        :root { --primary: #00695c; --secondary: #004d40; --accent: #d81b60; --text: #333; --light-bg: #f8f9fa; --white: #fff; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; color: var(--text); line-height: 1.6; background: var(--light-bg); }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        
+        /* ШАПКА */
+        .top-bar { background: var(--secondary); color: white; padding: 8px 0; text-align: center; font-size: 0.9em; }
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: var(--primary); text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
+        .main-menu { display: flex; gap: 20px; }
+        .main-menu a { font-weight: 500; color: #555; }
+        .main-menu a:hover { color: var(--primary); }
+        .menu-toggle { display: none; font-size: 26px; cursor: pointer; }
+
+        /* МАКЕТ СТАТЬИ (Сайдбар + Контент) */
+        .layout-grid { display: grid; grid-template-columns: 3fr 1fr; gap: 40px; max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        
+        /* Статья */
+        .article-content { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .article-content h1 { color: var(--secondary); margin-top: 0; }
+        .article-content h2, .article-content h3 { color: var(--primary); margin-top: 30px; }
+        .article-content ul { list-style: disc; padding-left: 20px; margin-bottom: 20px; }
+        .article-content li { margin-bottom: 10px; }
+        
+        /* Сайдбар (Боковое меню) */
+        aside { font-size: 0.95em; }
+        .sidebar-block { background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #eee; }
+        .sidebar-block h3 { margin-top: 0; color: var(--secondary); font-size: 1.1em; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 15px; }
+        .sidebar-menu { list-style: none; padding: 0; }
+        .sidebar-menu li { margin-bottom: 10px; border-bottom: 1px dotted #eee; padding-bottom: 5px; }
+        .sidebar-menu a:hover { color: var(--accent); }
+
+        footer { background: #263238; color: #cfd8dc; padding: 40px 0; margin-top: 50px; text-align: center; }
+
+        @media (max-width: 900px) {
+            .layout-grid { grid-template-columns: 1fr; } /* На телефоне в одну колонку */
+            .article-content { padding: 20px; }
+            .sidebar-block { display: none; } /* Можно скрыть сайдбар на мобильном */
+            
+            .main-menu { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: white; padding: 20px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+            .main-menu.active { display: flex; }
+            .menu-toggle { display: block; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">Консультации: <a href="tel:89272528367" style="color:white">8-927-252-83-67</a></div>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+             <img src="https://float-camera.ru/media/images/logo.png" alt="Miracle" style="height: 40px;"> Miracle
+        </a>
+        <div class="menu-toggle" onclick="document.querySelector('.main-menu').classList.toggle('active')">☰</div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tovary.html">Наши работы</a></li>
+                <li><a href="stati.html" style="color:var(--primary); font-weight:bold;">Статьи</a></li>
+                <li><a href="dokument.html">Документация</a></li>
+                <li><a href="cena.html">Цена</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                 <li><a href="https://float-camera-bufo.ru" target="_blank" style="color: var(--accent); font-weight: bold; border: 1px solid var(--accent); padding: 5px 10px; border-radius: 4px;">Premium BUFO</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="layout-grid">
+    
+    <!-- Основной контент статьи -->
+    <main class="article-content">
+        
+        <h1>Результаты научных исследований</h1>
+        
+        <p>В 1982 в ходе исследований доктора Томаса Тейлора, проводимых на 450 испытуемых в Университете штата Техас (США), было доказано, что флоатинг-терапия увеличивает скорость запоминания и улучшает синтетическое мышление, <b style="color:var(--primary)">повышая общий уровень обучаемости</b>.</p>
+
+        <h3>Влияние на иммунитет</h3>
+        <p>Профессор Аррид Барабац, доктор медицины в области психофизиологии, главный редактор Международного журнала клинического и экспериментального гипноза, в соавторстве с ведущими учеными-физиологами из США и стран Европы, занимаясь серьезным изучением флоат-терапии на базе Университета штата Вашингтон (США) пришел к важному выводу.</p> 
+        <p>Флоат-терапия способствует существенному <b style="color:var(--primary)">усилению иммунной системы</b>, поскольку в ходе сеанса усиливается производство клеток плазмы, участвующих в опознавании и уничтожении болезнетворных бактерий (Т-клеток и С-клеток).</p>
+
+        <h3>Давление, гормоны и суставы</h3>
+        <p>В Университете Толидо (штат Огайо, США) профессор Джон Тернер с группой ученых в 1990-е годы занимался исследованием влияния флоатинг-терапии на артериальное давление и гормональный фон организма. Его эксперименты и наблюдения показали, что флоатинг способствует <b style="color:var(--primary)">нормализации артериального давления</b> и уровня гормона кортизола в плазме.</p>
+        
+        <p>Профессор Тернер также доказал, что флоат-терапия при лечении ревматоидного артрита способствует:</p>
+        <ul>
+            <li>Увеличению силы захвата;</li>
+            <li>Росту подвижности конечностей;</li>
+            <li>Снижению болевого синдрома.</li>
+        </ul>
+
+        <h3>Остеопатия и боли в спине</h3>
+        <p>На медицинском факультете Университета Виктория (Австралия) коллектив ученых (Э. Роган, Т. Моррис и П. Гиббонс) в 2001 году изучил возможности использования флоат-терапии в остеопатии. Проведенные ими исследования доказали, что флоат-терапия может стать важным элементом лечения острых болей не идентифицируемой природы в спине.</p>
+        
+        <p>Группа практикующих врачей (С. Хилл, М. Эккет, С. Патерсон, и Е. Харкнесс) в 1999 году на базе Университета Экстера в Великобритании изучила влияние флоатинга на пациентов с остеоартритом. Эксперимент показал существенное улучшение в состоянии лиц, страдавших разными формами артрита в течение нескольких лет (снижение болевых ощущений, улучшение качества жизни, рост физической и социальной активности пациентов).</p>
+
+        <h3>Женское здоровье (ПМС)</h3>
+        <p>Доктор Уолтер Йессен из Австралии доказал, что флоатинг также эффективен в облегчении симптомов ПМС (предменструального синдрома).</p>
+
+        <h3>Борьба с курением</h3>
+        <p>Сотрудники факультета психологии Университета Британской Колумбии (Ванкувер, Канада) в 1985 году опубликовали результаты своего исследования, отразившие высокую эффективность флоат-терапии в лечении зависимости от табакокурения. Их выводы были подтверждены также работами целого ряда других ученых (в том числе и упоминавшегося выше доктора Аррида Барабаца).</p>
+
+        <div style="background: #e3f2fd; padding: 20px; border-left: 5px solid #1976d2; margin-top: 30px;">
+            <h3 style="margin-top: 0; color: #1565c0;">Комплексное воздействие на стресс</h3>
+            <p>В 2006 году большая группа ученых-физиологов из Университета Карлштад в Швеции подвела итог многолетним исследованиям воздействия флоат-терапии на пациентов, страдающих от заболеваний, вызванных прежде всего стрессом (бессонница, мышечные боли, головные боли, ухудшение метаболизма).</p>
+            <p style="margin-bottom:0"><strong>Вывод ученых однозначен:</strong> флоат-терапия чрезвычайно эффективна в лечении вышеперечисленных расстройств и их производных (ожирение, депрессивные состояния, приступы раздражительности и т.д.).</p>
+        </div>
+
+    </main>
+
+    <!-- Сайдбар (Боковое меню) -->
+    <aside>
+        <div class="sidebar-block">
+            <h3>Популярное</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati36.html">Как выбрать флоат-камеру?</a></li>
+                <li><a href="plan.html">Бизнес-план студии</a></li>
+                <li><a href="cena.html">Стоимость оборудования</a></li>
+                <li><a href="complect.html">Комплектация</a></li>
+                <li><a href="filtr.html">Система фильтрации</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-block">
+            <h3>Исследования</h3>
+            <ul class="sidebar-menu">
+                <li><a href="stati11.html">Флоатинг в спорте</a></li>
+                <li><a href="stati13.html">Беременность и флоатинг</a></li>
+                <li><a href="stati15.html">Лечение фибромиалгии</a></li>
+                <li><a href="stati16.html">Эндорфины и счастье</a></li>
+            </ul>
+        </div>
+        
+        <div class="sidebar-block" style="text-align: center; border:none; background: transparent;">
+             <a href="tel:89272528367" style="display:inline-block; background: var(--accent); color:white; padding: 10px 20px; border-radius:5px; font-weight:bold;">Заказать звонок</a>
+        </div>
+    </aside>
+
+</div>
+
+<footer>
+    <div class="container"><p>&copy; 2010-2025 Miracle. Производство флоат-камер.</p></div>
+</footer>
+
+</body>
+</html>
